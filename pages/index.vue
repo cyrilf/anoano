@@ -1,65 +1,110 @@
 <template>
   <div>
-    <section class="text-gray-600">
-      <div class="flex md:flex-row flex-col items-center">
-        <div
-          class="flex flex-col md:items-start md:text-left items-center text-center xl:pl-64 lg:pl-44 md:pl-16 px-4 container mx-auto my-8"
-        >
-          <h1
-            class="lg:text-6xl md:text-5xl sm:text-4xl text-3xl mb-4 font-medium bg-gradient-to-r from-amber-500 to-amber-400 bg-clip-text text-transparent"
+    <section class="relative">
+      <div
+        class="absolute inset-0 z-0 ml-auto hidden w-[450px] bg-[url('~/assets/images/anneaux.png')] bg-cover bg-left bg-no-repeat md:block lg:w-[512px]"
+        style="clip-path: polygon(11% 0%, 100% 0, 100% 100%, 0% 100%)"
+      >
+        <span
+          class="absolute bottom-0 right-2 rounded-t bg-zinc-50 bg-opacity-50 px-2 text-sm"
+          >Photo d'<a
+            href="https://samflam.notion.site/samflam/Otoko-Contraception-autonome-93fd30b3034d465096fc939959ce01d8#5073a73963d9448b822d482cc08cff13"
+            >Otoko</a
           >
-            Ta contraception masculine
-            <br class="hidden lg:inline-block" />commence ici.
-          </h1>
-          <p class="mb-8 leading-relaxed">Bienvenue <icon name="👋" /></p>
-          <div class="flex justify-start flex-wrap gap-4">
-            <nuxt-link
-              to="/parcours"
-              class="inline-flex text-white bg-amber-400 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-500 rounded text-lg"
+          en
+          <a href="https://creativecommons.org/licenses/by/4.0/deed.fr"
+            >CC BY 4.0</a
+          ></span
+        >
+      </div>
+      <div
+        class="container relative z-10 px-6 py-16 sm:mx-auto sm:py-8 md:py-28 md:pb-48"
+      >
+        <div class="flex flex-col md:flex-row">
+          <div
+            class="flex w-full flex-col items-center gap-7 text-center md:w-1/2 md:items-start md:gap-8 md:pr-8 md:text-left lg:w-2/3 lg:pr-20"
+          >
+            <h1
+              class="bg-gradient-to-r from-amber-500 to-amber-400 bg-clip-text text-4xl font-medium text-transparent md:text-5xl lg:text-6xl"
             >
-              Le parcours
-            </nuxt-link>
-            <nuxt-link
-              to="/a-propos"
-              class="inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"
+              Ta contraception masculine
+              <br class="hidden lg:inline-block" />commence ici.
+            </h1>
+            <p
+              class="tracking-snug text-lg text-gray-700 md:text-xl md:leading-normal"
             >
-              À propos
-            </nuxt-link>
+              Bienvenue <icon name="👋" />
+              <br />
+              On te recommande de regarder les outils à ta disposition ou bien
+              de te lancer dans le parcours.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 md:justify-start">
+              <nuxt-link
+                to="/outils"
+                class="inline-flex items-center rounded border-0 bg-amber-400 py-2 px-6 text-lg text-white hover:bg-yellow-500 focus:outline-none"
+              >
+                <icon name="🪛️" class="mr-3" /> Les outils
+              </nuxt-link>
+              <nuxt-link
+                to="/parcours"
+                class="inline-flex items-center rounded border-0 bg-gray-100 py-2 px-6 text-lg text-gray-700 hover:bg-gray-200 focus:outline-none"
+              >
+                <icon name="⛳️" class="mr-3" /> Le parcours
+              </nuxt-link>
+            </div>
           </div>
         </div>
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:ml-auto">
-          <img
-            class="object-cover object-center md:clip-path rounded-lg max-h-96 md:max-h-max mx-auto mb-8 md:mb-0 md:rounded-none"
-            alt="hero"
-            src="~/assets/images/oring.jpeg"
-          />
-        </div>
+      </div>
+      <div class="relative mx-auto w-fit md:hidden">
+        <img
+          class="mx-auto mb-8 max-h-96 rounded-lg object-cover object-center"
+          alt="anneau contraceptif"
+          src="~/assets/images/anneaux.png"
+        />
+        <span
+          class="absolute bottom-0 right-2 rounded-t bg-zinc-50 bg-opacity-50 px-2 text-sm"
+          >Photo d'<a
+            href="https://samflam.notion.site/samflam/Otoko-Contraception-autonome-93fd30b3034d465096fc939959ce01d8#5073a73963d9448b822d482cc08cff13"
+            target="_blank"
+            >Otoko</a
+          >
+          en
+          <a
+            href="https://creativecommons.org/licenses/by/4.0/deed.fr"
+            target="_blank"
+            >CC BY 4.0</a
+          ></span
+        >
       </div>
     </section>
-    <section class="text-gray-600 bg-zinc-100">
+    <section class="bg-zinc-100 text-gray-600">
       <div
-        class="flex py-24 md:flex-row flex-col items-center container mx-auto"
+        class="container mx-auto flex flex-col items-center py-24 md:flex-row"
       >
         <div
-          class="lg:flex-grow lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center px-16"
+          class="mb-16 flex flex-col items-center px-16 text-center md:mb-0 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24"
         >
-          <p class="font-bold text-2xl flex mb-8">
-            <icon name="🚧" class="mr-4" />Chantier en cours
-          </p>
-          <p>Ooh, c'est le tout, tout début.</p>
-          <p>
-            On commence seulement à créer les premières pages, les premiers
-            outils.
-          </p>
-          <p>
-            Bientôt, ici tu retrouveras tout plein d'informations sur la
-            contraception masculine.
-          </p>
-          <p class="mb-4"></p>
-          <p>
-            Alors, un peu de patience, et bientôt tu pourras même contribuer à
-            ce projet ! <icon name="👌" />
-          </p>
+          <wip-section>
+            <p class="mb-8 text-2xl font-bold">Chantier en cours</p>
+            <p>Ooh, c'est le tout, tout début.</p>
+            <p>
+              On commence seulement à créer les premières pages, les premiers
+              outils.
+            </p>
+            <p>
+              Bientôt, ici tu retrouveras tout plein d'informations sur la
+              contraception masculine.
+            </p>
+            <p>
+              Alors si tu vois un bloc qui a ce style avec l'emoji chantier
+              <icon name="🚧️" />, c'est que le contenu n'est pas final.
+            </p>
+            <p class="mb-4"></p>
+            <p>
+              Alors, un peu de patience, et bientôt tu pourras même contribuer à
+              ce projet ! <icon name="👌" />
+            </p>
+          </wip-section>
         </div>
       </div>
     </section>
