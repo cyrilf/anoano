@@ -4,23 +4,16 @@
       src="https://images.unsplash.com/photo-1611077544066-4522a88996aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&h=345&crop=top,right&q=80"
       class="mb-8 w-screen"
     />
-    <div
-      class="mb-8 flex w-fit items-center rounded border-l-4 border-sky-400 bg-sky-50 p-4 shadow-sm"
-    >
-      <div class="text-sky-700">
-        <div class="flex items-center gap-4 font-bold">
-          <icon name="ℹ️" /> Information
-        </div>
-        <div>
-          Avec cet outil tu peux facilement trouver la taille idéale pour ton
-          anneau.
-        </div>
-        <div>
-          Pour cela, il te suffit de mesurer la base de ton pénis en éréction
-          avec une règle. Puis d'entrer cette valeur dans le tableau ci-dessous.
-        </div>
+    <Alert title="Information" icon="ℹ️" type="info">
+      <div>
+        Avec cet outil tu peux facilement trouver la taille idéale pour ton
+        anneau.
       </div>
-    </div>
+      <div>
+        Pour cela, il te suffit de mesurer la base de ton pénis en éréction avec
+        une règle. Puis d'entrer cette valeur dans le tableau ci-dessous.
+      </div>
+    </Alert>
 
     <h2 class="text-2xl font-bold">
       <nuxt-link
