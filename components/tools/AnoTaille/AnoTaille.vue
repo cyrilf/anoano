@@ -28,7 +28,7 @@
         id="etape-1"
         active-class="_"
         exact-active-class="_"
-        class="flex flex-wrap items-center justify-center gap-2 sm:justify-start"
+        class="flex scroll-mt-24 flex-wrap items-center justify-center gap-2 sm:justify-start"
       >
         1.
         <span class="text-slate-400"> Tu mesures ton sexe</span>
@@ -52,7 +52,7 @@
         id="etape-2"
         active-class="_"
         exact-active-class="_"
-        class="flex flex-wrap items-center justify-center gap-2 sm:justify-start"
+        class="flex scroll-mt-24 flex-wrap items-center justify-center gap-2 sm:justify-start"
       >
         2.
         <span class="text-slate-400"> Tu trouves la taille qu'il te faut</span>
@@ -69,7 +69,7 @@
         id="etape-3"
         active-class="_"
         exact-active-class="_"
-        class="flex flex-wrap items-center justify-center gap-2 sm:justify-start"
+        class="flex scroll-mt-24 flex-wrap items-center justify-center gap-2 sm:justify-start"
       >
         3.
         <span class="text-slate-400"> Tu achètes ou fabriques ton anneau</span>
