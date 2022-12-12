@@ -48,7 +48,7 @@ const crumbs = computed(() => {
     const match = routes.find((route) => route.path === path);
     if (match) {
       results.push({
-        title: (match.meta?.crumb as string) || section.replace(/-/g, " "),
+        title: (match.meta?.title as string) || section.replace(/-/g, " "),
         path: match.path,
         isCurrent: route.fullPath === match.path,
       });

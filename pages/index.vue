@@ -2,8 +2,7 @@
   <div>
     <section class="relative">
       <div
-        class="absolute inset-0 z-0 ml-auto hidden w-[450px] bg-[url('~/assets/images/anneaux.png')] bg-cover bg-left bg-no-repeat md:block lg:w-[512px]"
-        style="clip-path: polygon(11% 0%, 100% 0, 100% 100%, 0% 100%)"
+        class="clip-path absolute inset-0 z-0 ml-auto hidden w-[450px] bg-[url('~/assets/images/anneaux.png')] bg-cover bg-left bg-no-repeat md:block lg:w-[512px]"
       >
         <span
           class="absolute bottom-0 right-2 rounded-t bg-zinc-50 bg-opacity-50 px-2 text-sm"
@@ -110,3 +109,8 @@
     </section>
   </div>
 </template>
+<script setup lang="ts">
+definePageMeta({
+  title: "Contraception masculine",
+});
+</script>

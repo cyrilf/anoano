@@ -29,6 +29,6 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  crumb: "💁️ À propos",
+  title: "💁️ À propos",
 });
 </script>

@@ -32,8 +32,3 @@
     </span>
   </footer>
 </template>
-<script>
-export default {
-  name: "MainHeader",
-};
-</script>

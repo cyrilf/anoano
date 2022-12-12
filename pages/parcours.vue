@@ -93,6 +93,6 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  crumb: "⛳️ Le parcours",
+  title: "⛳️ Le parcours",
 });
 </script>

@@ -13,6 +13,6 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  crumb: "📜️ L'ordonnance",
+  title: "📜️ L'ordonnance",
 });
 </script>

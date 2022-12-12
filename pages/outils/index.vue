@@ -93,6 +93,6 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  crumb: "🪛️ Les outils",
+  title: "🪛️ Les outils",
 });
 </script>

@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   // Global page headers: https://go.nuxtjs.dev/config-head
   app: {
     head: {
-    title: 'anoano',
+    title: 'Anoano',
+    titleTemplate: '%s - Anoano',
     htmlAttrs: {
       lang: 'en',
     },

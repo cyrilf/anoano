@@ -11,6 +11,6 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  crumb: "💍️ AnoTaille",
+  title: "💍️ AnoTaille",
 });
 </script>
