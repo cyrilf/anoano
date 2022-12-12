@@ -2,15 +2,11 @@
   <div>
     <section class="relative">
       <div
-        class="clip-path absolute inset-0 z-0 ml-auto hidden w-[450px] bg-[url('~/assets/images/anneaux.png')] bg-cover bg-left bg-no-repeat md:block lg:w-[512px]"
+        class="clip-path absolute inset-0 z-0 ml-auto hidden w-[400px] bg-[url('~/assets/images/anneaux.jpg')] bg-cover bg-center bg-no-repeat md:block lg:w-[550px] xl:w-[650px]"
       >
         <span
           class="absolute bottom-0 right-2 rounded-t bg-zinc-50 bg-opacity-50 px-2 text-sm"
-          >Photo d'<a
-            href="https://samflam.notion.site/samflam/Otoko-Contraception-autonome-93fd30b3034d465096fc939959ce01d8#5073a73963d9448b822d482cc08cff13"
-            >Otoko</a
-          >
-          en
+          >Photo de Koeko en
           <a href="https://creativecommons.org/licenses/by/4.0/deed.fr"
             >CC BY 4.0</a
           ></span
@@ -27,7 +23,10 @@
               class="bg-gradient-to-r from-amber-500 to-amber-400 bg-clip-text text-4xl font-medium text-transparent md:text-5xl lg:text-6xl"
             >
               Ta contraception masculine
-              <br class="hidden lg:inline-block" />commence ici.
+              <br class="hidden lg:inline-block" /><span class="underlined">
+                commence</span
+              >
+              ici.
             </h1>
             <p
               class="tracking-snug text-lg text-gray-700 md:text-xl md:leading-normal"
@@ -58,16 +57,11 @@
         <img
           class="mx-auto mb-8 max-h-96 rounded-lg object-cover object-center"
           alt="anneau contraceptif"
-          src="~/assets/images/anneaux.png"
+          src="~/assets/images/anneaux.jpg"
         />
         <span
           class="absolute bottom-0 right-2 rounded-t bg-zinc-50 bg-opacity-50 px-2 text-sm"
-          >Photo d'<a
-            href="https://samflam.notion.site/samflam/Otoko-Contraception-autonome-93fd30b3034d465096fc939959ce01d8#5073a73963d9448b822d482cc08cff13"
-            target="_blank"
-            >Otoko</a
-          >
-          en
+          >Photo de Koeko en
           <a
             href="https://creativecommons.org/licenses/by/4.0/deed.fr"
             target="_blank"
@@ -114,3 +108,20 @@ definePageMeta({
   title: "Contraception masculine",
 });
 </script>
+<style>
+.underlined {
+  position: relative;
+}
+
+.underlined::after {
+  content: "";
+  width: 110%;
+  height: 24px;
+  border-width: 3px;
+  border-color: rgb(251, 191, 36) transparent transparent;
+  border-radius: 100% 50% 0px 0px;
+  position: absolute;
+  top: 90%;
+  left: -5%;
+}
+</style>
