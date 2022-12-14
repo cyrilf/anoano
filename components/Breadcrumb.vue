@@ -1,6 +1,8 @@
 <template>
   <div class="bg-zinc-100" v-if="!isHome">
-    <ol class="container mx-auto flex items-center py-6 px-4 sm:px-6 lg:px-8">
+    <ol
+      class="container mx-auto flex flex-wrap items-center justify-center gap-4 py-6 md:justify-start"
+    >
       <li
         v-for="(crumb, index) in crumbs"
         :key="crumb.path"

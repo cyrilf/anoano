@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="mt-4 w-fit cursor-pointer text-zinc-400 hover:text-zinc-500 hover:underline"
-  >
+  <div class="w-fit cursor-pointer hover:underline" :class="$attrs.class">
     <div @click="toggle">
       <icon
         name="ep:arrow-down-bold"
@@ -11,22 +9,19 @@
       {{ isOpen ? textOpen : textClose }}
     </div>
   </div>
-  <div :class="`mt-4 overflow-hidden ${isOpen ? '' : ''}`">
-    <div
-      class="max-h-0 overflow-hidden transition-[max-height]"
-      :class="{
-        'max-h-[999px]': isOpen,
-      }"
-    >
-      <slot />
-    </div>
+  <div :class="`my-4 ${isOpen ? '' : 'hidden'}`">
+    <slot />
   </div>
 </template>
 <script setup lang="ts">
-defineProps<{
+interface Props {
   textOpen: string;
-  textClose: string;
-}>();
+  textClose?: string;
+}
+
+withDefaults(defineProps<Props>(), {
+  textClose: (props: { textOpen: string }): string => props.textOpen,
+});
 
 const isOpen = ref(false);
 const toggle = () => (isOpen.value = !isOpen.value);

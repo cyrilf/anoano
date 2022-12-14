@@ -27,6 +27,7 @@
       <Toggle
         textOpen="Cacher toutes les tailles"
         textClose="Voir toutes les tailles"
+        class="mt-4 text-zinc-400 hover:text-zinc-500"
       >
         <div class="rouded w-fit">
           <simple-table
