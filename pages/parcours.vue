@@ -14,19 +14,17 @@
             </div>
           </Alert>
           <div class="px-4 py-6 sm:px-0">
-            <wip-section>
-              <h2 class="text-2xl font-bold">
-                <nuxt-link
-                  to="/parcours#etape-1"
-                  id="etape-1"
-                  class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 sm:justify-start"
-                >
-                  <icon name="📚️" /> Étape 1 :
-                  <span class="text-slate-400">Je me prépare</span>
-                </nuxt-link>
-              </h2>
-              <StepsPreparation />
-            </wip-section>
+            <h2 class="text-2xl font-bold">
+              <nuxt-link
+                to="/parcours#etape-1"
+                id="etape-1"
+                class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 sm:justify-start"
+              >
+                <icon name="📚️" /> Étape 1 :
+                <span class="text-slate-400">Je me prépare</span>
+              </nuxt-link>
+            </h2>
+            <StepsPreparation />
           </div>
         </div>
       </div>
