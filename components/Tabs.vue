@@ -1,6 +1,7 @@
 <template>
   <div
-    class="mt-4 border-b border-zinc-100 text-center text-sm font-medium text-zinc-500"
+    class="mt-4 text-center text-sm font-medium text-zinc-500"
+    :class="$attrs.class"
   >
     <ul class="-mb-px flex flex-wrap">
       <li class="mr-2" v-for="tab in tabs" :key="tab.value">
@@ -18,7 +19,7 @@
       </li>
     </ul>
   </div>
-  <div class="border border-t-0 border-zinc-100 p-8">
+  <div class="max-w-max border border-zinc-200 bg-white p-8">
     <slot />
   </div>
 </template>

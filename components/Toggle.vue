@@ -3,11 +3,13 @@
     <div @click="toggle">
       <icon
         name="ep:arrow-down-bold"
-        class="transition-transform"
+        class="mr-1 transition-transform"
         :class="{ 'rotate-180': isOpen }"
         v-if="!right"
       />
-      {{ isOpen ? textOpen : textClose }}
+      <slot :isOpen="isOpen" name="title">{{
+        isOpen ? localTextOpen : text
+      }}</slot>
       <icon
         name="ep:arrow-down-bold"
         class="transition-transform"
@@ -16,21 +18,30 @@
       />
     </div>
   </div>
-  <div :class="`my-4 ${isOpen ? '' : 'hidden'}`">
+  <div
+    :class="`mt-2 mb-4 ml-2 ${
+      isOpen ? (withGuide ? 'border-l border-zinc-300 pl-4' : '') : 'hidden'
+    }`"
+  >
     <slot />
   </div>
 </template>
 <script setup lang="ts">
 interface Props {
-  textOpen: string;
-  textClose?: string;
+  text?: string;
+  textOpen?: string;
   right?: boolean;
+  withGuide?: boolean;
 }
 
-withDefaults(defineProps<Props>(), {
-  textClose: (props: { textOpen: string }): string => props.textOpen,
+const props = withDefaults(defineProps<Props>(), {
+  text: "Voir plus",
   right: false,
 });
+
+const localTextOpen = computed(
+  () => props.textOpen || props.text || "Voir moins"
+);
 
 const isOpen = ref(false);
 const toggle = () => (isOpen.value = !isOpen.value);

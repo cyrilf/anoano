@@ -1,7 +1,7 @@
 <template>
-  <header class="sticky top-0 z-20 bg-white/80 shadow backdrop-blur-lg">
+  <header class="sticky top-0 z-20 bg-white/80 shadow backdrop-blur-md">
     <div
-      class="container mx-auto flex flex-col flex-wrap items-center p-5 md:flex-row"
+      class="container mx-auto flex flex-col flex-wrap items-center px-4 py-6 md:flex-row"
     >
       <nuxt-link
         to="/"

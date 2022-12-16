@@ -1,7 +1,11 @@
 <template>
   <div>
     <div class="">
-      <label>
+      <label class="relative">
+        <icon
+          name="fe:quote-left"
+          class="absolute -top-2 -left-6 text-xl text-zinc-300"
+        />
         Mon pénis mesure
         <input
           type="number"
@@ -14,7 +18,7 @@
           hide-spin-buttons
           aria-label="En éréction"
         />
-        cm en éréction
+        cm de large en éréction
       </label>
       <label>
         et il mesure
@@ -29,25 +33,22 @@
           hide-spin-buttons
           aria-label="Au repos"
         />
-        cm au repos.
+        cm de large au repos.<icon
+          name="fe:quote-right"
+          class="-mt-4 text-xl text-zinc-300"
+        />
       </label>
     </div>
     <div>
       <div class="mt-4">
-        Alors ton modèle idéal c'est le :
-        <b class="ml-0.5 text-2xl text-amber-500"
-          ><a
-            :href="finalModelHref"
-            target="_blank"
-            class="border-b-2 border-amber-500 hover:border-amber-400 hover:text-amber-400"
-            >Andro-switch {{ isSoftVariant ? "soft" : "basique" }}
-            {{ finalModel }}</a
-          ></b
+        Alors ton modèle idéal c'est le
+        <b class="ml-0.5 text-amber-500"
+          >{{ isSoftVariant ? "soft" : "basique" }} {{ finalModel }}</b
         >
       </div>
       <Toggle
+        text="Voir toutes les tailles"
         textOpen="Cacher toutes les tailles"
-        textClose="Voir toutes les tailles"
         class="mt-4 text-zinc-400 hover:text-zinc-500"
       >
         <div class="rouded-lg w-fit">

@@ -1,7 +1,11 @@
 <template>
   <div>
-    <div class="col-span-2 grid grid-cols-2 gap-6">
-      <label class="w-fit">
+    <div>
+      <label class="relative">
+        <icon
+          name="fe:quote-left"
+          class="absolute -top-2 -left-6 text-xl text-zinc-300"
+        />
         Mon pénis mesure
         <input
           type="number"
@@ -13,7 +17,10 @@
           aria-label="En éréction"
           hide-spin-buttons
         />
-        cm en éréction.
+        cm de large en éréction.<icon
+          name="fe:quote-right"
+          class="-mt-4 text-xl text-zinc-300"
+        />
       </label>
     </div>
     <div>
@@ -25,8 +32,8 @@
         mm
       </div>
       <Toggle
+        text="Voir toutes les tailles"
         textOpen="Cacher toutes les tailles"
-        textClose="Voir toutes les tailles"
         class="mt-4 text-zinc-400 hover:text-zinc-500"
       >
         <div class="rouded w-fit">

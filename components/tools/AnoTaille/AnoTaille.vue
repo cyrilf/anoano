@@ -1,129 +1,182 @@
 <template>
-  <div>
-    <img
-      src="https://images.unsplash.com/photo-1611077544066-4522a88996aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&h=345&crop=top,right&q=80"
-      class="mb-8 w-screen"
-    />
-    <Alert title="Information" icon="ℹ️" type="info">
-      <div>
-        Avec cet outil tu peux facilement trouver la taille idéale pour ton
-        anneau.
-      </div>
-      <div>
-        Pour cela, il te suffit de mesurer la base de ton pénis en éréction avec
-        une règle. Puis d'entrer cette valeur dans le tableau ci-dessous.
-      </div>
-    </Alert>
-
-    <h2 class="text-2xl font-bold">
-      <nuxt-link
-        to="/outils/ano-taille#etape-1"
-        id="etape-1"
-        active-class="_"
-        exact-active-class="_"
-        class="flex scroll-mt-24 flex-wrap items-center justify-center gap-2 sm:justify-start"
-      >
-        1.
-        <span class="text-slate-400"> Tu mesures ton sexe</span>
-      </nuxt-link>
-    </h2>
-    <div class="mt-2">
-      <div>Prends <b>une règle</b> ou un mètre.</div>
-      <div>
-        Une fois debout, pose la règle sur ton pénis <b>en éréction</b> et
-        <b>mesure sa largeur</b> à la base.
-      </div>
-      <div>
-        Tu dois aussi faire une mesure similaire mais avec ton pénis au repos
-        pour l'Andro-switch.
-      </div>
-    </div>
-
-    <h2 class="mt-8 text-2xl font-bold">
-      <nuxt-link
-        to="/outils/ano-taille#etape-2"
-        id="etape-2"
-        active-class="_"
-        exact-active-class="_"
-        class="flex scroll-mt-24 flex-wrap items-center justify-center gap-2 sm:justify-start"
-      >
-        2.
-        <span class="text-slate-400"> Tu trouves la taille qu'il te faut</span>
-      </nuxt-link>
-    </h2>
-    <Tabs :tabs="tabs" v-model="provider">
-      <ToolsAnoTailleDIY v-if="provider === 'diy'" />
-      <ToolsAnoTailleAndro v-if="provider === 'andro'" @change="onChange" />
-    </Tabs>
-
-    <h2 class="mt-8 text-2xl font-bold">
-      <nuxt-link
-        to="/outils/ano-taille#etape-3"
-        id="etape-3"
-        active-class="_"
-        exact-active-class="_"
-        class="flex scroll-mt-24 flex-wrap items-center justify-center gap-2 sm:justify-start"
-      >
-        3.
-        <span class="text-slate-400"> Tu achètes ou fabriques ton anneau</span>
-      </nuxt-link>
-    </h2>
-    <div class="mt-2">
-      <div>
-        C'est bon, tu peux maintenant acheter ou faire ton anneau. Tu as les
-        mesures nécessaires.
-      </div>
-      <Tabs :tabs="tabs" v-model="provider">
-        <div v-if="provider === 'diy'" class="prose prose-zinc max-w-none">
+  <PageSkeleton
+    image-src="https://images.unsplash.com/photo-1611077544637-f826625c2776?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&h=750&crop=top,right&q=80"
+  >
+    <template #intro>
+      <p>
+        Avec cet outil tu peux facilement
+        <b>trouver la taille idéale pour ton anneau</b> en 3 étapes.
+      </p>
+      <p>
+        Pour cela, il te suffit de
+        <b>mesurer la largeur de ton pénis en éréction</b> avec une règle. Puis
+        d'<b>entrer cette valeur dans le formulaire</b> ci-dessous et hop', on
+        <b
+          >te proposes le modèle parfait
+          <span class="inline-block -translate-y-1 scale-150">💍</span></b
+        >.
+      </p>
+      <p>
+        Il est très important de bien prendre tes mesures. Si l'anneau est trop
+        grand, il ne tiendra pas en place et glissera. Si il est trop petit,
+        alors il irritera ta peau et sera responsable de sensations
+        désagréables. Si sa taille est bien choisi, tu ne sauras même pas que tu
+        le porte.
+      </p>
+    </template>
+    <div>
+      <div class="prose my-4 max-w-none rounded bg-zinc-50 p-4 px-8 shadow">
+        <h2 class="not-prose">
+          <nuxt-link
+            to="/outils/ano-taille#etape-1"
+            id="etape-1"
+            active-class="_"
+            exact-active-class="_"
+            class="scroll-mt-24"
+          >
+            1. Tu mesures ton sexe
+          </nuxt-link>
+        </h2>
+        <div class="">
           <div>
-            Tu peux
-            <a
-              href="https://samflam.notion.site/samflam/Tutoriel-Silicone-3bac4b5a6a254ba9bab7c9ec88f7ef35"
-              target="_blank"
-              >suivre ce tuto</a
-            >
-            pour le fabriquer toi même.
+            Prends <b>une règle</b> ou un mètre.
+            <div>
+              Une fois debout, pose la règle sur ton pénis
+              <b>en éréction</b> et <b>mesure sa largeur</b> à la base. Notes
+              cette taille.
+            </div>
           </div>
           <div>
-            Sinon, tu peux rejoindre un groupe près de chez toi ou assister à un
-            atelier animé par Otoko (sur Paris).
+            Tu dois aussi faire une mesure similaire mais avec ton pénis au
+            repos pour l'Andro-switch.
           </div>
+        </div>
+      </div>
+
+      <div class="prose my-4 max-w-none rounded bg-zinc-50 p-4 px-8 shadow">
+        <h2 class="not-prose mt-8">
+          <nuxt-link
+            to="/outils/ano-taille#etape-2"
+            id="etape-2"
+            active-class="_"
+            exact-active-class="_"
+            class="scroll-mt-24"
+          >
+            2. Tu trouves la taille qu'il te faut<Tooltip
+              >Aucune donnée n'est sauvegardée ou envoyée.
+              <span class="text-amber-400">Promis ✨</span>.
+              <div>D'ailleurs le code est open-source.</div>
+            </Tooltip>
+          </nuxt-link>
+        </h2>
+        <Tabs :tabs="tabs" v-model="provider" class="not-prose">
+          <ToolsAnoTailleDIY v-if="provider === 'diy'" />
+          <ToolsAnoTailleAndro v-if="provider === 'andro'" @change="onChange" />
+        </Tabs>
+      </div>
+      <div class="prose my-4 max-w-none rounded bg-zinc-50 p-4 px-8 shadow">
+        <h2 class="not-prose mt-8">
+          <nuxt-link
+            to="/outils/ano-taille#etape-3"
+            id="etape-3"
+            active-class="_"
+            exact-active-class="_"
+            class="scroll-mt-24"
+          >
+            3. Tu achètes ou tu fabriques ton anneau
+          </nuxt-link>
+        </h2>
+        <div class="mt-2">
           <div>
-            Toutes
+            C'est bon, tu peux maintenant acheter ou faire ton anneau. Tu as les
+            mesures nécessaires.
+          </div>
+          <Alert
+            title="⚠️ Information importante"
+            type="spicy"
+            toggle
+            class="mt-6"
+          >
+            Aujourd'hui,
+            <b>aucun dispositif de remontée testiculaire n'est certifié</b>.
+            Légalement les anneaux ne peuvent être vendu en tant qu'appareil
+            médical. Ce sont de simples anneaux adaptés pour la remontée
+            testiculaire mais ils ne peuvent être catégorisés comme
+            contraceptifs. Il est donc important de garder en tête que la
+            contraception masculine reste expérimentale, bien que basée sur des
+            études scientifiques, dont celles du
             <a
-              href="https://samflam.notion.site/Les-ateliers-d9de9241af564c2a877468af9d49d162"
-              target="_blank"
-              >les informations sur ses ateliers sont ici</a
+              href="https://link.springer.com/content/pdf/10.1007/s12610-012-0192-1.pdf"
+              >Dr Mieusset</a
             >.
-          </div>
+            <p>
+              C'est pourquoi l'achat de l'Andro-Switch ne se fait plus sur le
+              site de <a href="https://thoreme.com">Thoreme</a> mais sur un site
+              partenaire en tant que
+              <a href="https://www.coucouroucoucou.com"
+                ><i>"talismans réversibles"</i></a
+              >.
+            </p>
+            <p>
+              Mais les choses bougent
+              <a href="https://entrelac.coop/">une coopérative</a> a été créée
+              pour atteindre la certification européenne.
+            </p>
+          </Alert>
+          <Tabs :tabs="tabs" v-model="provider" class="not-prose">
+            <div v-if="provider === 'diy'" class="prose prose-zinc max-w-none">
+              <div>
+                Tu peux
+                <a
+                  href="https://samflam.notion.site/samflam/Tutoriel-Silicone-3bac4b5a6a254ba9bab7c9ec88f7ef35"
+                  target="_blank"
+                  >suivre ce tuto</a
+                >
+                pour le fabriquer toi même.
+              </div>
+              <div>
+                Sinon, tu peux rejoindre un groupe près de chez toi ou assister
+                à un atelier animé par Otoko (sur Paris).
+              </div>
+              <div>
+                Toutes
+                <a
+                  href="https://samflam.notion.site/Les-ateliers-d9de9241af564c2a877468af9d49d162"
+                  target="_blank"
+                  >les informations sur ses ateliers sont ici</a
+                >.
+              </div>
+            </div>
+            <div v-if="provider === 'andro'">
+              <div>
+                Voilà un lien pour acheter ton modèle idéal,
+                <b class="text-amber-500"
+                  ><a
+                    :href="selection[selection.isSoft ? 'hrefSoft' : 'href']"
+                    target="_blank"
+                    class="text-amber-500 underline decoration-amber-500 decoration-2 hover:text-amber-400 hover:decoration-amber-400"
+                    >l'Andro-switch
+                    {{ selection.isSoft ? "soft" : "basique" }}
+                    {{ selection[selection.isSoft ? "soft" : "model"] }}</a
+                  ></b
+                >
+              </div>
+            </div>
+          </Tabs>
         </div>
-        <div v-if="provider === 'andro'">
-          <div>Voilà le lien pour acheter ton modèle idéal.</div>
-          <div class="mt-2">
-            <b class="ml-0.5 text-2xl text-amber-500"
-              ><a
-                :href="selection[selection.isSoft ? 'hrefSoft' : 'href']"
-                target="_blank"
-                class="border-b-2 border-amber-500 hover:border-amber-400 hover:text-amber-400"
-                >Andro-switch {{ selection.isSoft ? "soft" : "basique" }}
-                {{ selection[selection.isSoft ? "soft" : "model"] }}</a
-              ></b
-            >
-          </div>
-        </div>
-      </Tabs>
+      </div>
     </div>
-  </div>
+  </PageSkeleton>
 </template>
 
 <script lang="ts" setup>
 import { ref, Ref } from "vue";
 import { SelectedModel } from "~/types/Model";
 
-const provider = ref("diy");
+const provider = ref("andro");
 const tabs = [
-  { name: "Do It Yourself", value: "diy" },
   { name: "Andro-switch", value: "andro" },
+  { name: "Do It Yourself", value: "diy" },
 ];
 
 const selection: Ref<SelectedModel> = ref({}) as Ref<SelectedModel>;

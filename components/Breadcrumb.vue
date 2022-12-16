@@ -1,7 +1,7 @@
 <template>
   <div class="bg-zinc-100" v-if="!isHome">
     <ol
-      class="container mx-auto flex flex-wrap items-center justify-center gap-4 py-6 md:justify-start"
+      class="container mx-auto flex flex-wrap items-center justify-center gap-4 px-4 py-6 md:justify-start"
     >
       <li
         v-for="(crumb, index) in crumbs"
@@ -10,7 +10,11 @@
           crumb.isCurrent ? 'text-3xl' : 'text-xl'
         } font-bold tracking-tight text-zinc-900`"
       >
-        <nuxt-link :to="crumb.path" active-class="_" exact-active-class="_">
+        <nuxt-link
+          :to="crumb.isCurrent ? '' : crumb.path"
+          active-class="_"
+          exact-active-class="_"
+        >
           <component :is="crumb.isCurrent ? 'h1' : 'span'">{{
             crumb.title
           }}</component>

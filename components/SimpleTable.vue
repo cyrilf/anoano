@@ -8,21 +8,7 @@
           class="border-b-2 border-zinc-200 bg-zinc-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-zinc-600 first:rounded-tl-lg last:rounded-tr-lg"
         >
           {{ header.name
-          }}<span
-            v-if="header.tooltip"
-            class="group relative inline-flex cursor-default flex-col items-center text-xl font-bold text-amber-500"
-          >
-            *
-            <span
-              class="absolute top-8 mb-6 inline-flex flex-col items-center opacity-0 transition-opacity group-hover:opacity-100"
-            >
-              <span class="-mb-2 h-3 w-3 rotate-45 bg-zinc-700"></span>
-              <span
-                class="whitespace-no-wrap relative z-10 w-60 bg-zinc-700 p-2 text-center text-xs text-white shadow-lg"
-                >{{ header.tooltip }}</span
-              >
-            </span></span
-          >
+          }}<Tooltip v-if="header.tooltip" :text="header.tooltip" />
         </th>
       </tr>
     </thead>

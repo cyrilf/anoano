@@ -56,7 +56,7 @@
       <div>
         Il y a
         <Toggle
-          text-open="quelques contre-indications à garder en tête."
+          text="quelques contre-indications à garder en tête."
           class="inline-block underline decoration-dashed underline-offset-4 hover:text-zinc-500 hover:decoration-zinc-500"
           right
         >
@@ -117,7 +117,7 @@
       </p>
       <div>
         Pour choisir le tien, un outil est disponible sur ce site :
-        <NuxtLink to="/outils/ano-taille">💍️ AnoTaille</NuxtLink>.
+        <NuxtLink to="/outils/ano-taille">📏 AnoTaille</NuxtLink>.
         <div>
           Tu prends tes mesures, tu les rentres dans l'outil et voilà, il
           t'indique l'anneau qu'il te faut. 😃
