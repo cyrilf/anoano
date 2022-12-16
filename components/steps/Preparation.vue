@@ -11,9 +11,9 @@
       <p>
         Dans les grandes lignes, tu vas utiliser la chaleur de ton corps pour
         stopper le processus de création des spermatozoïdes. Et oui, en
-        remontnant tes testicules (celles qui sont dans ton scrotum, tes
-        bourses) vers ton corps on passe de 35° à 37°. Et là, magie 🪄, la
-        spermatogènése s'arrête.
+        remontnant tes testicules (elles se trouvent dans tes bourses) vers ton
+        corps, elles passent de 35° à 37°. Et là, magie 🪄, la spermatogènése
+        s'arrête.
       </p>
       <p>
         Pour aider cette remontée, il existe diverses solutions. Celle mise en
@@ -25,8 +25,11 @@
         Un peu comme un bracelet au poignet ou une paire de lunettes.
       </p>
       <p>
-        Pour aller plus loin, le mieux c'est d'ouvrir ce lien et d'en apprendre
-        plus sur la contraception thermique et son fonctionnement.
+        Pour aller plus loin, le mieux c'est d'ouvrir ce lien<Tooltip
+          >En cours d'écriture, le lien sera bientôt disponible</Tooltip
+        >
+        et d'en apprendre plus sur la contraception thermique et son
+        fonctionnement.
       </p>
       <p>
         Pour rappel, la contraception thermique permet de devenir stérile (et

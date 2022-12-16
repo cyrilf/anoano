@@ -3,11 +3,11 @@
     <div class="container mx-auto flex items-center justify-between px-8">
       <NuxtLink
         to="/"
-        class="flex items-center font-medium hover:text-amber-500"
+        class="flex items-center font-medium hover:text-primary-500"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-10 w-10 rounded-full bg-amber-400 p-2"
+          class="h-10 w-10 rounded-full bg-primary-400 p-2"
         >
           <circle cx="50" cy="50" r="40" stroke="white" stroke-width="40" />
         </svg>

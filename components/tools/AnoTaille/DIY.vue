@@ -9,7 +9,7 @@
         Mon pénis mesure
         <input
           type="number"
-          class="w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent py-1 px-2 text-center text-2xl font-bold focus:border-amber-300 focus:outline-none focus:ring-0"
+          class="w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent py-1 px-2 text-center text-2xl font-bold focus:border-primary-300 focus:outline-none focus:ring-0"
           v-model="erect"
           step="0.1"
           min="3.2"
@@ -26,7 +26,7 @@
     <div>
       <div class="mt-4">
         La taille idéale pour ton modèle est de
-        <b class="ml-0.5 text-2xl text-amber-500">{{
+        <b class="ml-0.5 text-2xl text-primary-500">{{
           selectedModel.measure
         }}</b>
         mm
@@ -47,7 +47,7 @@
                 <p
                   :class="{
                     [innerClass]: true,
-                    'font-bold !text-amber-500':
+                    'font-bold !text-primary-500':
                       item.size === selectedModel.size,
                   }"
                 >

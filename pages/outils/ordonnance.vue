@@ -26,7 +26,7 @@
         <div class="mb-2 flex items-baseline gap-2">
           <h3 class="m-0">Année 1</h3>
           <div
-            class="rounded-md border border-zinc-300 bg-zinc-100 py-1 px-2 text-xs font-normal leading-none text-zinc-500 group-hover:border-amber-300 group-hover:bg-amber-100 group-hover:text-amber-600"
+            class="rounded-md border border-zinc-300 bg-zinc-100 py-1 px-2 text-xs font-normal leading-none text-zinc-500 group-hover:border-primary-300 group-hover:bg-primary-100 group-hover:text-primary-600"
           >
             10 spermogrammes
           </div>
@@ -119,7 +119,7 @@
         <div class="mb-2 flex items-baseline gap-2">
           <h3 class="mt-0">Année {{ index + 2 }}</h3>
           <div
-            class="rounded-md border border-zinc-300 bg-zinc-100 py-1 px-2 text-xs font-normal leading-none text-zinc-500 group-hover:border-amber-300 group-hover:bg-amber-100 group-hover:text-amber-600"
+            class="rounded-md border border-zinc-300 bg-zinc-100 py-1 px-2 text-xs font-normal leading-none text-zinc-500 group-hover:border-primary-300 group-hover:bg-primary-100 group-hover:text-primary-600"
           >
             4 spermogrammes
           </div>
@@ -141,7 +141,7 @@
         <div class="mb-2 flex items-baseline gap-2">
           <h3 class="mt-0">Année 5</h3>
           <div
-            class="rounded-md border border-zinc-300 bg-zinc-100 py-1 px-2 text-xs font-normal leading-none text-zinc-500 group-hover:border-amber-300 group-hover:bg-amber-100 group-hover:text-amber-600"
+            class="rounded-md border border-zinc-300 bg-zinc-100 py-1 px-2 text-xs font-normal leading-none text-zinc-500 group-hover:border-primary-300 group-hover:bg-primary-100 group-hover:text-primary-600"
           >
             0 spermogramme
           </div>

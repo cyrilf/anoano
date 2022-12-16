@@ -9,7 +9,7 @@
           @click="emit('update:modelValue', tab.value)"
           class="inline-block rounded-t-lg border-b-2 border-transparent p-4 hover:border-zinc-300 hover:text-zinc-600"
           :class="{
-            'border-amber-500 text-amber-500 hover:border-amber-500 hover:!text-amber-500':
+            'border-primary-500 text-primary-500 hover:border-primary-500 hover:!text-primary-500':
               modelValue === tab.value,
           }"
         >

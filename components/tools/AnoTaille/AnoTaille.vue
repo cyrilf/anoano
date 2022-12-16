@@ -13,7 +13,7 @@
         d'<b>entrer cette valeur dans le formulaire</b> ci-dessous et hop', on
         <b
           >te proposes le modèle parfait
-          <span class="inline-block -translate-y-1 scale-150">💍</span></b
+          <span class="-tranzinc-y-1 inline-block scale-150">💍</span></b
         >.
       </p>
       <p>
@@ -64,7 +64,7 @@
           >
             2. Tu trouves la taille qu'il te faut<Tooltip
               >Aucune donnée n'est sauvegardée ou envoyée.
-              <span class="text-amber-400">Promis ✨</span>.
+              <span class="text-primary-400">Promis ✨</span>.
               <div>D'ailleurs le code est open-source.</div>
             </Tooltip>
           </nuxt-link>
@@ -93,7 +93,7 @@
           </div>
           <Alert
             title="⚠️ Information importante"
-            type="spicy"
+            type="accent"
             toggle
             class="mt-6"
           >
@@ -150,11 +150,11 @@
             <div v-if="provider === 'andro'">
               <div>
                 Voilà un lien pour acheter ton modèle idéal,
-                <b class="text-amber-500"
+                <b class="text-primary-500"
                   ><a
                     :href="selection[selection.isSoft ? 'hrefSoft' : 'href']"
                     target="_blank"
-                    class="text-amber-500 underline decoration-amber-500 decoration-2 hover:text-amber-400 hover:decoration-amber-400"
+                    class="text-primary-500 underline decoration-primary-500 decoration-2 hover:text-primary-400 hover:decoration-primary-400"
                     >l'Andro-switch
                     {{ selection.isSoft ? "soft" : "basique" }}
                     {{ selection[selection.isSoft ? "soft" : "model"] }}</a

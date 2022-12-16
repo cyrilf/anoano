@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="`mb-8 flex w-fit items-center rounded border-l-4 ${color.border} ${color.bg} prose ${color.prose} p-4 shadow-sm`"
+    :class="`mb-8 flex w-fit items-center rounded border-l-4 ${color.border} ${color.bg} prose ${color.prose} p-4 shadow-sm ${$attrs.class}`"
   >
     <div :class="color.text">
       <Toggle v-if="toggle" :text="title" class="font-bold">
@@ -19,7 +19,7 @@
 <script setup lang="ts">
 import Toggle from "@/components/Toggle.vue";
 
-type AlertType = "info" | "danger" | "spicy";
+type AlertType = "info" | "danger" | "accent";
 
 const props = defineProps<{
   title: string;
@@ -35,16 +35,16 @@ const colors = {
     prose: "prose-sky",
   },
   danger: {
-    text: "text-amber-700",
-    bg: "bg-amber-50",
-    border: "border-amber-400",
-    prose: "prose-amber",
+    text: "text-primary-700",
+    bg: "bg-primary-50",
+    border: "border-primary-400",
+    prose: "prose-primary",
   },
-  spicy: {
-    text: "text-pink-600",
-    bg: "bg-pink-50",
-    border: "border-pink-400",
-    prose: "prose-pink",
+  accent: {
+    text: "text-accent-600",
+    bg: "bg-accent-50",
+    border: "border-accent-400",
+    prose: "prose-accent",
   },
 };
 

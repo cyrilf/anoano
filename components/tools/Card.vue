@@ -12,7 +12,7 @@
           :class="`flex items-center justify-center rounded-full border-2 p-4 ${
             inProgress
               ? 'border-zinc-400 bg-zinc-100'
-              : 'border-amber-400 bg-amber-100'
+              : 'border-primary-400 bg-primary-100'
           }`"
         >
           <icon :name="icon" class="-ml-1 mr-2 !text-5xl" />
@@ -33,7 +33,7 @@
       <div class="self-end">
         <span
           :class="`text-xl font-medium ${
-            inProgress ? 'text-zinc-400' : 'text-amber-400'
+            inProgress ? 'text-zinc-400' : 'text-primary-400'
           }`"
           >{{ inProgress ? "En développement" : "Ouvrir" }}</span
         >

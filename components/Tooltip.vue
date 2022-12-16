@@ -1,6 +1,6 @@
 <template>
   <span
-    class="group relative inline-flex cursor-default flex-col items-center align-super text-xl font-bold text-pink-500"
+    class="group relative inline-flex cursor-default flex-col items-center align-super text-xl font-bold text-accent-500"
   >
     <slot name="trigger">*</slot>
     <span

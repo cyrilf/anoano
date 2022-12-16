@@ -1,35 +1,39 @@
 <template>
   <main>
-    <div class="px-4 py-6 sm:px-0">
+    <div class="px-4 pt-6 sm:px-0">
       <div class="py-6 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-7xl">
-          <Alert title="🚧️ Page en cours de construction" type="danger">
+        <div class="container mx-auto">
+          <h2 class="text-2xl font-bold">
+            <nuxt-link
+              to="/parcours#etape-1"
+              id="etape-1"
+              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 sm:justify-start"
+            >
+              <icon name="📚️" /> Étape 1 :
+              <span class="text-zinc-400">Je me prépare</span>
+            </nuxt-link>
+          </h2>
+          <StepsPreparation />
+        </div>
+      </div>
+      <div class="bg-zinc-100 py-6 sm:px-6 lg:px-8">
+        <div class="container mx-auto">
+          <Alert
+            title="🚧️ Contenu en cours de construction"
+            type="danger"
+            class="mt-10"
+          >
             <div>
-              Le contenu de cette page n'est pas encore prêt. On pense, on
-              rédige et tout bientôt ce sera tout beau !
+              Le reste de cette page n'est pas encore prêt. On pense, on rédige
+              et tout bientôt ce sera tout beau !
             </div>
             <div>
               Alors n'hésite pas à revenir y jeter un oeil <i>(ou deux) </i>
               <icon name="👀️" />
             </div>
           </Alert>
-          <div class="px-4 py-6 sm:px-0">
-            <h2 class="text-2xl font-bold">
-              <nuxt-link
-                to="/parcours#etape-1"
-                id="etape-1"
-                class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 sm:justify-start"
-              >
-                <icon name="📚️" /> Étape 1 :
-                <span class="text-slate-400">Je me prépare</span>
-              </nuxt-link>
-            </h2>
-            <StepsPreparation />
-          </div>
         </div>
-      </div>
-      <div class="bg-zinc-100 py-6 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-7xl divide-y py-12">
+        <div class="container mx-auto divide-y py-12">
           <wip-section>
             <h2 class="text-2xl font-bold">
               <nuxt-link
@@ -38,7 +42,7 @@
                 class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 sm:justify-start"
               >
                 <icon name="👌️" /> Étape 2 :
-                <span class="text-slate-400">Je commence</span>
+                <span class="text-zinc-400">Je commence</span>
               </nuxt-link>
             </h2>
             <StepsPratique />
@@ -46,7 +50,7 @@
         </div>
       </div>
       <div class="py-6 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-7xl divide-y py-12">
+        <div class="container mx-auto divide-y py-12">
           <wip-section>
             <h2 class="text-2xl font-bold">
               <nuxt-link
@@ -55,7 +59,7 @@
                 class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 sm:justify-start"
               >
                 <icon name="🔎️" /> Étape 3 :
-                <span class="text-slate-400">Je fais mon suivi</span>
+                <span class="text-zinc-400">Je fais mon suivi</span>
               </nuxt-link>
             </h2>
             <StepsSuivi />
@@ -63,7 +67,7 @@
         </div>
       </div>
       <div class="bg-zinc-100 py-6 sm:px-6 lg:px-8">
-        <div class="mx-auto max-w-7xl divide-y py-12">
+        <div class="container mx-auto divide-y py-12">
           <wip-section>
             <h2 class="text-2xl font-bold">
               <nuxt-link
@@ -72,7 +76,7 @@
                 class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 sm:justify-start"
               >
                 <icon name="⏱️" /> Étape 4 :
-                <span class="text-slate-400">Je décide d'arrêter</span>
+                <span class="text-zinc-400">Je décide d'arrêter</span>
               </nuxt-link>
             </h2>
             <StepsArret />

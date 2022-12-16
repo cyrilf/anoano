@@ -9,7 +9,7 @@
         Mon pénis mesure
         <input
           type="number"
-          class="w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent py-1 px-2 text-center text-2xl font-bold focus:border-amber-300 focus:outline-none focus:ring-0"
+          class="w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent py-1 px-2 text-center text-2xl font-bold focus:border-primary-300 focus:outline-none focus:ring-0"
           v-model="erect"
           @change="onChangeErect"
           step="0.1"
@@ -24,7 +24,7 @@
         et il mesure
         <input
           type="number"
-          class="w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent py-1 px-2 text-center text-2xl font-bold focus:border-amber-300 focus:outline-none focus:ring-0"
+          class="w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent py-1 px-2 text-center text-2xl font-bold focus:border-primary-300 focus:outline-none focus:ring-0"
           v-model="flacid"
           @change="onChangeFlacid"
           step="0.1"
@@ -42,7 +42,7 @@
     <div>
       <div class="mt-4">
         Alors ton modèle idéal c'est le
-        <b class="ml-0.5 text-amber-500"
+        <b class="ml-0.5 text-primary-500"
           >{{ isSoftVariant ? "soft" : "basique" }} {{ finalModel }}</b
         >
       </div>
@@ -58,7 +58,7 @@
                 <p
                   :class="{
                     [innerClass]: true,
-                    'text-2xl font-bold !text-amber-500':
+                    'text-2xl font-bold !text-primary-500':
                       item.model === finalModel,
                   }"
                 >
@@ -71,7 +71,7 @@
                 <p
                   :class="{
                     [innerClass]: true,
-                    'text-2xl font-bold !text-amber-500':
+                    'text-2xl font-bold !text-primary-500':
                       item.soft === finalModel,
                   }"
                 >
