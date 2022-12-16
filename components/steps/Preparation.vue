@@ -1,7 +1,7 @@
 <template>
   <div class="mt-8">
     <div
-      class="prose prose-zinc my-4 mt-8 rounded bg-zinc-50 p-4 px-8 shadow xl:min-w-[650px]"
+      class="prose prose-zinc my-4 mx-auto mt-8 rounded bg-zinc-50 p-4 px-8 shadow xl:min-w-[650px]"
     >
       <h3>a. Je me renseigne</h3>
       <p>
@@ -38,7 +38,7 @@
       </p>
     </div>
     <div
-      class="prose prose-zinc my-4 mt-8 rounded bg-zinc-50 p-4 px-8 shadow xl:min-w-[650px]"
+      class="prose prose-zinc my-4 mx-auto mt-8 rounded bg-zinc-50 p-4 px-8 shadow xl:min-w-[650px]"
     >
       <h3>b. Je me fais accompagner</h3>
       <p>
@@ -77,7 +77,7 @@
       </div>
     </div>
     <div
-      class="prose prose-zinc my-4 mt-8 rounded bg-zinc-50 p-4 px-8 shadow xl:min-w-[650px]"
+      class="prose prose-zinc my-4 mx-auto mt-8 rounded bg-zinc-50 p-4 px-8 shadow xl:min-w-[650px]"
     >
       <h3>c. Je fais mon premier spermogramme</h3>
       <p>
@@ -110,7 +110,7 @@
       </div>
     </div>
     <div
-      class="prose prose-zinc my-4 mt-8 rounded bg-zinc-50 p-4 px-8 shadow xl:min-w-[650px]"
+      class="prose prose-zinc my-4 mx-auto mt-8 rounded bg-zinc-50 p-4 px-8 shadow xl:min-w-[650px]"
     >
       <h3>d. Je choisis mon outil de contraception</h3>
       <p>
@@ -119,7 +119,7 @@
         chauffant) mais ici on va parler principalement de l'anneau.
       </p>
       <div>
-        Pour choisir le tien, un outil est disponible sur ce site :
+        Pour choisir le tien, un outil est disponible sur cette page :
         <NuxtLink to="/outils/ano-taille">📏 AnoTaille</NuxtLink>.
         <div>
           Tu prends tes mesures, tu les rentres dans l'outil et voilà, il
