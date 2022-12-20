@@ -31,7 +31,7 @@
             <p
               class="tracking-snug text-lg text-zinc-700 md:text-xl md:leading-normal"
             >
-              Bienvenue <icon name="👋" />
+              Bienvenue 👋
               <br />
               On te recommande de regarder les outils à ta disposition ou bien
               de te lancer dans le parcours.
@@ -41,13 +41,13 @@
                 to="/outils"
                 class="inline-flex items-center rounded border-0 bg-primary-400 py-2 px-6 text-lg text-white hover:bg-primary-500 focus:outline-none"
               >
-                <icon name="🪛️" class="mr-3" /> Les outils
+                <icon name="🪛️" class="-ml-2 mr-3" /> Les outils
               </nuxt-link>
               <nuxt-link
                 to="/parcours"
                 class="inline-flex items-center rounded border-0 bg-zinc-100 py-2 px-6 text-lg text-zinc-700 hover:bg-zinc-200 focus:outline-none"
               >
-                <icon name="⛳️" class="mr-3" /> Le parcours
+                <icon name="⛳️" class="-ml-2 mr-3" /> Le parcours
               </nuxt-link>
             </div>
           </div>
@@ -89,13 +89,13 @@
               contraception masculine.
             </p>
             <p>
-              Alors si tu vois un bloc qui a ce style avec l'emoji chantier
-              <icon name="🚧️" />, c'est que le contenu n'est pas final.
+              Alors si tu vois un bloc qui a ce style avec l'emoji chantier 🚧️,
+              c'est que le contenu n'est pas final.
             </p>
             <p class="mb-4"></p>
             <p>
               Alors, un peu de patience, et bientôt tu pourras même contribuer à
-              ce projet ! <icon name="👌" />
+              ce projet ! 👌
             </p>
           </wip-section>
         </div>

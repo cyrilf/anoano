@@ -47,7 +47,7 @@
     <span
       class="container mx-auto block px-8 py-2 text-center text-sm text-zinc-700 dark:text-zinc-300"
     >
-      Anoano ~ contraception masculine. <icon name="✨" />
+      Anoano ~ contraception masculine. ✨
     </span>
   </footer>
 </template>

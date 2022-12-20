@@ -1,5 +1,7 @@
 <template>
-  <div class="flex min-h-screen flex-col">
+  <div
+    class="flex min-h-screen flex-col selection:bg-accent-500 selection:text-zinc-50"
+  >
     <Title>{{ title || "Anoano" }}</Title>
     <MainHeader />
     <Breadcrumb />

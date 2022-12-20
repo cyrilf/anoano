@@ -6,7 +6,7 @@
       <h3>a. Je me renseigne</h3>
       <p>
         Pour bien commencer, il va falloir t'informer.<br />
-        Ça tombe bien, tu es au bon endroit pour ça ! <icon name="👏" />
+        Ça tombe bien, tu es au bon endroit pour ça ! 👏
       </p>
       <p>
         Dans les grandes lignes, tu vas utiliser la chaleur de ton corps pour
