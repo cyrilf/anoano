@@ -20,9 +20,12 @@ export default defineNuxtConfig({
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
   },
+  image: {
+    domains: ['images.unsplash.com']
+  },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['@/assets/css/main.css'],
   plugins: [],
   typescript: { shim: false },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon']
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/image-edge']
 })

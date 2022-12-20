@@ -1,7 +1,17 @@
 <template>
-  <PageSkeleton
-    image-src="https://images.unsplash.com/photo-1611077544637-f826625c2776?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&h=750&crop=top,right&q=80"
-  >
+  <PageSkeleton>
+    <template #image="{ imageClass }">
+      <image-caption
+        src="https://images.unsplash.com/photo-1611077544637-f826625c2776?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&h=750&crop=top,right&q=80"
+        alt="Mètre mesure"
+        width="530px"
+        :class="imageClass"
+      >
+        Photo de
+        <a href="https://unsplash.com/@diana_pole">Diana Polekhina</a>
+        sur <a href="https://unsplash.com/photos/Xg-ut7qtJiM">Unsplash</a>
+      </image-caption>
+    </template>
     <template #intro>
       <p>
         Avec cet outil tu peux facilement

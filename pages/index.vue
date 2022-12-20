@@ -2,7 +2,8 @@
   <div>
     <section class="relative">
       <div
-        class="clip-path absolute inset-0 z-0 ml-auto hidden w-[400px] bg-[url('~/assets/images/anneaux.jpg')] bg-cover bg-center bg-no-repeat md:block lg:w-[550px] xl:w-[650px]"
+        class="clip-path absolute inset-0 z-0 ml-auto hidden w-[400px] bg-cover bg-center bg-no-repeat md:block lg:w-[550px] xl:w-[650px]"
+        :style="`background-image: url(${mainImage})`"
       >
         <span
           class="absolute bottom-0 right-2 rounded-t bg-zinc-50 bg-opacity-50 px-2 text-sm"
@@ -53,21 +54,21 @@
           </div>
         </div>
       </div>
-      <div class="relative mx-auto w-fit md:hidden">
-        <img
+      <div class="mx-auto w-fit md:hidden">
+        <image-caption
           class="mx-auto max-h-96 object-cover object-center sm:rounded-lg"
-          alt="anneau contraceptif"
-          src="~/assets/images/anneaux.jpg"
-        />
-        <span
-          class="absolute bottom-0 right-2 rounded-t bg-zinc-50 bg-opacity-50 px-2 text-sm"
-          >Photo de Koeko en
-          <a
-            href="https://creativecommons.org/licenses/by/4.0/deed.fr"
-            target="_blank"
-            >CC BY 4.0</a
-          ></span
+          alt="anneaux contraceptif"
+          :src="mainImage"
         >
+          <span
+            >Photo de Koeko en
+            <a
+              href="https://creativecommons.org/licenses/by/4.0/deed.fr"
+              target="_blank"
+              >CC BY 4.0</a
+            ></span
+          >
+        </image-caption>
       </div>
     </section>
     <section class="bg-zinc-100 text-zinc-600">
@@ -107,6 +108,8 @@
 definePageMeta({
   title: "Contraception masculine",
 });
+const $img = useImage();
+const mainImage = computed(() => $img("/anneaux.jpg", { width: "650px" }));
 </script>
 <style>
 .underlined {
