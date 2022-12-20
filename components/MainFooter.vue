@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-zinc-800 pt-6 md:py-8">
+  <footer class="bg-zinc-200 pt-6 dark:bg-zinc-800 md:py-8">
     <div
       class="container mx-auto flex flex-col flex-wrap items-center justify-between gap-y-8 px-8 md:flex-row"
     >
@@ -13,22 +13,26 @@
         >
           <circle cx="50" cy="50" r="40" stroke="white" stroke-width="40" />
         </svg>
-        <span class="text-md ml-3 text-zinc-300">Anoano</span>
+        <span class="text-md ml-3 text-zinc-800 dark:text-zinc-300"
+          >Anoano</span
+        >
       </NuxtLink>
-      <div class="flex gap-12 lg:gap-24">
+      <div class="flex flex-wrap gap-12 lg:gap-24">
         <div
           class="text-sm font-semibold"
           v-for="linkGroup in links"
           :key="linkGroup.name"
         >
-          <span class="mb-4 block uppercase text-zinc-500">{{
+          <span class="mb-4 block uppercase text-zinc-400 dark:text-zinc-500">{{
             linkGroup.name
           }}</span>
-          <ul class="text-zinc-300">
+          <ul class="text-zinc-600 dark:text-zinc-300">
             <li class="pb-3" v-for="link in linkGroup.links" :key="link.name">
               <NuxtLink
                 :to="link.href"
-                class="hover:text-zinc-300 hover:underline"
+                class="hover:text-zinc-500 hover:underline dark:hover:text-zinc-300"
+                active-class="_"
+                exact-active-class="_"
               >
                 {{ link.name }}
               </NuxtLink>
@@ -37,9 +41,11 @@
         </div>
       </div>
     </div>
-    <hr class="my-6 border-zinc-600 sm:mx-auto lg:my-8" />
+    <hr
+      class="container my-6 rounded border-zinc-300 dark:border-primary-400 sm:mx-auto lg:my-8"
+    />
     <span
-      class="container mx-auto block px-8 pb-4 text-center text-sm text-zinc-300"
+      class="container mx-auto block px-8 py-2 text-center text-sm text-zinc-700 dark:text-zinc-300"
     >
       Anoano ~ contraception masculine. <icon name="✨" />
     </span>
@@ -47,6 +53,15 @@
 </template>
 <script setup lang="ts">
 const links = [
+  {
+    name: "Le parcours",
+    links: [
+      { name: "Je me prépare", href: "/parcours#etape-1" },
+      { name: "Je commence", href: "/parcours#etape-2" },
+      { name: "Je fais mon suivi", href: "/parcours#etape-3" },
+      { name: "Je décide d'arrêter", href: "/parcours#etape-4" },
+    ],
+  },
   {
     name: "Les outils",
     links: [
@@ -56,10 +71,7 @@ const links = [
   },
   {
     name: "Autres",
-    links: [
-      { name: "Le parcours", href: "/parcours" },
-      { name: "À propos", href: "/a-propos" },
-    ],
+    links: [{ name: "À propos", href: "/a-propos" }],
   },
 ];
 </script>
