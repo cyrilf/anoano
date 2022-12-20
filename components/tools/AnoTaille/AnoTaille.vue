@@ -62,7 +62,14 @@
             exact-active-class="_"
             class="scroll-mt-24"
           >
-            2. Tu trouves la taille qu'il te faut<Tooltip
+            2. Tu trouves
+            <Tooltip
+              ><template #trigger="{ defaultTriggerClass, accentClass }"
+                ><span
+                  ><span :class="defaultTriggerClass"
+                    >la taille qu'il te faut</span
+                  ><span :class="accentClass" class="accent">*</span></span
+                ></template
               >Aucune donnée n'est sauvegardée ou envoyée.
               <span class="text-primary-400">Promis ✨</span>.
               <div>D'ailleurs le code est open-source.</div>

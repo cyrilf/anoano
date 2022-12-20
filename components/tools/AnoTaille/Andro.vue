@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="">
-      <label class="relative">
+    <div>
+      <label class="relative leading-10 md:leading-normal">
         <icon
           name="fe:quote-left"
           class="absolute -top-2 -left-6 text-xl text-zinc-300"
@@ -20,7 +20,7 @@
         />
         cm de large en éréction
       </label>
-      <label>
+      <label class="leading-10 md:leading-normal">
         et il mesure
         <input
           type="number"

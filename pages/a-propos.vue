@@ -34,7 +34,7 @@
           <p>
             C'est encore un peu le chantier, mais si tu veux me contacter, tu
             peux écrire à
-            <a href="mailto:koeko+anoano@proton.me">koeko+anoano@proton.me</a>
+            <a href="mailto:anoano@luseeds.com">anoano@luseeds.com</a>
           </p>
           <hr />
           <div>

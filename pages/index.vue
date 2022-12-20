@@ -55,7 +55,7 @@
       </div>
       <div class="relative mx-auto w-fit md:hidden">
         <img
-          class="mx-auto mb-8 max-h-96 rounded-lg object-cover object-center"
+          class="mx-auto max-h-96 object-cover object-center sm:rounded-lg"
           alt="anneau contraceptif"
           src="~/assets/images/anneaux.jpg"
         />
@@ -111,6 +111,7 @@ definePageMeta({
 <style>
 .underlined {
   position: relative;
+  background: inherit;
 }
 
 .underlined::after {

@@ -1,21 +1,28 @@
 <template>
-  <span
-    class="group relative inline-flex cursor-default flex-col items-center align-super text-xl font-bold text-accent-500"
-  >
-    <slot name="trigger">*</slot>
-    <span
-      class="absolute top-8 mb-6 inline-flex flex-col items-center opacity-0 transition-opacity group-hover:opacity-100"
+  <span class="group relative inline-flex flex-col items-center">
+    <slot
+      name="trigger"
+      :defaultTriggerClass="defaultTriggerClass"
+      :accentClass="accentClass"
+      ><span :class="accentClass">*</span></slot
     >
-      <span class="-mb-2 h-3 w-3 rotate-45 bg-zinc-700"></span>
+    <span
+      class="pointer-events-none absolute bottom-8 mt-6 inline-flex flex-col items-center opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:cursor-auto group-hover:opacity-100"
+    >
       <span
         class="whitespace-no-wrap relative z-10 w-60 bg-zinc-700 p-2 text-center text-xs text-white shadow-lg"
         ><slot>{{ text }}</slot></span
       >
-    </span></span
-  >
+      <span class="-mt-2 h-3 w-3 rotate-45 bg-zinc-700"></span> </span
+  ></span>
 </template>
 <script setup lang="ts">
 defineProps<{
   text?: string;
 }>();
+
+const defaultTriggerClass =
+  "underline decoration-dashed decoration-zinc-300 underline-offset-4 group-hover:text-zinc-500";
+const accentClass =
+  "cursor-default text-xl align-super font-bold text-accent-500 -mt-1 group-hover:text-accent-400";
 </script>

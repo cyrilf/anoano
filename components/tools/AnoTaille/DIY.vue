@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <label class="relative">
+      <label class="relative leading-10 md:leading-normal">
         <icon
           name="fe:quote-left"
           class="absolute -top-2 -left-6 text-xl text-zinc-300"

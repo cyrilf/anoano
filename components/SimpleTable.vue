@@ -5,10 +5,12 @@
         <th
           v-for="header in headers"
           :key="header.key"
-          class="border-b-2 border-zinc-200 bg-zinc-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-zinc-600 first:rounded-tl-lg last:rounded-tr-lg"
+          class="border-b-2 border-zinc-200 bg-zinc-100 px-5 py-3 first:rounded-tl-lg last:rounded-tr-lg"
         >
-          {{ header.name
-          }}<Tooltip v-if="header.tooltip" :text="header.tooltip" />
+          <span
+            class="text-left text-xs font-semibold uppercase tracking-wider text-zinc-600"
+            >{{ header.name }}</span
+          ><Tooltip v-if="header.tooltip" :text="header.tooltip" />
         </th>
       </tr>
     </thead>
