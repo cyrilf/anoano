@@ -10,14 +10,14 @@
           crumb.isCurrent ? 'text-3xl' : 'text-xl'
         } font-bold tracking-tight text-zinc-900`"
       >
+        <h1 v-if="crumb.isCurrent">{{ crumb.title }}</h1>
         <nuxt-link
-          :to="crumb.isCurrent ? '' : crumb.path"
+          v-if="!crumb.isCurrent"
+          :to="crumb.path"
           active-class="_"
           exact-active-class="_"
         >
-          <component :is="crumb.isCurrent ? 'h1' : 'span'">{{
-            crumb.title
-          }}</component>
+          <span>{{ crumb.title }}</span>
         </nuxt-link>
         <icon
           name="fe:arrow-right"
