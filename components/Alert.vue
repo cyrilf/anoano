@@ -7,9 +7,9 @@
         <slot />
       </Toggle>
       <div v-if="!toggle">
-        <span class="font-bold">
+        <div class="font-bold">
           {{ title }}
-        </span>
+        </div>
         <slot />
       </div>
     </div>

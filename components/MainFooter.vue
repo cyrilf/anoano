@@ -57,7 +57,7 @@ const links = [
     name: "Le parcours",
     links: [
       { name: "Je me prépare", href: "/parcours#etape-1" },
-      { name: "Je commence", href: "/parcours#etape-2" },
+      { name: "Je débute", href: "/parcours#etape-2" },
       { name: "Je fais mon suivi", href: "/parcours#etape-3" },
       { name: "Je décide d'arrêter", href: "/parcours#etape-4" },
     ],

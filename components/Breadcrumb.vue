@@ -41,6 +41,8 @@ const route = useRoute();
 
 const isHome = computed(() => route.fullPath === "/");
 
+const removeHash = (section: string) => section.split("#")[0];
+
 const crumbs = computed(() => {
   const sections = route.fullPath.startsWith("/")
     ? route.fullPath.substring(1).split("/")
@@ -50,13 +52,14 @@ const crumbs = computed(() => {
   let path = "";
   const results: Array<Crumb> = [];
   sections.forEach((section) => {
-    path = `${path}/${section}`;
+    const pureSection = removeHash(section);
+    path = `${path}/${pureSection}`;
     const match = routes.find((route) => route.path === path);
     if (match) {
       results.push({
-        title: (match.meta?.title as string) || section.replace(/-/g, " "),
+        title: (match.meta?.title as string) || pureSection.replace(/-/g, " "),
         path: match.path,
-        isCurrent: route.fullPath === match.path,
+        isCurrent: removeHash(route.fullPath) === match.path,
       });
     }
   });

@@ -8,7 +8,7 @@
           >
             <slot
               name="image"
-              imageClass="order-first col-span-2 h-80 justify-self-center md:order-none md:col-span-1 md:justify-self-end lg:h-96"
+              imageClass="order-first col-span-2 h-80 justify-self-center md:order-none md:col-span-1 md:justify-self-end lg:h-96 max-w-full"
             />
 
             <div

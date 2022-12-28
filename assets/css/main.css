@@ -8,6 +8,10 @@
   }
 }
 
+.hand {
+  font-family: "Caveat", cursive;
+}
+
 .router-link-active {
   @apply text-primary-400;
 }

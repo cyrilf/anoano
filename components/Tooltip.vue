@@ -1,5 +1,5 @@
 <template>
-  <span class="group relative inline-flex flex-col items-center">
+  <span class="group/tooltip relative inline-flex flex-col items-center">
     <slot
       name="trigger"
       :defaultTriggerClass="defaultTriggerClass"
@@ -7,7 +7,7 @@
       ><span :class="accentClass">*</span></slot
     >
     <span
-      class="pointer-events-none absolute bottom-8 mt-6 inline-flex flex-col items-center opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:cursor-auto group-hover:opacity-100"
+      class="pointer-events-none absolute bottom-8 mt-6 inline-flex flex-col items-center opacity-0 transition-opacity group-hover/tooltip:pointer-events-auto group-hover/tooltip:cursor-auto group-hover/tooltip:opacity-100"
     >
       <span
         class="whitespace-no-wrap relative z-10 w-60 bg-zinc-700 p-2 text-center text-xs text-white shadow-lg"
@@ -22,7 +22,7 @@ defineProps<{
 }>();
 
 const defaultTriggerClass =
-  "underline decoration-dashed decoration-zinc-300 underline-offset-4 group-hover:text-zinc-500";
+  "underline decoration-dashed decoration-zinc-300 underline-offset-4 group-hover/tooltip:text-zinc-500";
 const accentClass =
-  "cursor-default text-xl align-super font-bold text-accent-500 -mt-1 group-hover:text-accent-400";
+  "cursor-default text-xl align-super font-bold text-accent-500 -mt-1 group-hover/tooltip:text-accent-400";
 </script>

@@ -182,9 +182,6 @@ const isSoftVariant = computed(() => erect.value - flacid.value > 1.2);
 const finalModel = computed(
   () => selectedModel.value[isSoftVariant.value ? "soft" : "model"]
 );
-const finalModelHref = computed(
-  () => selectedModel.value[isSoftVariant.value ? "hrefSoft" : "href"]
-);
 
 const onChangeErect = () => {
   if (erect.value < flacid.value) {

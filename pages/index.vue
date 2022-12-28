@@ -40,7 +40,7 @@
             <div class="flex flex-wrap justify-center gap-4 md:justify-start">
               <nuxt-link
                 to="/outils"
-                class="inline-flex items-center rounded border-0 bg-primary-400 py-2 px-6 text-lg text-white hover:bg-primary-500 focus:outline-none"
+                class="inline-flex items-center rounded border-0 bg-primary-400 py-2 px-6 text-lg text-zinc-700 hover:bg-primary-500 focus:outline-none"
               >
                 <icon name="🪛️" class="-ml-2 mr-3" /> Les outils
               </nuxt-link>
@@ -72,6 +72,57 @@
       </div>
     </section>
     <section class="bg-zinc-100 text-zinc-600">
+      <div
+        class="container mx-auto flex flex-col items-center py-24 md:flex-row"
+      >
+        <div
+          class="prose mb-16 flex flex-col items-center px-16 text-center md:mb-0 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24"
+        >
+          <h2 class="text-4xl">
+            La contraception en deux mots
+            <span class="hand text-2xl text-zinc-400"
+              >(et un tout petit peu plus)</span
+            >
+          </h2>
+          <p>
+            Ce site te présente une méthode simple, efficace et réversible pour
+            te contracepter.
+          </p>
+          <p>
+            Il s'agit d'une méthode thermique naturelle qui utilise la chaleur
+            de ton propre corps pour arrêter la production de spermatozoïdes. Il
+            suffit pour cela d'exposer tes testicules à une température de 37°,
+            15 heures par jour. Au bout de trois mois, te voilà contracepté !
+          </p>
+          <p>
+            Différents outils sont disponible, ici on va surtout te parler de
+            l'anneau. Un simple objet en silicone bio-compatible qui se porte
+            aussi facilement qu'un bracelet
+            <span class="hand text-xl leading-normal text-zinc-600"
+              >(sauf que lui, tu ne le mets pas autour de ton bras)</span
+            >. Ou alors aussi facilement que des lunettes
+            <span class="hand text-xl leading-normal text-zinc-600"
+              >(sauf que lui, tu ne le mets pas sur le nez)</span
+            >. Bon on arrête les métaphores, tu as compris l'idée.
+          </p>
+          <div>
+            Prêt pour en apprendre plus ?
+            <div>
+              Commence par
+              <span class="not-prose">
+                <nuxt-link
+                  to="/parcours"
+                  class="rounded border-2 border-primary-400 p-1 hover:bg-primary-400 hover:text-zinc-900"
+                >
+                  ⛳️ le parcours
+                </nuxt-link>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-white text-zinc-600">
       <div
         class="container mx-auto flex flex-col items-center py-24 md:flex-row"
       >

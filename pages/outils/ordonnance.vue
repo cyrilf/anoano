@@ -73,7 +73,7 @@
             <div class="prose text-justify">
               <p>
                 Il permet de t'assurer que la méthode fonctionne bien pour toi.
-                Pour celà, tu dois passer
+                Pour ça, tu dois passer
                 <b
                   >sous la barre des 1 million de spermatozoïdes par millilitre
                   (&lt;1M/mL)</b
@@ -111,8 +111,8 @@
             ><div class="prose text-justify">
               Ces 6 spermogrammes te servent de <b>checkpoints</b>. Ils
               permettent de t'assurer que ta contraception
-              <b>fonctionne bien dans la durée</b>, que la manière dont tu le
-              portes est <b>efficace et règulière</b>.
+              <b>fonctionne bien dans la durée</b>, que la manière dont tu
+              portes l'anneau est <b>efficace et règulière</b>.
               <div>
                 Tu peux les espacer à un tous les deux mois si besoin. Ce qui
                 est vraiment important c'est que tu sois
