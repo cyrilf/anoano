@@ -43,7 +43,7 @@
       </p>
       <p>
         C'est cette personne qui te préscrira
-        <NuxtLink to="/outils/ordonnance">une ordonnance</NuxtLink>.
+        <NuxtLink to="/guides/ordonnance">une ordonnance</NuxtLink>.
       </p>
       <p>
         Bon, on ne va pas se mentir, aujourd'hui encore trop peu de médecins
@@ -90,7 +90,7 @@
         rendez-vous dans un laboratoire, muni de ton ordonnance.
         <div>
           Plus d'info sur la page
-          <NuxtLink to="/outils/ordonnance">📜️ Ordonnances</NuxtLink>.
+          <NuxtLink to="/guides/ordonnance">📜️ Ordonnances</NuxtLink>.
         </div>
       </div>
       <div class="mt-4">

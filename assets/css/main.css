@@ -13,11 +13,11 @@
 }
 
 .router-link-active {
-  @apply text-primary-400;
+  @apply text-primary-600;
 }
 
 .router-link-exact-active {
-  @apply text-primary-400;
+  @apply text-primary-600;
 }
 
 input[type="number"][hide-spin-buttons]::-webkit-outer-spin-button,

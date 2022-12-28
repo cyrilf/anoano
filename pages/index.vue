@@ -30,25 +30,32 @@
               ici.
             </h1>
             <p
-              class="tracking-snug text-lg text-zinc-700 md:text-xl md:leading-normal"
+              class="tracking-snug prose text-lg text-zinc-700 md:text-xl md:leading-normal"
             >
               Bienvenue 👋
               <br />
-              On te recommande de regarder les outils à ta disposition ou bien
-              de te lancer dans le parcours.
+              On te recommande de suivre le parcours qui résume les grandes
+              étapes de la contraception. Tu peux aussi regarder les outils et
+              les guides à ta disposition.
             </p>
             <div class="flex flex-wrap justify-center gap-4 md:justify-start">
               <nuxt-link
-                to="/outils"
-                class="inline-flex items-center rounded border-0 bg-primary-400 py-2 px-6 text-lg text-zinc-700 hover:bg-primary-500 focus:outline-none"
-              >
-                <icon name="🪛️" class="-ml-2 mr-3" /> Les outils
-              </nuxt-link>
-              <nuxt-link
                 to="/parcours"
-                class="inline-flex items-center rounded border-0 bg-zinc-100 py-2 px-6 text-lg text-zinc-700 hover:bg-zinc-200 focus:outline-none"
+                class="inline-flex items-center rounded border-0 bg-primary-400 py-2 px-6 text-lg text-zinc-700 hover:bg-primary-500"
               >
                 <icon name="⛳️" class="-ml-2 mr-3" /> Le parcours
+              </nuxt-link>
+              <nuxt-link
+                to="/guides"
+                class="inline-flex items-center rounded border-0 bg-zinc-100 py-2 px-6 text-lg text-zinc-700 hover:bg-zinc-200"
+              >
+                <icon name="📚" class="-ml-2 mr-3" /> Les guides
+              </nuxt-link>
+              <nuxt-link
+                to="/outils"
+                class="inline-flex items-center rounded border-0 bg-zinc-100 py-2 px-6 text-lg text-zinc-700 hover:bg-zinc-200"
+              >
+                <icon name="🪛️" class="-ml-2 mr-3" /> Les outils
               </nuxt-link>
             </div>
           </div>

@@ -17,17 +17,20 @@
       <nav
         class="mt-5 flex flex-wrap items-center justify-center gap-y-4 text-base md:ml-auto md:mt-0"
       >
-        <nuxt-link to="/outils" class="mr-5 hover:text-zinc-900">
+        <nuxt-link to="/guides" class="mr-5 hover:text-primary-500">
+          Les guides
+        </nuxt-link>
+        <nuxt-link to="/outils" class="mr-5 hover:text-primary-500">
           Les outils
         </nuxt-link>
-        <nuxt-link to="/a-propos" class="mr-5 hover:text-zinc-900">
+        <nuxt-link to="/a-propos" class="mr-5 hover:text-primary-500">
           À propos
         </nuxt-link>
         <nuxt-link
           to="/parcours"
           active-class="_"
           exact-active-class="_"
-          class="inline-flex items-center rounded border-0 bg-zinc-100 py-1 px-3 text-base hover:bg-zinc-200 focus:outline-none"
+          class="inline-flex items-center rounded border-0 bg-zinc-100 py-1 px-3 text-base hover:bg-primary-400"
         >
           Le parcours
           <svg

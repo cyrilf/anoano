@@ -28,7 +28,9 @@
             <nuxt-link
               to="/parcours#etape-1"
               id="etape-1"
-              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2"
+              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 text-primary-400"
+              active-class="_"
+              exact-active-class="_"
             >
               📚️ Étape 1 :
               <span class="text-zinc-400">Je me prépare</span>
@@ -45,7 +47,9 @@
             <nuxt-link
               to="/parcours#etape-2"
               id="etape-2"
-              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2"
+              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 text-primary-400"
+              active-class="_"
+              exact-active-class="_"
             >
               👌️ Étape 2 :
               <span class="text-zinc-400">Je débute</span>
@@ -62,7 +66,9 @@
             <nuxt-link
               to="/parcours#etape-3"
               id="etape-3"
-              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2"
+              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 text-primary-400"
+              active-class="_"
+              exact-active-class="_"
             >
               🔎️ Étape 3 :
               <span class="text-zinc-400">Je fais mon suivi</span>
@@ -79,7 +85,9 @@
             <nuxt-link
               to="/parcours#etape-4"
               id="etape-4"
-              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2"
+              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 text-primary-400"
+              active-class="_"
+              exact-active-class="_"
             >
               ⏱️ Étape 4 :
               <span class="text-zinc-400">Je décide d'arrêter</span>

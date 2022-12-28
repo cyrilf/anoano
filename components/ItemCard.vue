@@ -26,7 +26,7 @@
         >
           {{ title }}
         </h2>
-        <p :class="`mt-2 ${inProgress ? 'text-zinc-300' : 'text-zinc-600'}`">
+        <p :class="`my-2 ${inProgress ? 'text-zinc-300' : 'text-zinc-600'}`">
           {{ description }}
         </p>
       </div>
@@ -35,18 +35,26 @@
           :class="`text-xl font-medium ${
             inProgress ? 'text-zinc-400' : 'text-primary-400'
           }`"
-          >{{ inProgress ? "En développement" : "Ouvrir" }}</span
+          >{{ actionName }}</span
         >
       </div>
     </nuxt-link>
   </div>
 </template>
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   title: string;
   description: string;
   link?: string;
   icon: string;
-  inProgress?: boolean;
+  inProgress?: boolean | string;
 }>();
+
+let actionName = ref("Ouvrir");
+if (props.inProgress) {
+  actionName.value =
+    typeof props.inProgress === "boolean"
+      ? "En développement"
+      : props.inProgress;
+}
 </script>

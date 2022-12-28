@@ -18,7 +18,7 @@
             </p>
             <NuxtLink
               to="/parcours"
-              class="my-4 inline-flex rounded border-0 bg-primary-400 py-2 px-6 text-lg text-white no-underline hover:bg-primary-500 focus:outline-none"
+              class="my-4 inline-flex rounded border-0 bg-primary-400 py-2 px-6 text-lg text-white no-underline hover:bg-primary-500"
             >
               Le parcours
             </NuxtLink>

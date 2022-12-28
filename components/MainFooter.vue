@@ -63,11 +63,12 @@ const links = [
     ],
   },
   {
+    name: "Les guides",
+    links: [{ name: "L'ordonnance", href: "/guides/ordonnance" }],
+  },
+  {
     name: "Les outils",
-    links: [
-      { name: "AnoTaille", href: "/outils/ano-taille" },
-      { name: "L'ordonnance", href: "/outils/ordonnance" },
-    ],
+    links: [{ name: "AnoTaille", href: "/outils/ano-taille" }],
   },
   {
     name: "Autres",

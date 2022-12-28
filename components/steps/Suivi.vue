@@ -4,7 +4,7 @@
       <p>
         Ça y est, trois mois se sont écoulés. Tout s'est bien passé. Il est
         temps de faire un spermogramme de contrôle (comme on a vu sur la page
-        <NuxtLink to="/outils/ordonnance" target="_blank"
+        <NuxtLink to="/guides/ordonnance" target="_blank"
           >des ordonnances</NuxtLink
         >).
       </p>
