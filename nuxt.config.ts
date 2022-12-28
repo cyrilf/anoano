@@ -28,9 +28,7 @@ export default defineNuxtConfig({
   image: {
     domains: ['images.unsplash.com']
   },
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/assets/css/main.css'],
   plugins: [],
   typescript: { shim: false },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/image-edge']
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/image-edge', 'nuxt-purgecss',]
 })

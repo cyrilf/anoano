@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  .clip-path {
-    clip-path: polygon(11% 0%, 100% 0, 100% 100%, 0% 100%);
-  }
+.clip-path {
+  clip-path: polygon(11% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .hand {
