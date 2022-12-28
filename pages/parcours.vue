@@ -2,8 +2,29 @@
   <main>
     <div class="px-4 pt-6 sm:px-0">
       <div class="py-6 sm:px-6 lg:px-8">
+        <div class="container prose mx-auto">
+          <p>
+            Cette page, découpée en grandes étapes, te permets de découvir le
+            parcours complet d'une personne voulant se contracepter<span
+              class="hand text-2xl text-zinc-600"
+              >(potentiellement, toi <span class="text-base">😉</span>)</span
+            >.
+          </p>
+          <p>
+            Prends le temps de lire chaque section pour comprendre les
+            pré-requis, la marche à suivre, la mise en pratique et le suivi. Si
+            besoin, il y a aussi le processus pour arrêter
+            <span class="hand text-2xl text-zinc-600"
+              >(oui, cette méthode est réversible)</span
+            >.
+          </p>
+        </div>
+      </div>
+      <div class="py-6 sm:px-6 lg:px-8">
         <div class="container mx-auto">
-          <h2 class="text-2xl font-bold">
+          <h2
+            class="bg-white py-4 text-2xl font-bold xl:sticky xl:top-20 xl:z-20"
+          >
             <nuxt-link
               to="/parcours#etape-1"
               id="etape-1"
@@ -18,68 +39,53 @@
       </div>
       <div class="bg-zinc-100 py-6 sm:px-6 lg:px-8">
         <div class="container mx-auto">
-          <Alert
-            title="🚧️ Contenu en cours de construction"
-            type="danger"
-            class="mt-10"
+          <h2
+            class="bg-zinc-100 py-4 text-2xl font-bold xl:sticky xl:top-20 xl:z-20"
           >
-            <div>
-              Le reste de cette page n'est pas encore prêt. On pense, on rédige
-              et tout bientôt ce sera tout beau !
-            </div>
-            <div>
-              Alors n'hésite pas à revenir y jeter un oeil <i>(ou deux) </i> 👀️
-            </div>
-          </Alert>
-        </div>
-        <div class="container mx-auto divide-y py-12">
-          <wip-section>
-            <h2 class="text-2xl font-bold">
-              <nuxt-link
-                to="/parcours#etape-2"
-                id="etape-2"
-                class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2"
-              >
-                👌️ Étape 2 :
-                <span class="text-zinc-400">Je commence</span>
-              </nuxt-link>
-            </h2>
-            <StepsPratique />
-          </wip-section>
+            <nuxt-link
+              to="/parcours#etape-2"
+              id="etape-2"
+              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2"
+            >
+              👌️ Étape 2 :
+              <span class="text-zinc-400">Je débute</span>
+            </nuxt-link>
+          </h2>
+          <StepsDebut />
         </div>
       </div>
       <div class="py-6 sm:px-6 lg:px-8">
-        <div class="container mx-auto divide-y py-12">
-          <wip-section>
-            <h2 class="text-2xl font-bold">
-              <nuxt-link
-                to="/parcours#etape-3"
-                id="etape-3"
-                class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2"
-              >
-                🔎️ Étape 3 :
-                <span class="text-zinc-400">Je fais mon suivi</span>
-              </nuxt-link>
-            </h2>
-            <StepsSuivi />
-          </wip-section>
+        <div class="container mx-auto">
+          <h2
+            class="bg-white py-4 text-2xl font-bold xl:sticky xl:top-20 xl:z-20"
+          >
+            <nuxt-link
+              to="/parcours#etape-3"
+              id="etape-3"
+              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2"
+            >
+              🔎️ Étape 3 :
+              <span class="text-zinc-400">Je fais mon suivi</span>
+            </nuxt-link>
+          </h2>
+          <StepsSuivi />
         </div>
       </div>
       <div class="bg-zinc-100 py-6 sm:px-6 lg:px-8">
-        <div class="container mx-auto divide-y py-12">
-          <wip-section>
-            <h2 class="text-2xl font-bold">
-              <nuxt-link
-                to="/parcours#etape-4"
-                id="etape-4"
-                class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2"
-              >
-                ⏱️ Étape 4 :
-                <span class="text-zinc-400">Je décide d'arrêter</span>
-              </nuxt-link>
-            </h2>
-            <StepsArret />
-          </wip-section>
+        <div class="container mx-auto">
+          <h2
+            class="bg-zinc-100 py-4 text-2xl font-bold xl:sticky xl:top-20 xl:z-20"
+          >
+            <nuxt-link
+              to="/parcours#etape-4"
+              id="etape-4"
+              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2"
+            >
+              ⏱️ Étape 4 :
+              <span class="text-zinc-400">Je décide d'arrêter</span>
+            </nuxt-link>
+          </h2>
+          <StepsArret />
         </div>
       </div>
     </div>

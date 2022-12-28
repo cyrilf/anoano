@@ -1,9 +1,6 @@
 <template>
   <div class="mt-8">
-    <div
-      class="prose prose-zinc my-4 mx-auto mt-8 rounded bg-zinc-50 p-4 px-8 shadow xl:min-w-[650px]"
-    >
-      <h3>a. Je me renseigne</h3>
+    <Card title="a. Je me renseigne">
       <p>
         Pour bien commencer, il va falloir t'informer.<br />
         Ça tombe bien, tu es au bon endroit pour ça ! 👏
@@ -33,19 +30,20 @@
       </p>
       <p>
         Pour rappel, la contraception thermique permet de devenir stérile (et
-        c'est réversible), mais ne protège pas des MST. Pour celà, il faut
+        c'est réversible), mais ne protège pas des MST. Pour cela, il faut
         recourir à d'autres méthodes (préservatif, ...).
       </p>
-    </div>
-    <div
-      class="prose prose-zinc my-4 mx-auto mt-8 rounded bg-zinc-50 p-4 px-8 shadow xl:min-w-[650px]"
-    >
-      <h3>b. Je me fais accompagner</h3>
+    </Card>
+    <Card title="b. Je me fais accompagner">
       <p>
         La contraception est un sujet sérieux. Il est donc important pour toi de
-        te faire accompagner dans cette démarche. Pour celà, il te faudra
+        te faire accompagner dans cette démarche. Pour cela, il te faudra
         trouver un.e médecin ou un.e professionel.le de santé (urologue,
         andrologue) prêt.e à te suivre.
+      </p>
+      <p>
+        C'est cette personne qui te préscrira
+        <NuxtLink to="/outils/ordonnance">une ordonnance</NuxtLink>.
       </p>
       <p>
         Bon, on ne va pas se mentir, aujourd'hui encore trop peu de médecins
@@ -70,16 +68,14 @@
             </li>
             <li>une torsion du cordon spermatique</li>
             <li>une hernie inguinale (soignée ou pas)</li>
+            <li>un cancer du testicule</li>
             <li>un varicocèle de grade 3</li>
           </ul>
         </Toggle>
         <div>N'hésite pas à lui demander son avis.</div>
       </div>
-    </div>
-    <div
-      class="prose prose-zinc my-4 mx-auto mt-8 rounded bg-zinc-50 p-4 px-8 shadow xl:min-w-[650px]"
-    >
-      <h3>c. Je fais mon premier spermogramme</h3>
+    </Card>
+    <Card title="c. Je fais mon premier spermogramme">
       <p>
         Il permet de contrôler si tu es fertile ou non.
         <i
@@ -108,11 +104,8 @@
         contraception thermique est déconseillée, il te faudra demander l'avis
         d'un.e professionnel.le de santé.
       </div>
-    </div>
-    <div
-      class="prose prose-zinc my-4 mx-auto mt-8 rounded bg-zinc-50 p-4 px-8 shadow xl:min-w-[650px]"
-    >
-      <h3>d. Je choisis mon outil de contraception</h3>
+    </Card>
+    <Card title="d. Je choisis mon outil de contraception">
       <p>
         Ça y est, le moment de s'équiper est arrivé. Il y a plusieurs dispositif
         de contraception thermiques disponibles (anneau, jockstrap, slip
@@ -126,6 +119,6 @@
           t'indique l'anneau qu'il te faut. 😃
         </div>
       </div>
-    </div>
+    </Card>
   </div>
 </template>
