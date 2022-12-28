@@ -65,7 +65,7 @@
         <image-caption
           class="mx-auto max-h-96 object-cover object-center sm:rounded-lg"
           alt="anneaux contraceptif"
-          :src="mainImage"
+          :src="imageSrc"
         >
           <span
             >Photo de Koeko en
@@ -167,7 +167,8 @@ definePageMeta({
   title: "Contraception masculine",
 });
 const $img = useImage();
-const mainImage = computed(() => $img("/anneaux.jpg", { width: "650px" }));
+const imageSrc = ref("/anneaux.jpg");
+const mainImage = ref($img(imageSrc.value, { width: "650px" }));
 </script>
 <style>
 .underlined {
@@ -180,7 +181,7 @@ const mainImage = computed(() => $img("/anneaux.jpg", { width: "650px" }));
   width: 110%;
   height: 24px;
   border-width: 3px;
-  border-color: rgb(251, 191, 36) transparent transparent;
+  border-color: rgb(244, 114, 182) transparent transparent;
   border-radius: 100% 50% 0px 0px;
   position: absolute;
   top: 90%;

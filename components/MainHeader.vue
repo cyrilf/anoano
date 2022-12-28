@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-50 bg-white/80 shadow backdrop-blur-md">
+  <header :class="`sticky top-0 z-50 bg-white shadow ${headerClass}`">
     <div
       class="container mx-auto flex flex-col flex-wrap items-center px-4 py-6 md:flex-row"
     >
@@ -49,3 +49,14 @@
     </div>
   </header>
 </template>
+<script setup lang="ts">
+const router = useRouter();
+const headerClass = ref("");
+
+watchEffect(() => {
+  headerClass.value =
+    router.currentRoute.value.fullPath === "/"
+      ? "bg-white/80 backdrop-blur-md"
+      : "";
+});
+</script>

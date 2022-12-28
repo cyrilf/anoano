@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-zinc-100" v-if="!isHome">
+  <div class="bg-zinc-100 xl:sticky xl:top-[5.5rem] xl:z-30" v-if="!isHome">
     <ol
       class="container mx-auto flex flex-wrap items-center justify-center gap-4 px-4 py-6 md:justify-start"
     >

@@ -4,9 +4,10 @@
       <div class="py-6 sm:px-6 lg:px-8">
         <div class="container prose mx-auto">
           <p>
-            Cette page, découpée en grandes étapes, te permets de découvir le
-            parcours complet d'une personne voulant se contracepter<span
-              class="hand text-2xl text-zinc-600"
+            Cette page, découpée en <b>4 grandes étapes</b>, te permets de
+            découvir le parcours complet d'une
+            <b>personne voulant se contracepter</b
+            ><span class="hand text-2xl text-zinc-600"
               >(potentiellement, toi <span class="text-base">😉</span>)</span
             >.
           </p>
@@ -23,7 +24,7 @@
       <div class="py-6 sm:px-6 lg:px-8">
         <div class="container mx-auto">
           <h2
-            class="bg-white py-4 text-2xl font-bold xl:sticky xl:top-20 xl:z-20"
+            class="bg-white py-4 text-2xl font-bold xl:sticky xl:top-40 xl:z-20"
           >
             <nuxt-link
               to="/parcours#etape-1"
@@ -39,10 +40,10 @@
           <StepsPreparation />
         </div>
       </div>
-      <div class="bg-zinc-100 py-6 sm:px-6 lg:px-8">
+      <div class="bg-zinc-50 py-6 sm:px-6 lg:px-8">
         <div class="container mx-auto">
           <h2
-            class="bg-zinc-100 py-4 text-2xl font-bold xl:sticky xl:top-20 xl:z-20"
+            class="bg-zinc-50 py-4 text-2xl font-bold xl:sticky xl:top-40 xl:z-20"
           >
             <nuxt-link
               to="/parcours#etape-2"
@@ -61,7 +62,7 @@
       <div class="py-6 sm:px-6 lg:px-8">
         <div class="container mx-auto">
           <h2
-            class="bg-white py-4 text-2xl font-bold xl:sticky xl:top-20 xl:z-20"
+            class="bg-white py-4 text-2xl font-bold xl:sticky xl:top-40 xl:z-20"
           >
             <nuxt-link
               to="/parcours#etape-3"
@@ -77,10 +78,10 @@
           <StepsSuivi />
         </div>
       </div>
-      <div class="bg-zinc-100 py-6 sm:px-6 lg:px-8">
+      <div class="bg-zinc-50 py-6 sm:px-6 lg:px-8">
         <div class="container mx-auto">
           <h2
-            class="bg-zinc-100 py-4 text-2xl font-bold xl:sticky xl:top-20 xl:z-20"
+            class="bg-zinc-50 py-4 text-2xl font-bold xl:sticky xl:top-40 xl:z-20"
           >
             <nuxt-link
               to="/parcours#etape-4"

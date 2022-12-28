@@ -4,8 +4,11 @@
       name="trigger"
       :defaultTriggerClass="defaultTriggerClass"
       :accentClass="accentClass"
-      ><span :class="accentClass">*</span></slot
-    >
+      ><span>
+        <span :class="defaultTriggerClass" v-if="trigger">{{ trigger }}</span>
+        <span :class="accentClass">*</span>
+      </span>
+    </slot>
     <span
       class="pointer-events-none absolute bottom-8 mt-6 inline-flex flex-col items-center opacity-0 transition-opacity group-hover/tooltip:pointer-events-auto group-hover/tooltip:cursor-auto group-hover/tooltip:opacity-100"
     >
@@ -19,10 +22,11 @@
 <script setup lang="ts">
 defineProps<{
   text?: string;
+  trigger?: string;
 }>();
 
 const defaultTriggerClass =
-  "underline decoration-dashed decoration-zinc-300 underline-offset-4 group-hover/tooltip:text-zinc-500";
+  "underline decoration-dashed decoration-zinc-300 underline-offset-4 group-hover/tooltip:text-zinc-500 cursor-[help]";
 const accentClass =
   "cursor-default text-xl align-super font-bold text-accent-500 -mt-1 group-hover/tooltip:text-accent-400";
 </script>

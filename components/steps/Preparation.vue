@@ -2,20 +2,21 @@
   <div class="mt-8">
     <Card title="a. Je me renseigne">
       <p>
-        Pour bien commencer, il va falloir t'informer.<br />
+        Pour bien commencer, il va <b>falloir t'informer</b>.<br />
         Ça tombe bien, tu es au bon endroit pour ça ! 👏
       </p>
       <p>
         Dans les grandes lignes, tu vas utiliser la chaleur de ton corps pour
         stopper le processus de création des spermatozoïdes. Et oui, en
-        remontnant tes testicules (elles se trouvent dans tes bourses) vers ton
-        corps, elles passent de 35° à 37°. Et là, magie 🪄, la spermatogènése
-        s'arrête.
+        <b>remontant tes testicules</b> (elles se trouvent dans tes bourses)
+        vers ton corps, elles passent de 35° à 37°. Et là, magie 🪄, la
+        <b>spermatogènése s'arrête</b>.
       </p>
       <p>
         Pour aider cette remontée, il existe diverses solutions. Celle mise en
-        avant par ce site c'est un anneau en silicone. Maintenu à la base de ton
-        pénis, il doit être porté tous les jours pendant au moins 15 heures.
+        avant par ce site c'est <b>un anneau en silicone</b>. Maintenu à la base
+        de ton pénis, il doit être
+        <b>porté tous les jours pendant au moins 15 heures</b>.
       </p>
       <p>
         C'est un peu contraignant au début, mais très vite on ne le sent plus.
@@ -25,34 +26,42 @@
         Pour aller plus loin, le mieux c'est d'ouvrir ce lien<Tooltip
           >En cours d'écriture, le lien sera bientôt disponible</Tooltip
         >
-        et d'en apprendre plus sur la contraception thermique et son
-        fonctionnement.
+        et d'en apprendre plus sur
+        <b>la contraception thermique et son fonctionnement</b>.
       </p>
-      <p>
-        Pour rappel, la contraception thermique permet de devenir stérile (et
-        c'est réversible), mais ne protège pas des MST. Pour cela, il faut
-        recourir à d'autres méthodes (préservatif, ...).
-      </p>
+      <Alert title="Rappel" type="info">
+        <p>
+          La contraception thermique permet de devenir stérile (et c'est
+          réversible), mais
+          <b
+            >ne protège pas des
+            <Tooltip trigger="MST"
+              >Maladies Sexuellement Transmissible</Tooltip
+            ></b
+          >. Pour cela, il faut recourir à d'autres méthodes (préservatifs par
+          exemple).
+        </p>
+      </Alert>
     </Card>
     <Card title="b. Je me fais accompagner">
       <p>
         La contraception est un sujet sérieux. Il est donc important pour toi de
-        te faire accompagner dans cette démarche. Pour cela, il te faudra
+        <b>te faire accompagner</b> dans cette démarche. Pour cela, il te faudra
         trouver un.e médecin ou un.e professionel.le de santé (urologue,
         andrologue) prêt.e à te suivre.
       </p>
       <p>
-        C'est cette personne qui te préscrira
+        C'est <b>cette personne qui te préscrira </b>
         <NuxtLink to="/guides/ordonnance">une ordonnance</NuxtLink>.
       </p>
       <p>
         Bon, on ne va pas se mentir, aujourd'hui encore trop peu de médecins
-        connaissent réellement cette méthode. Alors si tu tombes sur quelqu'un.e
-        de réticent, ou qui prône la dangerosité voire la non-existance de la
-        contraception thermique, libre à toi d'argumenter ou d'aller trouver
-        quelqu'un.e d'autre. Dans tout les cas, tu finiras par trouver
-        quelqu'un.e de curieux.se. D'autant plus si tu sais de quoi tu parles et
-        de pourquoi tu veux le faire.
+        connaissent réellement cette méthode. Alors si tu tombes sur
+        <b>quelqu'un.e de réticent</b>, ou qui prône la dangerosité voire la
+        non-existance de la contraception thermique, libre à toi d'argumenter ou
+        d'aller <b>trouver quelqu'un.e d'autre</b>. Dans tous les cas, tu
+        finiras par trouver quelqu'un.e de curieux.se. D'autant plus si tu sais
+        de quoi tu parles et de pourquoi tu veux le faire.
       </p>
       <div>
         Il y a
@@ -72,22 +81,23 @@
             <li>un varicocèle de grade 3</li>
           </ul>
         </Toggle>
-        <div>N'hésite pas à lui demander son avis.</div>
+        <div>N'hésite pas à lui <b>demander son avis</b>.</div>
       </div>
     </Card>
     <Card title="c. Je fais mon premier spermogramme">
-      <p>
-        Il permet de contrôler si tu es fertile ou non.
-        <i
-          >(Attention ! Il se peut que tu sois déjà stérile. Il faut te préparer
-          à cette éventualité là pscychologiquement. Sois sûr d'être prêt,
-          soutenu)</i
-        >.
-      </p>
+      <p>Il permet de <b>contrôler si tu es fertile</b> ou non.</p>
+      <Alert title="⚠️ Attention" type="accent">
+        Il se peut que tu sois déjà stérile. Il faut te préparer à cette
+        éventualité là pscychologiquement. Sois sûr d'être prêt et soutenu.
+      </Alert>
       <div>
-        Ce sera aussi ton spermogramme de référence pour suivre l'évolution de
-        ta contraception. Pour faire un spermogramme, il te suffit de prendre un
-        rendez-vous dans un laboratoire, muni de ton ordonnance.
+        Ce sera aussi ton <b>spermogramme de référence</b> pour suivre
+        l'évolution de ta contraception. Pour faire un spermogramme, il te
+        suffit de
+        <b
+          >prendre un rendez-vous dans un laboratoire, muni de ton
+          ordonnance.</b
+        >
         <div>
           Plus d'info sur la page
           <NuxtLink to="/guides/ordonnance">📜️ Ordonnances</NuxtLink>.
@@ -96,23 +106,26 @@
       <div class="mt-4">
         Si le résultat de ton premier spermogramme a :
         <ul>
-          <li>une concentration en spermatozoïdes supérieure à 15M/mL</li>
-          <li>une mobilité supérieure à 32%</li>
+          <li>
+            une concentration en <b>spermatozoïdes supérieure à 15M/mL</b>
+          </li>
+          <li>une mobilité <b>supérieure à 32%</b></li>
         </ul>
-        alors c'est bon, tu es fertile, tu peux continuer. Par contre, si les
-        valeurs n'atteignent pas ces paliers (définis par l'OMS), la
-        contraception thermique est déconseillée, il te faudra demander l'avis
-        d'un.e professionnel.le de santé.
+        alors c'est bon, <b>tu es fertile, tu peux continuer</b>.<br />
+        Par contre, si les valeurs <b>n'atteignent pas ces paliers</b> (définis
+        par l'OMS), la <b>contraception thermique est déconseillée</b>, il te
+        faudra demander l'avis d'un.e professionnel.le de santé.
       </div>
     </Card>
     <Card title="d. Je choisis mon outil de contraception">
       <p>
-        Ça y est, le moment de s'équiper est arrivé. Il y a plusieurs dispositif
-        de contraception thermiques disponibles (anneau, jockstrap, slip
-        chauffant) mais ici on va parler principalement de l'anneau.
+        Ça y est, le moment de s'équiper est arrivé. Il y a
+        <b>plusieurs dispositif de contraception thermiques</b> disponibles
+        (anneau, jockstrap, slip chauffant) mais ici on va parler principalement
+        de l'<b>anneau</b>.
       </p>
       <div>
-        Pour choisir le tien, un outil est disponible sur cette page :
+        Pour <b>trouver le tien</b>, un outil est disponible sur cette page :
         <NuxtLink to="/outils/ano-taille">📏 AnoTaille</NuxtLink>.
         <div>
           Tu prends tes mesures, tu les rentres dans l'outil et voilà, il

@@ -3,31 +3,36 @@
     <Card title="a. Spermogramme de contrôle à 3 mois">
       <p>
         Ça y est, trois mois se sont écoulés. Tout s'est bien passé. Il est
-        temps de faire un spermogramme de contrôle (comme on a vu sur la page
+        temps de faire un <b>spermogramme de contrôle</b> (comme on a vu sur la
+        page
         <NuxtLink to="/guides/ordonnance" target="_blank"
           >des ordonnances</NuxtLink
         >).
       </p>
       <p>
-        Il te suffit alors de prendre rendez-vous dans un laboratoire d'analyse
-        médicale et de t'y rendre avec ton ordonnance, ta carte vitale et ta
-        mutuelle (si tu en as).
-        <!--TODO add link to the lab map-->Un spermogramme coûte en moyenne 30€
-        mais il est remboursé à 100% si tu as une mutuelle.
+        Il te suffit alors de <b>prendre rendez-vous</b> dans un
+        <b>laboratoire d'analyse médicale</b> et de t'y rendre avec ton
+        <b>ordonnance</b>, ta <b>carte vitale</b> et ta <b>mutuelle</b> (si tu
+        en as).
+        <!--TODO add link to the lab map-->Un spermogramme coûte
+        <b>en moyenne 30€</b> mais il est <b>remboursé à 100%</b> si tu as une
+        mutuelle.
       </p>
       <p>
-        Avant un rendez-vous, il est nécessaire de respecter une période
-        d'abstinence comprise entre 2 et 7 jours. Si tu veux avoir des résultats
-        fiables et pouvoir les comparer entre eux, il est conseillé de garder la
-        même durée d'abstinence à chaque fois (par exemple, 3 jours). N'hésite
-        pas à te mettre un petit rappel pour ne pas oublier.
+        Avant un rendez-vous, il est nécessaire de respecter une
+        <b>période d'abstinence</b> comprise entre <b>2 et 7 jours</b>. Si tu
+        veux avoir des résultats fiables et pouvoir les comparer entre eux, il
+        est conseillé de <b>garder la même durée d'abstinence</b> à chaque fois
+        (par exemple, 3 jours). N'hésite pas à te mettre un petit rappel pour ne
+        pas oublier.
       </p>
       <p>
-        Dans les jours qui suivent, tu vas recevoir les résultats. Tu dois être
-        passé sous la barre des 1 million de spermatozoïdes par millilitre
-        (&lt;1M/mL). Si ce n'est pas le cas, tu peux attendre encore un peu ou
-        augmenter ton temps de port journalier (15h+). Le mieux est de demander
-        l'avis d'un.e professionnel.le de santé.
+        Dans les jours qui suivent, tu vas <b>recevoir les résultats</b>. Tu
+        dois être passé sous la barre des 1 million de spermatozoïdes par
+        millilitre (&lt;1M/mL). Si ce n'est pas le cas, tu peux attendre encore
+        un peu ou augmenter ton temps de port journalier (15h+).
+        <b>Le mieux</b> est de
+        <b>demander l'avis d'un.e professionnel.le de santé</b>.
       </p>
     </Card>
     <Card title="b. Spermogramme de validation à 3 mois et 3 semaines.">
