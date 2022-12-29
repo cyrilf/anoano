@@ -10,9 +10,9 @@
   </div>
 </template>
 <script setup lang="ts">
-let route = useRoute();
-const title = computed(() => route.meta?.title);
-addRouteMiddleware(() => {
-  route = useRoute();
+const route = useRoute();
+const title = ref("");
+watchEffect(() => {
+  title.value = route.meta.title as string;
 });
 </script>

@@ -30,5 +30,5 @@ export default defineNuxtConfig({
   },
   plugins: [],
   typescript: { shim: false },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/image-edge', 'nuxt-purgecss',]
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/image-edge', 'nuxt-purgecss', '@nuxt/content']
 })

@@ -141,7 +141,7 @@
             </p>
           </Alert>
           <Tabs :tabs="tabs" v-model="provider" class="not-prose">
-            <div v-if="provider === 'diy'" class="prose prose-zinc max-w-none">
+            <div v-if="provider === 'diy'" class="prose max-w-none">
               <div>
                 Tu peux
                 <a

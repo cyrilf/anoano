@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group prose prose-zinc my-4 mx-auto mt-8 rounded bg-zinc-50 p-4 px-8 shadow transition-shadow hover:shadow-md hover:shadow-zinc-300 xl:min-w-[650px]"
+    class="group prose my-4 mx-auto mt-8 rounded bg-zinc-50 p-4 px-8 shadow transition-shadow hover:shadow-md hover:shadow-zinc-300 xl:min-w-[650px]"
   >
     <h3
       v-if="title"
@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
 defineProps<{
-  title: string;
+  title?: string;
   subtitle?: string;
 }>();
 </script>
