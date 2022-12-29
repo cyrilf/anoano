@@ -1,5 +1,7 @@
 <template>
-  <ContentDoc class="mx-auto" :head="false" />
+  <div>
+    <ContentDoc class="mx-auto" :head="false" />
+  </div>
 </template>
 <script setup lang="ts">
 definePageMeta({
