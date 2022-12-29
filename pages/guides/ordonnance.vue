@@ -2,9 +2,9 @@
   <PageSkeleton>
     <template #image="{ imageClass }">
       <image-caption
-        src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+        src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=575&q=80"
         alt="Ordonnance papier"
-        width="575px"
+        :width="575"
         :class="imageClass"
       >
         Photo de

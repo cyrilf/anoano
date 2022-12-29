@@ -40,10 +40,10 @@
           <StepsPreparation />
         </div>
       </div>
-      <div class="bg-zinc-50 py-6 sm:px-6 lg:px-8">
+      <div class="py-6 sm:bg-zinc-50 sm:px-6 lg:px-8">
         <div class="container mx-auto">
           <h2
-            class="bg-zinc-50 py-4 text-2xl font-bold xl:sticky xl:top-40 xl:z-20"
+            class="bg-white py-4 text-2xl font-bold sm:bg-zinc-50 xl:sticky xl:top-40 xl:z-20"
           >
             <nuxt-link
               to="/parcours#etape-2"
@@ -78,10 +78,10 @@
           <StepsSuivi />
         </div>
       </div>
-      <div class="bg-zinc-50 py-6 sm:px-6 lg:px-8">
+      <div class="py-6 sm:bg-zinc-50 sm:px-6 lg:px-8">
         <div class="container mx-auto">
           <h2
-            class="bg-zinc-50 py-4 text-2xl font-bold xl:sticky xl:top-40 xl:z-20"
+            class="bg-white py-4 text-2xl font-bold sm:bg-zinc-50 xl:sticky xl:top-40 xl:z-20"
           >
             <nuxt-link
               to="/parcours#etape-4"

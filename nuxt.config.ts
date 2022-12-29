@@ -1,9 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
-
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  telemetry: false,
   app: {
     head: {
       title: 'Anoano',
@@ -25,10 +21,7 @@ export default defineNuxtConfig({
       ],
     },
   },
-  image: {
-    domains: ['images.unsplash.com']
-  },
   plugins: [],
   typescript: { shim: false },
-  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/image-edge', 'nuxt-purgecss', '@nuxt/content']
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-icon', '@nuxt/content']
 })

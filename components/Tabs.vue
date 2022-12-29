@@ -7,11 +7,11 @@
       <li class="mr-2" v-for="tab in tabs" :key="tab.value">
         <button
           @click="emit('update:modelValue', tab.value)"
-          class="inline-block rounded-t-lg border-b-2 border-transparent p-4 hover:border-zinc-300 hover:text-zinc-600"
-          :class="{
-            'border-primary-500 text-primary-500 hover:border-primary-500 hover:!text-primary-500':
-              modelValue === tab.value,
-          }"
+          :class="`inline-flex items-center rounded-t-lg border-b-2 p-4 ${
+            modelValue === tab.value
+              ? 'border-primary-500 text-primary-500 hover:border-primary-500 hover:text-primary-500'
+              : 'border-transparent hover:border-zinc-300 hover:text-zinc-600'
+          }`"
         >
           <icon :name="modelValue === tab.value ? '🟠️' : '⚪️'" class="mr-2" />
           {{ tab.name }}

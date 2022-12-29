@@ -3,10 +3,10 @@
     <section class="relative">
       <div
         class="clip-path absolute inset-0 z-0 ml-auto hidden w-[400px] bg-cover bg-center bg-no-repeat md:block lg:w-[550px] xl:w-[650px]"
-        :style="`background-image: url(${mainImage})`"
+        style="background-image: url(/anneaux.jpg)"
       >
         <span
-          class="absolute bottom-0 right-2 rounded-t bg-zinc-50 bg-opacity-50 px-2 text-sm"
+          class="absolute bottom-0 right-2 rounded-t bg-zinc-50 bg-opacity-70 px-2 text-sm"
           >Photo de Koeko en
           <a href="https://creativecommons.org/licenses/by/4.0/deed.fr"
             >CC BY 4.0</a
@@ -47,13 +47,13 @@
               </nuxt-link>
               <nuxt-link
                 to="/guides"
-                class="inline-flex items-center rounded border-0 bg-zinc-100 py-2 px-6 text-lg text-zinc-700 hover:bg-zinc-200"
+                class="inline-flex items-center rounded border-0 bg-zinc-100 py-2 px-6 text-lg text-zinc-700 hover:bg-primary-200"
               >
                 <icon name="📚" class="-ml-2 mr-3" /> Les guides
               </nuxt-link>
               <nuxt-link
                 to="/outils"
-                class="inline-flex items-center rounded border-0 bg-zinc-100 py-2 px-6 text-lg text-zinc-700 hover:bg-zinc-200"
+                class="inline-flex items-center rounded border-0 bg-zinc-100 py-2 px-6 text-lg text-zinc-700 hover:bg-primary-200"
               >
                 <icon name="🪛️" class="-ml-2 mr-3" /> Les outils
               </nuxt-link>
@@ -65,7 +65,8 @@
         <image-caption
           class="mx-auto max-h-96 object-cover object-center sm:rounded-lg"
           alt="anneaux contraceptif"
-          :src="imageSrc"
+          src="/anneaux.jpg"
+          :width="650"
         >
           <span
             >Photo de Koeko en
@@ -166,11 +167,8 @@
 definePageMeta({
   title: "Contraception masculine",
 });
-const $img = useImage();
-const imageSrc = ref("/anneaux.jpg");
-const mainImage = ref($img(imageSrc.value, { width: "650px" }));
 </script>
-<style>
+<style scoped>
 .underlined {
   position: relative;
   background: inherit;
