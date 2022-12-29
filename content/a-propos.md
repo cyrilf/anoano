@@ -15,7 +15,7 @@
 
   **Tout le monde est le.la bienvenue pour participer !** Et surtout toi, oui, toi !
 
-  C'est encore un peu le chantier, mais si tu veux me contacter, tu peux écrire à [anoano@luseeds.com](mailto:anoano@luseeds.com)
+  C'est encore un peu le chantier, mais si tu veux me contacter, tu peux écrire à [hey@anoano.page](mailto:hey@anoano.page)
 
   ----
 
