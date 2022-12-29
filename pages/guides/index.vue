@@ -39,5 +39,6 @@
 <script setup lang="ts">
 definePageMeta({
   title: "📚 Les guides",
+  desc: "Une collection de guides remplis d'informations utiles pour t'accompagner dans ta contraception.",
 });
 </script>

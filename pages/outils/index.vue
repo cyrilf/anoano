@@ -29,5 +29,6 @@
 <script setup lang="ts">
 definePageMeta({
   title: "🪛️ Les outils",
+  desc: "Une collection de différents outils pour t'accompagner dans ta contraception masculine.",
 });
 </script>

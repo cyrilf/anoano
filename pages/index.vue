@@ -166,6 +166,7 @@
 <script setup lang="ts">
 definePageMeta({
   title: "Contraception masculine",
+  desc: "Ta contraception masculine commence ici. Il y a des guides et des outils à ta disposition pour t'accompagner dans ton parcours contraceptif.",
 });
 </script>
 <style scoped>
