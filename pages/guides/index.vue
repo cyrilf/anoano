@@ -10,18 +10,17 @@
               description="C'est un guide sur l'ordonnance à demander ainsi que l'explication détaillée des différents spermogrammes nécessaires."
               icon="📜️"
               link="/guides/ordonnance"
-              class="z-10"
+            />
+            <item-card
+              title="Le spermogramme"
+              description="Avec ce guide tu vas tout savoir sur le spermogramme."
+              icon="🧪️"
+              link="/guides/spermogramme"
             />
             <item-card
               title="La contraception thermique"
               description="Tout connaître sur la contraception thermique."
               icon="🌡️"
-              inProgress="Rédaction en cours"
-            />
-            <item-card
-              title="Le spermogramme"
-              description="Avec ce tu vas tout savoir sur faire un spermogramme."
-              icon="🧪️"
               inProgress="Rédaction en cours"
             />
             <item-card

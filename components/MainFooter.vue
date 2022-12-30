@@ -64,7 +64,10 @@ const links = [
   },
   {
     name: "Les guides",
-    links: [{ name: "L'ordonnance", href: "/guides/ordonnance" }],
+    links: [
+      { name: "L'ordonnance", href: "/guides/ordonnance" },
+      { name: "Le spermogramme", href: "/guides/spermogramme" },
+    ],
   },
   {
     name: "Les outils",

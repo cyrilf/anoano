@@ -17,8 +17,9 @@
     <template #intro>
       <p>
         C'est <b>important d'être bien accompagné.e</b>.<br />
-        Si ton.ta médecin traitant, un.e urologue ou un.e andrologue décide de
-        te suivre dans ta contraception, c'est le top ✨.<br />
+        Un.e médecin généraliste, un.e urologue, un.e andrologue ou une
+        sage-femme/maïeuticien peut te prescrire un spermogramme. Si iel décide
+        de te suivre dans ta contraception, c'est le top ✨.<br />
         Mais parfois, ces personnes là ne connaissent pas bien la contraception
         thermique.
       </p>

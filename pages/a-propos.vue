@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ContentDoc class="mx-auto" :head="false" />
+    <ContentDoc class="mx-auto w-fit" :head="false" />
   </div>
 </template>
 <script setup lang="ts">

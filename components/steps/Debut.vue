@@ -1,6 +1,10 @@
 <template>
-  <div class="mt-8">
-    <Card title="a. J'apprends à mettre l'anneau" subtitle="(et à l'enlever)">
+  <div class="mx-auto mt-8 w-fit">
+    <Card
+      title="a. J'apprends à mettre l'anneau"
+      subtitle="(et à l'enlever)"
+      sticky
+    >
       <p>
         Il y a différentes façon d'apprendre à le mettre. Tu peux choisir celle
         qui te convient le mieux.
@@ -101,7 +105,7 @@
         <b>automatismes</b>. C'est normal de tatonner un peu au début.
       </p>
     </Card>
-    <Card title="b. Je porte un anneau adapté">
+    <Card title="b. Je porte un anneau adapté" sticky>
       <div>
         Il se peut que l'anneau soit :
         <ul>
@@ -129,7 +133,7 @@
         tu ne sentiras même plus si tu le portes ou non.
       </p>
     </Card>
-    <Card title="c. Je porte l'anneau 15h / jour">
+    <Card title="c. Je porte l'anneau 15h / jour" sticky>
       <p>
         Pour que la méthode de contraception thermique soit efficace, il faut
         <b>maintenir les testicules à 37°, 15 heures par jour</b>.
@@ -176,7 +180,11 @@
         <b>ni utile, ni recommandé, de le porter plus de 17 heures par jour</b>.
       </p>
     </Card>
-    <Card title="d. Je me responsabilise" subtitle="(et je fais attention)">
+    <Card
+      title="d. Je me responsabilise"
+      subtitle="(et je fais attention)"
+      sticky
+    >
       <p>
         Choisir de se contracepter c'est aussi
         <b>accepter les responsabilités</b> qui viennent avec. Pour ça, il est

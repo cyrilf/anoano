@@ -1,12 +1,15 @@
 <template>
   <div
-    :class="`duration-50 group relative mt-20 w-96 rounded-lg bg-white py-4 px-8 shadow-lg transition-all hover:scale-105 hover:shadow-2xl ${
-      inProgress ? 'pointer-events-none z-0 cursor-not-allowed' : ''
-    } ${$attrs.class}`"
+    class="mt-20 w-96 rounded-lg bg-white py-4 px-8 shadow-lg"
+    :class="
+      inProgress
+        ? 'cursor-not-allowed'
+        : 'duration-50 group transition-all hover:scale-105 hover:shadow-2xl'
+    "
   >
     <nuxt-link :to="link" class="flex h-full flex-col">
       <div
-        class="relative z-10 -mt-16 flex justify-center transition-all duration-200 group-hover:-mr-10 group-hover:scale-125 md:justify-end"
+        class="relative -mt-16 flex justify-center transition-all duration-200 group-hover:scale-125 md:justify-end"
       >
         <div
           :class="`flex items-center justify-center rounded-full border-2 p-4 ${

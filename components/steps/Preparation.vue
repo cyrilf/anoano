@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-8">
-    <Card title="a. Je me renseigne">
+  <div class="mx-auto mt-8 w-fit">
+    <Card title="a. Je me renseigne" sticky>
       <p>
         Pour bien commencer, il va <b>falloir t'informer</b>.<br />
         Ça tombe bien, tu es au bon endroit pour ça ! 👏
@@ -43,7 +43,7 @@
         </p>
       </Alert>
     </Card>
-    <Card title="b. Je me fais accompagner">
+    <Card title="b. Je me fais accompagner" sticky>
       <p>
         La contraception est un sujet sérieux. Il est donc important pour toi de
         <b>te faire accompagner</b> dans cette démarche. Pour cela, il te faudra
@@ -84,7 +84,7 @@
         <div>N'hésite pas à lui <b>demander son avis</b>.</div>
       </div>
     </Card>
-    <Card title="c. Je fais mon premier spermogramme">
+    <Card title="c. Je fais mon premier spermogramme" sticky>
       <p>Il permet de <b>contrôler si tu es fertile</b> ou non.</p>
       <Alert title="⚠️ Attention" type="accent">
         Il se peut que tu sois déjà stérile. Il faut te préparer à cette
@@ -117,7 +117,7 @@
         faudra demander l'avis d'un.e professionnel.le de santé.
       </div>
     </Card>
-    <Card title="d. Je choisis mon outil de contraception">
+    <Card title="d. Je choisis mon outil de contraception" sticky>
       <p>
         Ça y est, le moment de s'équiper est arrivé. Il y a
         <b>plusieurs dispositif de contraception thermiques</b> disponibles

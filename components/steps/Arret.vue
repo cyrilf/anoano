@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-8">
-    <Card title="a. J'enlève l'anneau">
+  <div class="mx-auto mt-8 w-fit">
+    <Card title="a. J'enlève l'anneau" sticky>
       <p>
         Il n'est <b>pas recommandé</b> d'utiliser la méthode thermique
         <b>plus de 4 ans de suite</b>. Cela est dû au fait que la plus grand

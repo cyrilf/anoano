@@ -11,7 +11,6 @@
                     trouver la bonne taille pour ton anneau."
               icon="📏"
               link="/outils/ano-taille"
-              class="z-20"
             />
             <item-card
               title="Décrypte ton spermogramme"
