@@ -6,7 +6,7 @@
         style="background-image: url(/anneaux.jpg)"
       >
         <span
-          class="absolute bottom-0 right-2 rounded-t bg-zinc-50 bg-opacity-70 px-2 text-sm"
+          class="absolute right-0 bottom-0 bg-zinc-50 bg-opacity-70 px-2 text-sm text-zinc-600"
           >Photo de Koeko en
           <a href="https://creativecommons.org/licenses/by/4.0/deed.fr"
             >CC BY 4.0</a
@@ -84,47 +84,50 @@
         class="container mx-auto flex flex-col items-center py-24 md:flex-row"
       >
         <div
-          class="prose mb-16 flex flex-col items-center px-16 text-center md:mb-0 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24"
+          class="prose mb-16 flex max-w-none flex-col items-center px-16 text-center md:mb-0 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24"
         >
           <h2 class="text-4xl">
             La contraception en deux mots
             <span class="hand text-2xl text-zinc-400"
-              >(et un tout petit peu plus)</span
+              >(et un tout petit peu plus..)</span
             >
           </h2>
-          <p>
-            Ce site te présente une méthode simple, efficace et réversible pour
-            te contracepter.
-          </p>
-          <p>
-            Il s'agit d'une méthode thermique naturelle qui utilise la chaleur
-            de ton propre corps pour arrêter la production de spermatozoïdes. Il
-            suffit pour cela d'exposer tes testicules à une température de 37°,
-            15 heures par jour. Au bout de trois mois, te voilà contracepté !
-          </p>
-          <p>
-            Différents outils sont disponible, ici on va surtout te parler de
-            l'anneau. Un simple objet en silicone bio-compatible qui se porte
-            aussi facilement qu'un bracelet
-            <span class="hand text-xl leading-normal text-zinc-600"
-              >(sauf que lui, tu ne le mets pas autour de ton bras)</span
-            >. Ou alors aussi facilement que des lunettes
-            <span class="hand text-xl leading-normal text-zinc-600"
-              >(sauf que lui, tu ne le mets pas sur le nez)</span
-            >. Bon on arrête les métaphores, tu as compris l'idée.
-          </p>
-          <div>
-            Prêt pour en apprendre plus ?
+          <div class="max-w-prose">
+            <p>
+              Ce site te présente une méthode simple, efficace et réversible
+              pour te contracepter.
+            </p>
+            <p>
+              Il s'agit d'une méthode thermique naturelle qui utilise la chaleur
+              de ton propre corps pour arrêter la production de spermatozoïdes.
+              Il suffit pour cela d'exposer tes testicules à une température de
+              37°, 15 heures par jour. Au bout de trois mois, te voilà
+              contracepté !
+            </p>
+            <p>
+              Différents outils sont disponible, ici on va surtout te parler de
+              l'anneau. Un simple objet en silicone bio-compatible qui se porte
+              aussi facilement qu'un bracelet
+              <span class="hand text-xl leading-normal text-zinc-600"
+                >(sauf que lui, tu ne le mets pas autour de ton bras)</span
+              >. Ou alors aussi facilement que des lunettes
+              <span class="hand text-xl leading-normal text-zinc-600"
+                >(sauf que lui, tu ne le mets pas sur le nez)</span
+              >. Bon on arrête les métaphores, tu as compris l'idée.
+            </p>
             <div>
-              Commence par
-              <span class="not-prose">
-                <nuxt-link
-                  to="/parcours"
-                  class="rounded border-2 border-primary-400 p-1 hover:bg-primary-400 hover:text-zinc-900"
-                >
-                  ⛳️ le parcours
-                </nuxt-link>
-              </span>
+              Prêt pour en apprendre plus ?
+              <div>
+                Commence par
+                <span class="not-prose">
+                  <nuxt-link
+                    to="/parcours"
+                    class="rounded border-2 border-primary-400 p-1 hover:bg-primary-400 hover:text-zinc-900"
+                  >
+                    ⛳️ le parcours
+                  </nuxt-link>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -180,7 +183,7 @@ definePageMeta({
   width: 110%;
   height: 24px;
   border-width: 3px;
-  border-color: rgb(244, 114, 182) transparent transparent;
+  border-color: #fbbf24 transparent transparent;
   border-radius: 100% 50% 0px 0px;
   position: absolute;
   top: 90%;

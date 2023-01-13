@@ -24,12 +24,12 @@
       <div class="py-6 sm:px-6 lg:px-8">
         <div class="container mx-auto">
           <h2
-            class="bg-white py-4 text-2xl font-bold xl:sticky xl:top-40 xl:z-20"
+            class="bg-white py-4 text-2xl font-bold xl:sticky xl:top-20 xl:z-20"
           >
             <nuxt-link
               to="/parcours#etape-1"
               id="etape-1"
-              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 text-primary-400"
+              class="flex scroll-mt-28 flex-wrap items-center justify-center gap-2 text-primary-400"
               active-class="_"
               exact-active-class="_"
             >
@@ -43,12 +43,12 @@
       <div class="py-6 sm:bg-zinc-50 sm:px-6 lg:px-8">
         <div class="container mx-auto">
           <h2
-            class="bg-white py-4 text-2xl font-bold sm:bg-zinc-50 xl:sticky xl:top-40 xl:z-20"
+            class="bg-white py-4 text-2xl font-bold sm:bg-zinc-50 xl:sticky xl:top-20 xl:z-20"
           >
             <nuxt-link
               to="/parcours#etape-2"
               id="etape-2"
-              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 text-primary-400"
+              class="flex scroll-mt-28 flex-wrap items-center justify-center gap-2 text-primary-400"
               active-class="_"
               exact-active-class="_"
             >
@@ -62,12 +62,12 @@
       <div class="py-6 sm:px-6 lg:px-8">
         <div class="container mx-auto">
           <h2
-            class="bg-white py-4 text-2xl font-bold xl:sticky xl:top-40 xl:z-20"
+            class="bg-white py-4 text-2xl font-bold xl:sticky xl:top-20 xl:z-20"
           >
             <nuxt-link
               to="/parcours#etape-3"
               id="etape-3"
-              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 text-primary-400"
+              class="flex scroll-mt-28 flex-wrap items-center justify-center gap-2 text-primary-400"
               active-class="_"
               exact-active-class="_"
             >
@@ -81,12 +81,12 @@
       <div class="py-6 sm:bg-zinc-50 sm:px-6 lg:px-8">
         <div class="container mx-auto">
           <h2
-            class="bg-white py-4 text-2xl font-bold sm:bg-zinc-50 xl:sticky xl:top-40 xl:z-20"
+            class="bg-white py-4 text-2xl font-bold sm:bg-zinc-50 xl:sticky xl:top-20 xl:z-20"
           >
             <nuxt-link
               to="/parcours#etape-4"
               id="etape-4"
-              class="flex scroll-mt-36 flex-wrap items-center justify-center gap-2 text-primary-400"
+              class="flex scroll-mt-28 flex-wrap items-center justify-center gap-2 text-primary-400"
               active-class="_"
               exact-active-class="_"
             >

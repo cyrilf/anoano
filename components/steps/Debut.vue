@@ -3,6 +3,8 @@
     <Card
       title="a. J'apprends à mettre l'anneau"
       subtitle="(et à l'enlever)"
+      link="/parcours#etape-2-anneau"
+      id="etape-2-anneau"
       sticky
     >
       <p>
@@ -105,7 +107,12 @@
         <b>automatismes</b>. C'est normal de tatonner un peu au début.
       </p>
     </Card>
-    <Card title="b. Je porte un anneau adapté" sticky>
+    <Card
+      title="b. Je porte un anneau adapté"
+      sticky
+      link="/parcours#etape-2-adapte"
+      id="etape-2-adapte"
+    >
       <div>
         Il se peut que l'anneau soit :
         <ul>
@@ -133,7 +140,12 @@
         tu ne sentiras même plus si tu le portes ou non.
       </p>
     </Card>
-    <Card title="c. Je porte l'anneau 15h / jour" sticky>
+    <Card
+      title="c. Je porte l'anneau 15h / jour"
+      sticky
+      link="/parcours#etape-2-15heures"
+      id="etape-2-15heures"
+    >
       <p>
         Pour que la méthode de contraception thermique soit efficace, il faut
         <b>maintenir les testicules à 37°, 15 heures par jour</b>.
@@ -183,6 +195,8 @@
     <Card
       title="d. Je me responsabilise"
       subtitle="(et je fais attention)"
+      link="/parcours#etape-2-responsabilise"
+      id="etape-2-responsabilise"
       sticky
     >
       <p>

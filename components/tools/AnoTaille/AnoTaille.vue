@@ -187,7 +187,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, Ref } from "vue";
+import { Ref } from "vue";
 import { SelectedModel } from "~/types/Model";
 
 const provider = ref("andro");

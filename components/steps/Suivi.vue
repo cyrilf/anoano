@@ -1,6 +1,11 @@
 <template>
   <div class="mx-auto mt-8 w-fit">
-    <Card title="a. Spermogramme de contrôle à 3 mois" sticky>
+    <Card
+      title="a. Spermogramme de contrôle à 3 mois"
+      sticky
+      link="/parcours#etape-3-spermogramme-controle"
+      id="etape-3-spermogramme-controle"
+    >
       <p>
         Ça y est, trois mois se sont écoulés. Tout s'est bien passé. Il est
         temps de faire un <b>spermogramme de contrôle</b> (comme on a vu sur la
@@ -35,7 +40,12 @@
         <b>demander l'avis d'un.e professionnel.le de santé</b>.
       </p>
     </Card>
-    <Card title="b. Spermogramme de validation à 3 mois et 3 semaines." sticky>
+    <Card
+      title="b. Spermogramme de validation à 3 mois et 3 semaines."
+      sticky
+      link="/parcours#etape-3-spermogramme-validation"
+      id="etape-3-spermogramme-validation"
+    >
       <div>
         Ce deuxième spermogramme de validation vient
         <b>confirmer que tout se passe bien</b>. Tu es toujours sous la barre
@@ -49,7 +59,12 @@
         </ul>
       </div>
     </Card>
-    <Card title="c. Spermogrammes réguliers" sticky>
+    <Card
+      title="c. Spermogrammes réguliers"
+      sticky
+      link="/parcours#etape-3-spermogrammes-reguliers"
+      id="etape-3-spermogrammes-reguliers"
+    >
       Ces spermogrammes te servent de <b>checkpoints</b>. Ils permettent de
       t'assurer que ta contraception <b>fonctionne bien dans la durée</b>, que
       la manière dont tu portes l'anneau est <b>efficace et règulière</b>.

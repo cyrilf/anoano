@@ -12,7 +12,7 @@
       }}</slot>
       <icon
         name="ep:arrow-down-bold"
-        class="transition-transform"
+        class="ml-1 transition-transform"
         :class="{ 'rotate-180': isOpen }"
         v-if="right"
       />

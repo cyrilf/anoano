@@ -1,9 +1,9 @@
 ::card
 
-  Ce site souhaite parler de contraception masculine.  
+  Ce site souhaite parler de contraception testiculaire _(aussi appelée contraception masculine)_.  
   Principalement de la **contraception thermique** avec l'anneau.
 
-  Le mieux pour commencer est de suivre le parcours. C'est un contenu en cours de création sur les différentes étapes pour se contracepter.
+  Le mieux pour commencer est de suivre le parcours. C'est un contenu qui présente les différentes étapes pour se contracepter.
 
   ::my-button{to='/parcours'}
   Le parcours
