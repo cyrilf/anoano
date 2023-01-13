@@ -3,8 +3,8 @@
     <Card
       title="a. J'apprends à mettre l'anneau"
       subtitle="(et à l'enlever)"
-      link="/parcours#etape-2-anneau"
-      id="etape-2-anneau"
+      link="/parcours#anneau"
+      id="anneau"
       sticky
     >
       <p>
@@ -110,8 +110,8 @@
     <Card
       title="b. Je porte un anneau adapté"
       sticky
-      link="/parcours#etape-2-adapte"
-      id="etape-2-adapte"
+      link="/parcours#adapte"
+      id="adapte"
     >
       <div>
         Il se peut que l'anneau soit :
@@ -143,8 +143,8 @@
     <Card
       title="c. Je porte l'anneau 15h / jour"
       sticky
-      link="/parcours#etape-2-15heures"
-      id="etape-2-15heures"
+      link="/parcours#15heures"
+      id="15heures"
     >
       <p>
         Pour que la méthode de contraception thermique soit efficace, il faut
@@ -195,8 +195,8 @@
     <Card
       title="d. Je me responsabilise"
       subtitle="(et je fais attention)"
-      link="/parcours#etape-2-responsabilise"
-      id="etape-2-responsabilise"
+      link="/parcours#responsabilise"
+      id="responsabilise"
       sticky
     >
       <p>

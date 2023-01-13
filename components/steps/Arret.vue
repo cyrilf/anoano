@@ -3,8 +3,8 @@
     <Card
       title="a. J'enlève l'anneau"
       sticky
-      link="/parcours#etape-4-enleve"
-      id="etape-4-enleve"
+      link="/parcours#enleve"
+      id="enleve"
     >
       <p>
         Il n'est <b>pas recommandé</b> d'utiliser la méthode thermique

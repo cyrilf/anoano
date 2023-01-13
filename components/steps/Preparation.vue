@@ -2,8 +2,8 @@
   <div class="mx-auto mt-8 w-fit">
     <Card
       title="a. Je me renseigne"
-      link="/parcours#etape-1-renseigne"
-      id="etape-1-renseigne"
+      link="/parcours#renseigne"
+      id="renseigne"
       sticky
     >
       <p>
@@ -51,8 +51,8 @@
     <Card
       title="b. Je me fais accompagner"
       sticky
-      link="/parcours#etape-1-accompagner"
-      id="etape-1-accompagner"
+      link="/parcours#accompagner"
+      id="accompagner"
     >
       <p>
         La contraception est un sujet sérieux. Il est donc important pour toi de
@@ -97,8 +97,8 @@
     <Card
       title="c. Je fais mon premier spermogramme"
       sticky
-      link="/parcours#etape-1-spermogramme"
-      id="etape-1-spermogramme"
+      link="/parcours#spermogramme"
+      id="spermogramme"
     >
       <p>Il permet de <b>contrôler si tu es fertile</b> ou non.</p>
       <Alert title="⚠️ Attention" type="accent">
@@ -135,8 +135,8 @@
     <Card
       title="d. Je choisis mon outil de contraception"
       sticky
-      link="/parcours#etape-1-outil"
-      id="etape-1-outil"
+      link="/parcours#outil"
+      id="outil"
     >
       <p>
         Ça y est, le moment de s'équiper est arrivé. Il y a

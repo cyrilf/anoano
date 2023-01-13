@@ -3,8 +3,8 @@
     <Card
       title="a. Spermogramme de contrôle à 3 mois"
       sticky
-      link="/parcours#etape-3-spermogramme-controle"
-      id="etape-3-spermogramme-controle"
+      link="/parcours#spermogramme-controle"
+      id="spermogramme-controle"
     >
       <p>
         Ça y est, trois mois se sont écoulés. Tout s'est bien passé. Il est
@@ -43,8 +43,8 @@
     <Card
       title="b. Spermogramme de validation à 3 mois et 3 semaines."
       sticky
-      link="/parcours#etape-3-spermogramme-validation"
-      id="etape-3-spermogramme-validation"
+      link="/parcours#spermogramme-validation"
+      id="spermogramme-validation"
     >
       <div>
         Ce deuxième spermogramme de validation vient
@@ -62,8 +62,8 @@
     <Card
       title="c. Spermogrammes réguliers"
       sticky
-      link="/parcours#etape-3-spermogrammes-reguliers"
-      id="etape-3-spermogrammes-reguliers"
+      link="/parcours#spermogrammes-reguliers"
+      id="spermogrammes-reguliers"
     >
       Ces spermogrammes te servent de <b>checkpoints</b>. Ils permettent de
       t'assurer que ta contraception <b>fonctionne bien dans la durée</b>, que

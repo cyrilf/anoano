@@ -27,7 +27,11 @@
       </p>
     </template>
     <div class="flex flex-wrap justify-around 2xl:justify-between">
-      <Card title="Qui est concerné ?">
+      <Card
+        title="👤 Qui est concerné ?"
+        link="/guides/spermogramme#qui"
+        id="qui"
+      >
         Cet examen est le plus généralement fait dans le cardre d'un bilan
         d'infertilité pour un couple hétérosexuel.
         <p>
@@ -41,7 +45,11 @@
           examen intéressant pour en apprendre plus sur son corps.
         </p>
       </Card>
-      <Card title="Je le fais quand ?">
+      <Card
+        title="🗓️ Je le fais quand ?"
+        link="/guides/spermogramme#quand"
+        id="quand"
+      >
         Tout est bien décrit sur la page
         <NuxtLink to="/guides/ordonnance">ordonnance</NuxtLink>. Mais allez, je
         te fais un petit résumé ici. C'est cadeau 🎁.<br />Tu en fais :
@@ -65,7 +73,7 @@
           </li>
         </ul>
       </Card>
-      <Card title="Je le fais où ?">
+      <Card title="📍 Je le fais où ?" link="/guides/spermogramme#où" id="où">
         Dans un <b>laboratoire d'analyses médicales</b>.
         <p>
           Attention toutefois, tous les laboratoires ne proposent pas cette
@@ -87,7 +95,11 @@
           les toilettes près de l'entrée..
         </p>
       </Card>
-      <Card title="J'ai besoin de quoi ?">
+      <Card
+        title="🪧 J'ai besoin de quoi ?"
+        link="/guides/spermogramme#quoi"
+        id="quoi"
+      >
         <b>Une ordonnance</b>. Ça tombe bien, il y a une
         <NuxtLink to="/guides/ordonnance">page dédiée</NuxtLink> qui t'explique
         ça.
@@ -100,7 +112,11 @@
           être remboursé à 100%. Sinon le prix moyen est estimé à 30€.
         </p>
       </Card>
-      <Card title="Quelles sont les conditions ?">
+      <Card
+        title="✅ Quelles sont les conditions ?"
+        link="/guides/spermogramme#conditions"
+        id="conditions"
+      >
         <p>
           Tu dois respecter une <b>période d'abstinence sexuelle</b> comprise
           <b>entre 2 et 7 jours sans aucune éjaculation</b>. Cela permet d'avoir
@@ -116,7 +132,11 @@
           laboratoire.
         </p>
       </Card>
-      <Card title="Comment ça se passe ?">
+      <Card
+        title="🤔 Comment ça se passe ?"
+        link="/guides/spermogramme#comment"
+        id="comment"
+      >
         <p>
           Chaque laboratoire est différent mais généralement ça se passe comme
           ça :
@@ -161,7 +181,11 @@
           seulement. Demande quand même à l'acceuil pour t'assurer de ça.
         </p>
       </Card>
-      <Card title="Comment je lis mes résultats ?">
+      <Card
+        title="👓 Comment je lis mes résultats ?"
+        link="/guides/spermogramme#decrypte"
+        id="decrypte"
+      >
         Tu peux <b>demander conseil à ta.ton médecin</b> ou la personne qui te
         suis. Sinon, tu peux aussi utiliser l'outil
         <NuxtLink href="/outils/decrypte-spermogramme"
