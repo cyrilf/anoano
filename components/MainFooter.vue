@@ -23,9 +23,15 @@
           v-for="linkGroup in links"
           :key="linkGroup.name"
         >
-          <span class="mb-4 block uppercase text-zinc-400 dark:text-zinc-500">{{
-            linkGroup.name
-          }}</span>
+          <NuxtLink
+            class="mb-4 block uppercase text-zinc-400 dark:text-zinc-500"
+            :class="linkGroup.href ? 'hover:underline' : ''"
+            :to="linkGroup.href"
+            active-class="_"
+            exact-active-class="_"
+          >
+            {{ linkGroup.name }}</NuxtLink
+          >
           <ul class="text-zinc-600 dark:text-zinc-300">
             <li class="pb-3" v-for="link in linkGroup.links" :key="link.name">
               <NuxtLink
@@ -55,6 +61,7 @@
 const links = [
   {
     name: "Le parcours",
+    href: "/parcours",
     links: [
       { name: "Je me prépare", href: "/parcours#etape-1" },
       { name: "Je débute", href: "/parcours#etape-2" },
@@ -64,6 +71,7 @@ const links = [
   },
   {
     name: "Les guides",
+    href: "/guides",
     links: [
       { name: "L'ordonnance", href: "/guides/ordonnance" },
       { name: "Le spermogramme", href: "/guides/spermogramme" },
@@ -71,11 +79,15 @@ const links = [
   },
   {
     name: "Les outils",
+    href: "/outils",
     links: [{ name: "AnoTaille", href: "/outils/ano-taille" }],
   },
   {
     name: "Autres",
-    links: [{ name: "À propos", href: "/a-propos" }],
+    links: [
+      { name: "À propos", href: "/a-propos" },
+      { name: "Glossaire", href: "/glossaire" },
+    ],
   },
 ];
 </script>
