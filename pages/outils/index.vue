@@ -17,7 +17,7 @@
               description="Avec cet outil tu vas pouvoir lire et comprendre ton
                   spermogramme."
               icon="🧪️"
-              inProgress
+              link="/outils/decrypte-spermogramme"
             />
           </div>
         </div>

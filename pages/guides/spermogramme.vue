@@ -164,9 +164,8 @@
       <Card title="Comment je lis mes résultats ?">
         Tu peux <b>demander conseil à ta.ton médecin</b> ou la personne qui te
         suis. Sinon, tu peux aussi utiliser l'outil
-        <NuxtLink href="/outils"
-          ><!-- TODO: change link once tool created -->Décrypte ton
-          spermogramme</NuxtLink
+        <NuxtLink href="/outils/decrypte-spermogramme"
+          >Décrypte ton spermogramme</NuxtLink
         >
         disponible sur ce site.
       </Card>
