@@ -14,7 +14,7 @@
         >
       </div>
       <div
-        class="container relative z-10 px-6 py-16 sm:mx-auto sm:py-8 md:py-28 md:pb-48"
+        class="container relative px-6 py-16 sm:mx-auto sm:py-8 md:py-28 md:pb-48"
       >
         <div class="flex flex-col md:flex-row">
           <div
@@ -23,7 +23,21 @@
             <h1
               class="bg-gradient-to-r from-primary-500 to-primary-400 bg-clip-text text-4xl font-medium text-transparent md:text-5xl lg:text-6xl"
             >
-              Ta contraception masculine
+              Ta contraception
+              <Tooltip
+                ><template #trigger="{ defaultTriggerClass, accentClass }">
+                  <span :class="defaultTriggerClass"
+                    >masculine<span :class="accentClass" class="accent"
+                      >*</span
+                    ></span
+                  ></template
+                >Le terme "masculine" est choisi en faveur de contraception
+                testiculaire ou thermique car il est plus populaire. Mais nous
+                ne voulons pas invisibiliser les problèmes de genre que celà
+                implique. D'où la
+                <span class="text-accent-500">petite étoile</span> et cette
+                note. 💖
+              </Tooltip>
               <br class="hidden lg:inline-block" /><span class="underlined">
                 commence</span
               >
