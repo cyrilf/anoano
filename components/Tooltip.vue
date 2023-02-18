@@ -1,5 +1,5 @@
 <template>
-  <span class="group/tooltip relative inline-flex flex-col items-center">
+  <span class="group/tooltip inline-flex flex-col items-center">
     <slot
       name="trigger"
       :defaultTriggerClass="defaultTriggerClass"

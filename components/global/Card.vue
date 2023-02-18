@@ -11,7 +11,7 @@
     >
       <h3
         v-if="title"
-        class="z-10 mb-0 bg-zinc-50 py-2 pt-4"
+        class="z-10 mt-0 mb-0 bg-zinc-50 py-2 pt-4"
         :class="sticky ? 'xl:sticky xl:top-32 xl:text-center' : ''"
       >
         {{ title }}

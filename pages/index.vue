@@ -24,20 +24,7 @@
               class="bg-gradient-to-r from-primary-500 to-primary-400 bg-clip-text text-4xl font-medium text-transparent md:text-5xl lg:text-6xl"
             >
               Ta contraception
-              <Tooltip
-                ><template #trigger="{ defaultTriggerClass, accentClass }">
-                  <span :class="defaultTriggerClass"
-                    >masculine<span :class="accentClass" class="accent"
-                      >*</span
-                    ></span
-                  ></template
-                >Le terme "masculine" est choisi en faveur de contraception
-                testiculaire ou thermique car il est plus populaire. Mais nous
-                ne voulons pas invisibiliser les problèmes de genre que celà
-                implique. D'où la
-                <span class="text-accent-500">petite étoile</span> et cette
-                note. 💖
-              </Tooltip>
+              <ContentMasculine />
               <br class="hidden lg:inline-block" /><span class="underlined">
                 commence</span
               >
@@ -124,10 +111,7 @@
               aussi facilement qu'un bracelet
               <span class="hand text-xl leading-normal text-zinc-600"
                 >(sauf que lui, tu ne le mets pas autour de ton bras)</span
-              >. Ou alors aussi facilement que des lunettes
-              <span class="hand text-xl leading-normal text-zinc-600"
-                >(sauf que lui, tu ne le mets pas sur le nez)</span
-              >. Bon on arrête les métaphores, tu as compris l'idée.
+              >. On arrête la métaphore, tu as compris l'idée.
             </p>
             <div>
               Prêt pour en apprendre plus ?
@@ -188,6 +172,7 @@ definePageMeta({
 </script>
 <style scoped>
 .underlined {
+  display: inline-block;
   position: relative;
   background: inherit;
 }
