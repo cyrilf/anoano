@@ -30,7 +30,7 @@
         >.</Alert
       >
     </template>
-    <div class="flex flex-wrap justify-around 2xl:justify-between">
+    <div class="flex flex-wrap items-start justify-around 2xl:justify-between">
       <div>
         <Card title="📚 Les livres" link="/explorer#livres" id="livres">
           <ul>
@@ -51,6 +51,17 @@
               - {{ video.author }} - {{ video.year }}
             </li>
           </ul>
+        </Card>
+        <Card title="🎤 Les podcasts" link="/explorer#podcasts" id="podcasts">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/6wo0xBl01NYXtJAUcs1hEy"
+            width="100%"
+            height="352"
+            frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
         </Card>
       </div>
       <Card
