@@ -2,9 +2,9 @@
   <PageSkeleton>
     <template #image="{ imageClass }">
       <image-caption
-        src="https://img.freepik.com/photos-gratuite/jeune-femme-medecin-asiatique-uniforme-medical-blanc-aide-presse-papiers-livre-excellentes-nouvelles-pour-discuter-resultats_7861-3135.jpg?w=530"
+        src="https://img.freepik.com/photos-gratuite/jeune-femme-medecin-asiatique-uniforme-medical-blanc-aide-presse-papiers-livre-excellentes-nouvelles-pour-discuter-resultats_7861-3135.jpg?w=550"
         alt="Résultat médical"
-        :width="530"
+        :width="550"
         :class="imageClass"
       >
         Photo de
@@ -73,8 +73,9 @@
                 <span v-else>{{ d.name }}</span>
               </td>
               <td
-                class="border-2 border-x-0 bg-primary-300 p-4 text-right font-bold text-zinc-800"
+                class="border-2 border-x-0 p-4 text-right font-bold text-zinc-800"
                 :class="{
+                  'bg-primary-300': d.check === null,
                   'bg-emerald-300': d.check === true,
                   'bg-rose-300': d.check === false,
                 }"
@@ -124,7 +125,7 @@
               </td>
             </tr>
             <tr v-if="hasConditionUnmet">
-              <td colspan="3" class="text max-w-xl bg-rose-300 p-4">
+              <td colspan="3" class="text bg-rose-300 p-4">
                 D'après les résultats de ton premier spermogramme, tu ne remplis
                 pas toutes les conditions nécessaire pour être fertile.<br />
                 On te recommande de te rapprocher de ton.ta médecin ou de la
@@ -194,6 +195,7 @@ const data = ref([
     condition: "≥",
     explanation: "Entre 2 et 8 jours",
     value: 2,
+    check: null,
     range: [2, 8],
     extra: true,
   },
@@ -203,12 +205,14 @@ const data = ref([
     condition: "≥",
     explanation: "Volume émis / Volume de l'éjaculat",
     value: 1.5,
+    check: null,
     range: [1.5, 6],
   },
   {
     name: "pH",
     condition: "≥",
     value: 7.2,
+    check: null,
     range: [7.2, 8],
   },
   {
@@ -217,6 +221,7 @@ const data = ref([
     condition: "≥",
     explanation: "Concentration / Nombre de spermatozoïdes par mL",
     value: 15,
+    check: null,
     range: [15, 200],
   },
   {
@@ -225,6 +230,7 @@ const data = ref([
     condition: "≥",
     explanation: "Nombre de spermatozoïdes par éjaculat",
     value: 39,
+    check: null,
     extra: true,
   },
   {
@@ -232,6 +238,7 @@ const data = ref([
     unit: "millions/mL",
     condition: "≤",
     value: 3,
+    check: null,
     extra: true,
   },
   {
@@ -240,6 +247,7 @@ const data = ref([
     condition: "≥",
     explanation: "Mobilité PR à 1 heure",
     value: 32,
+    check: null,
   },
   {
     name: "Mobilité totale",
@@ -247,6 +255,7 @@ const data = ref([
     condition: "≥",
     explanation: "Mobilité PR + NP à 1 heure",
     value: 40,
+    check: null,
     extra: true,
   },
   {
@@ -255,6 +264,7 @@ const data = ref([
     condition: "≥",
     explanation: "Spermatozoïdes vivants",
     value: 58,
+    check: null,
   },
   {
     name: "Morphologie normale",
@@ -262,6 +272,7 @@ const data = ref([
     condition: "≥",
     explanation: "Spermatozoïdes typiques",
     value: 4,
+    check: null,
   },
   {
     name: "Morphologie anormale",
@@ -269,6 +280,7 @@ const data = ref([
     condition: "≤",
     explanation: "Spermatozoïdes atypiques",
     value: 96,
+    check: null,
     extra: true,
   },
 ]);

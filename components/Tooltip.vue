@@ -26,7 +26,7 @@ defineProps<{
 }>();
 
 const defaultTriggerClass =
-  "underline decoration-dashed decoration-zinc-300 underline-offset-4 group-hover/tooltip:text-zinc-500 cursor-[help]";
+  "underline decoration-dashed decoration-2 decoration-zinc-300 underline-offset-4 group-hover/tooltip:text-zinc-500 cursor-[help]";
 const accentClass =
-  "cursor-default text-xl align-super font-bold text-accent-500 -mt-1 group-hover/tooltip:text-accent-400";
+  "text-xl align-super font-bold text-accent-500 group-hover/tooltip:text-accent-400";
 </script>

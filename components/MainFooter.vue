@@ -80,13 +80,20 @@ const links = [
   {
     name: "Les outils",
     href: "/outils",
-    links: [{ name: "AnoTaille", href: "/outils/ano-taille" }],
+    links: [
+      { name: "AnoTaille", href: "/outils/ano-taille" },
+      {
+        name: "Décrypte ton spermogramme",
+        href: "/outils/decrypte-spermogramme",
+      },
+    ],
   },
   {
     name: "Autres",
     links: [
       { name: "À propos", href: "/a-propos" },
       { name: "Glossaire", href: "/glossaire" },
+      { name: "Des ressources pour explorer", href: "/explorer" },
     ],
   },
 ];

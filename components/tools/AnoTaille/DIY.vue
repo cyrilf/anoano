@@ -63,7 +63,6 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, computed } from "vue";
 import { DiyModel, Header } from "~/types/Model";
 
 const headers = ref<Header[]>([

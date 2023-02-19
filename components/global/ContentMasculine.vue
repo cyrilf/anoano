@@ -1,8 +1,9 @@
 <template>
   <Tooltip
     ><template #trigger="{ defaultTriggerClass, accentClass }">
-      <span :class="defaultTriggerClass"
-        >masculine<span :class="accentClass" class="accent">*</span></span
+      <span
+        ><span :class="defaultTriggerClass">masculine</span
+        ><span :class="accentClass" class="accent">*</span></span
       ></template
     >Le terme "masculine" est choisi en faveur de contraception testiculaire ou
     thermique car il est plus populaire. Mais nous ne voulons pas invisibiliser

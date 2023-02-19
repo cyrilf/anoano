@@ -23,12 +23,6 @@
               icon="🌡️"
               inProgress="Rédaction en cours"
             />
-            <item-card
-              title="Les études cliniques"
-              description="Un guide sur les sources, l'efficacité et l'historique des publications scientifiques sur la contraception thermique."
-              icon="🧑‍⚕️"
-              inProgress="Rédaction en cours"
-            />
           </div>
         </div>
       </div>
