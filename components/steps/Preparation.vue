@@ -8,7 +8,8 @@
     >
       <p>
         Pour bien commencer, il va <b>falloir t'informer</b>.<br />
-        Ça tombe bien, tu es au bon endroit pour ça ! 👏
+        Ça tombe bien, tu es au bon endroit pour ça !
+        <icon name="noto-waving-hand" />
       </p>
       <p>
         Dans les grandes lignes, tu vas utiliser la chaleur de ton corps pour
@@ -115,7 +116,9 @@
         >
         <div>
           Plus d'info sur la page
-          <NuxtLink to="/guides/ordonnance">📜️ Ordonnances</NuxtLink>.
+          <NuxtLink to="/guides/ordonnance"
+            ><icon name="noto-scroll" /> Ordonnances</NuxtLink
+          >.
         </div>
       </div>
       <div class="mt-4">
@@ -146,10 +149,13 @@
       </p>
       <div>
         Pour <b>trouver le tien</b>, un outil est disponible sur cette page :
-        <NuxtLink to="/outils/ano-taille">📏 AnoTaille</NuxtLink>.
+        <NuxtLink to="/outils/ano-taille"
+          ><icon name="noto-straight-ruler" /> AnoTaille</NuxtLink
+        >.
         <div>
           Tu prends tes mesures, tu les rentres dans l'outil et voilà, il
-          t'indique l'anneau qu'il te faut. 😃
+          t'indique l'anneau qu'il te faut.
+          <icon name="noto-grinning-face" />
         </div>
       </div>
     </Card>

@@ -23,7 +23,8 @@
         d'<b>entrer cette valeur dans le formulaire</b> ci-dessous et hop', on
         <b
           >te proposes le modèle parfait
-          <span class="-tranzinc-y-1 inline-block scale-150">💍</span></b
+          <span class="relative bottom-1 inline-block scale-125"
+            ><icon name="noto-ring" /></span></b
         >.
       </p>
       <p>

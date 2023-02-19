@@ -184,7 +184,8 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: "🧪️ Décrypte ton spermogramme",
+  title: "Décrypte ton spermogramme",
+  icon: "noto-test-tube",
   desc: "Décrypte et comprend les valeurs indiquées sur ton spermogramme.",
 });
 

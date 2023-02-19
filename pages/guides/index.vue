@@ -8,19 +8,19 @@
             <item-card
               title="L'ordonnance"
               description="C'est un guide sur l'ordonnance à demander ainsi que l'explication détaillée des différents spermogrammes nécessaires."
-              icon="📜️"
+              icon="noto-scroll"
               link="/guides/ordonnance"
             />
             <item-card
               title="Le spermogramme"
               description="Avec ce guide tu vas tout savoir sur le spermogramme."
-              icon="🧪️"
+              icon="noto-test-tube"
               link="/guides/spermogramme"
             />
             <item-card
               title="La contraception thermique"
               description="Tout connaître sur la contraception thermique."
-              icon="🌡️"
+              icon="noto-thermometer"
               inProgress="Rédaction en cours"
             />
           </div>
@@ -31,7 +31,8 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: "📚 Les guides",
+  title: "Les guides",
+  icon: "noto-books",
   desc: "Une collection de guides remplis d'informations utiles pour t'accompagner dans ta contraception.",
 });
 </script>

@@ -5,7 +5,8 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: "📔 Glossaire",
+  title: "Glossaire",
+  icon: "noto-notebook-with-decorative-cover",
   desc: "Retrouve la définition de tous les mots spécifiques à la contraception thermique.",
 });
 </script>

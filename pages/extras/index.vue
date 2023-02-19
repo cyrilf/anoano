@@ -6,8 +6,10 @@
           Des pages additionnelles pour trouver plus d'informations sur la
           contraception <ContentMasculine />.
           <ul class="mt-8">
-            <li v-for="other in others" :key="other.href">
-              <nuxt-link :href="other.href">{{ other.name }}</nuxt-link>
+            <li v-for="extra in extras" :key="extra.href">
+              <nuxt-link :href="extra.href"
+                ><icon :name="extra.icon" /> {{ extra.name }}</nuxt-link
+              >
             </li>
           </ul>
         </div>
@@ -17,13 +19,22 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: "🕵️ Extras",
+  title: "Extras",
+  icon: "noto-detective",
   desc: "Des pages additionnelles pour trouver plus d'informations sur la contraception masculine.",
 });
 
-const others = ref([
-  { name: "💁️ À propos", href: "/a-propos" },
-  { name: "📔 Glossaire", href: "/glossaire" },
-  { name: "🔎 Des ressources pour explorer", href: "/explorer" },
+const extras = ref([
+  { name: "À propos", icon: "noto-person-tipping-hand", href: "/a-propos" },
+  {
+    name: "Glossaire",
+    icon: "noto-notebook-with-decorative-cover",
+    href: "/glossaire",
+  },
+  {
+    name: "Des ressources pour explorer",
+    icon: "noto-magnifying-glass-tilted-right",
+    href: "/explorer",
+  },
 ]);
 </script>

@@ -9,14 +9,14 @@
               title="AnoTaille"
               description="Avec cet outil tu vas savoir comment mesurer ton pénis et
                     trouver la bonne taille pour ton anneau."
-              icon="📏"
+              icon="noto-straight-ruler"
               link="/outils/ano-taille"
             />
             <item-card
               title="Décrypte ton spermogramme"
               description="Avec cet outil tu vas pouvoir lire et comprendre ton
                   spermogramme."
-              icon="🧪️"
+              icon="noto-test-tube"
               link="/outils/decrypte-spermogramme"
             />
           </div>
@@ -27,7 +27,8 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: "🪛️ Les outils",
+  title: "Les outils",
+  icon: "noto-screwdriver",
   desc: "Une collection de différents outils pour t'accompagner dans ta contraception masculine.",
 });
 </script>

@@ -28,7 +28,8 @@
     </template>
     <div class="flex flex-wrap justify-around 2xl:justify-between">
       <Card
-        title="👤 Qui est concerné ?"
+        title="Qui est concerné ?"
+        icon="noto-bust-in-silhouette"
         link="/guides/spermogramme#qui"
         id="qui"
       >
@@ -46,13 +47,15 @@
         </p>
       </Card>
       <Card
-        title="🗓️ Je le fais quand ?"
+        title="Je le fais quand ?"
+        icon="noto-spiral-calendar"
         link="/guides/spermogramme#quand"
         id="quand"
       >
         Tout est bien décrit sur la page
         <NuxtLink to="/guides/ordonnance">ordonnance</NuxtLink>. Mais allez, je
-        te fais un petit résumé ici. C'est cadeau 🎁.<br />Tu en fais :
+        te fais un petit résumé ici. C'est cadeau
+        <icon name="noto-wrapped-gift" />.<br />Tu en fais :
         <ul class="mt-0">
           <li>
             <b>avant de commencer</b> la contraception pour t'assurer que tu es
@@ -73,7 +76,12 @@
           </li>
         </ul>
       </Card>
-      <Card title="📍 Je le fais où ?" link="/guides/spermogramme#où" id="où">
+      <Card
+        title="Je le fais où ?"
+        icon="noto-round-pushpin"
+        link="/guides/spermogramme#où"
+        id="où"
+      >
         Dans un <b>laboratoire d'analyses médicales</b>.
         <p>
           Attention toutefois, tous les laboratoires ne proposent pas cette
@@ -133,7 +141,8 @@
         </p>
       </Card>
       <Card
-        title="🤔 Comment ça se passe ?"
+        title="Comment ça se passe ?"
+        icon="noto-thinking-face"
         link="/guides/spermogramme#comment"
         id="comment"
       >
@@ -182,7 +191,8 @@
         </p>
       </Card>
       <Card
-        title="👓 Comment je lis mes résultats ?"
+        title="Comment je lis mes résultats ?"
+        icon="noto-glasses"
         link="/guides/spermogramme#decrypte"
         id="decrypte"
       >
@@ -198,7 +208,8 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: "🧪 Le spermogramme",
+  title: "Le spermogramme",
+  icon: "noto-test-tube",
   desc: "Ce guide te donne toutes les informations ce qu'est un spermogramme.",
 });
 </script>

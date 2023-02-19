@@ -176,7 +176,8 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: "📜️ L'ordonnance",
+  title: "L'ordonnance",
+  icon: "noto-scroll",
   desc: "Ce guide te donnes toutes les informations sur les spermogrammes que tu dois demander à ton.ta médecin.",
 });
 </script>

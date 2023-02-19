@@ -13,7 +13,14 @@
               : 'border-transparent hover:border-zinc-300 hover:text-zinc-600'
           }`"
         >
-          <icon :name="modelValue === tab.value ? '🟠️' : '⚪️'" class="mr-2" />
+          <icon
+            :name="
+              modelValue === tab.value
+                ? 'noto:orange-circle'
+                : 'noto:white-circle'
+            "
+            class="mr-2"
+          />
           {{ tab.name }}
         </button>
       </li>

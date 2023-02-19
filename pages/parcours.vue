@@ -8,7 +8,9 @@
             découvir le parcours complet d'une
             <b>personne voulant se contracepter</b
             ><span class="hand text-2xl text-zinc-600"
-              >(potentiellement, toi <span class="text-base">😉</span>)</span
+              >(potentiellement, toi
+              <span class="text-base"><icon name="noto-winking-face" /></span
+              >)</span
             >.
           </p>
           <p>
@@ -33,7 +35,7 @@
               active-class="_"
               exact-active-class="_"
             >
-              📚️ Étape 1 :
+              <icon name="noto-books" /> Étape 1 :
               <span class="text-zinc-400">Je me prépare</span>
             </nuxt-link>
           </h2>
@@ -52,7 +54,7 @@
               active-class="_"
               exact-active-class="_"
             >
-              👌️ Étape 2 :
+              <icon name="noto-ok-hand" /> Étape 2 :
               <span class="text-zinc-400">Je débute</span>
             </nuxt-link>
           </h2>
@@ -71,7 +73,7 @@
               active-class="_"
               exact-active-class="_"
             >
-              🔎️ Étape 3 :
+              <icon name="noto-magnifying-glass-tilted-right" /> Étape 3 :
               <span class="text-zinc-400">Je fais mon suivi</span>
             </nuxt-link>
           </h2>

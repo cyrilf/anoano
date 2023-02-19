@@ -33,7 +33,7 @@
             <p
               class="tracking-snug prose text-lg text-zinc-700 md:text-xl md:leading-normal"
             >
-              Bienvenue 👋
+              Bienvenue <icon name="noto-waving-hand" />
               <br />
               On te recommande de suivre le parcours qui résume les grandes
               étapes de la contraception. Tu peux aussi regarder les outils et
@@ -44,19 +44,19 @@
                 to="/parcours"
                 class="inline-flex items-center rounded border-0 bg-primary-400 py-2 px-6 text-lg text-zinc-700 hover:bg-primary-500"
               >
-                <icon name="⛳️" class="-ml-2 mr-3" /> Le parcours
+                <icon name="noto-flag-in-hole" class="-ml-2 mr-3" /> Le parcours
               </nuxt-link>
               <nuxt-link
                 to="/guides"
                 class="inline-flex items-center rounded border-0 bg-zinc-100 py-2 px-6 text-lg text-zinc-700 hover:bg-primary-200"
               >
-                <icon name="📚" class="-ml-2 mr-3" /> Les guides
+                <icon name="noto-books" class="-ml-2 mr-3" /> Les guides
               </nuxt-link>
               <nuxt-link
                 to="/outils"
                 class="inline-flex items-center rounded border-0 bg-zinc-100 py-2 px-6 text-lg text-zinc-700 hover:bg-primary-200"
               >
-                <icon name="🪛️" class="-ml-2 mr-3" /> Les outils
+                <icon name="noto-screwdriver" class="-ml-2 mr-3" /> Les outils
               </nuxt-link>
             </div>
           </div>
@@ -122,7 +122,7 @@
                     to="/parcours"
                     class="rounded border-2 border-primary-400 p-1 hover:bg-primary-400 hover:text-zinc-900"
                   >
-                    ⛳️ le parcours
+                    <icon name="noto-flag-in-hole" /> le parcours
                   </nuxt-link>
                 </span>
               </div>
@@ -150,13 +150,14 @@
               contraception masculine.
             </p>
             <p>
-              Alors si tu vois un bloc qui a ce style avec l'emoji chantier 🚧️,
-              c'est que le contenu n'est pas final.
+              Alors si tu vois un bloc qui a ce style avec l'emoji chantier
+              <icon name="noto-construction" />, c'est que le contenu n'est pas
+              final.
             </p>
             <p class="mb-4"></p>
             <p>
               Alors, un peu de patience, et bientôt tu pourras même contribuer à
-              ce projet ! 👌
+              ce projet ! <icon name="noto-ok-hand" />
             </p>
           </wip-section>
         </div>

@@ -11,7 +11,7 @@
 
   ----
 
-  La vocation du site est de partager du **contenu clair et détailé** ainsi que des **outils pratiques**. Tout en **libre**, tout en **open source** (_code, textes, etc._). 🥳
+  La vocation du site est de partager du **contenu clair et détailé** ainsi que des **outils pratiques**. Tout en **libre**, tout en **open source** (_code, textes, etc._). :icon{name='noto-partying-face'}
 
   **Tout le monde est le.la bienvenue pour participer !** Et surtout toi, oui, toi !
 
@@ -19,11 +19,11 @@
 
   ----
 
-  🙏 Un grand **GRAND** merci :
+  :icon{name='noto-folded-hands'} Un grand **GRAND** merci :
 
   - à Sam d'[Otoko](https://samflam.notion.site/samflam/Otoko-Contraception-autonome-93fd30b3034d465096fc939959ce01d8) pour l'inspiration de ce site, ses valeurs et ses ateliers.
   - à Maxime de [Thoreme](https://thoreme.com) pour avoir lancé quelque chose de grand avec l'Andro-switch.
   - aux pionier.re.s de la contraception masculine.
-  - à toi ! 👏
+  - à toi ! :icon{name='noto-waving-hand'}
 
 ::

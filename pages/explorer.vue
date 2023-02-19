@@ -32,7 +32,12 @@
     </template>
     <div class="flex flex-wrap items-start justify-around 2xl:justify-between">
       <div>
-        <Card title="📚 Les livres" link="/explorer#livres" id="livres">
+        <Card
+          title="Les livres"
+          icon="noto-books"
+          link="/explorer#livres"
+          id="livres"
+        >
           <ul>
             <li v-for="book in books" :key="book.name">
               <nuxt-link :href="book.link" target="_blank">{{
@@ -42,7 +47,12 @@
             </li>
           </ul>
         </Card>
-        <Card title="🎬 Les vidéos" link="/explorer#vidéos" id="vidéos">
+        <Card
+          title="Les vidéos"
+          icon="noto-clapper-board"
+          link="/explorer#vidéos"
+          id="vidéos"
+        >
           <ul>
             <li v-for="video in videos" :key="video.name">
               <nuxt-link :href="video.link" target="_blank">{{
@@ -52,7 +62,12 @@
             </li>
           </ul>
         </Card>
-        <Card title="🎤 Les podcasts" link="/explorer#podcasts" id="podcasts">
+        <Card
+          title="Les podcasts"
+          icon="noto-microphone"
+          link="/explorer#podcasts"
+          id="podcasts"
+        >
           <iframe
             style="border-radius: 12px"
             src="https://open.spotify.com/embed/playlist/6wo0xBl01NYXtJAUcs1hEy"
@@ -65,7 +80,8 @@
         </Card>
       </div>
       <Card
-        title="🧑‍🔬 Les ressources scientifiques"
+        title="Les ressources scientifiques"
+        icon="noto-scientist"
         link="/explorer#ressources-scientifiques"
         id="ressources-scientifiques"
       >
@@ -173,7 +189,8 @@
 import { Header } from "~/types/Model";
 
 definePageMeta({
-  title: "🔎 Des ressources pour explorer",
+  title: "Des ressources pour explorer",
+  icon: "noto-magnifying-glass-tilted-right",
   desc: "Ce guide référence l'ensemble des revues scientifiques disponible au sujet de la contraception thermique.",
 });
 

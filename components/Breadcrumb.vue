@@ -1,23 +1,29 @@
 <template>
   <div class="bg-zinc-100" v-if="!isHome">
     <ol
-      class="container mx-auto flex flex-wrap items-center justify-center gap-4 px-4 py-6 md:justify-start"
+      class="container mx-auto flex flex-wrap items-center justify-center px-4 py-6 md:justify-start"
     >
       <li
         v-for="(crumb, index) in crumbs"
         :key="crumb.path"
         :class="`${
           crumb.isCurrent ? 'text-3xl' : 'text-xl'
-        } font-bold tracking-tight text-zinc-900`"
+        } flex items-center font-bold tracking-tight text-zinc-900`"
       >
-        <h1 v-if="crumb.isCurrent">{{ crumb.title }}</h1>
+        <h1 v-if="crumb.isCurrent" class="flex items-center gap-4">
+          <icon v-if="crumb.icon" :name="crumb.icon" size="1.2em" />
+          {{ crumb.title }}
+        </h1>
         <nuxt-link
           v-if="!crumb.isCurrent"
           :to="crumb.path"
           active-class="_"
           exact-active-class="_"
         >
-          <span>{{ crumb.title }}</span>
+          <span class="flex items-center gap-2"
+            ><icon v-if="crumb.icon" :name="crumb.icon" size="1.2em" />
+            {{ crumb.title }}</span
+          >
         </nuxt-link>
         <icon
           name="fe:arrow-right"
@@ -32,6 +38,7 @@
 <script setup lang="ts">
 type Crumb = {
   title: string;
+  icon?: string;
   path: string;
   isCurrent: boolean;
 };
@@ -58,6 +65,7 @@ const crumbs = computed(() => {
     if (match) {
       results.push({
         title: (match.meta?.title as string) || pureSection.replace(/-/g, " "),
+        icon: match.meta?.icon as string,
         path: match.path,
         isCurrent: removeHash(route.fullPath) === match.path,
       });

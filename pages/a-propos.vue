@@ -5,7 +5,8 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: "💁️ À propos",
+  title: "À propos",
+  icon: "noto-person-tipping-hand",
   desc: "Ce site a été crée dans le but de partager des informations riches et variées sur la contraception masculine.",
 });
 </script>

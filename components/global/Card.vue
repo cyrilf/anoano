@@ -14,7 +14,7 @@
         class="z-10 mt-0 mb-0 bg-zinc-50 py-2 pt-4"
         :class="sticky ? 'xl:sticky xl:top-32 xl:text-center' : ''"
       >
-        {{ title }}
+        <icon :name="icon" v-if="icon" /> {{ title }}
         <span v-if="subtitle" class="hand text-xl text-zinc-600">{{
           subtitle
         }}</span>
@@ -29,6 +29,7 @@
 <script setup lang="ts">
 const props = defineProps<{
   title?: string;
+  icon?: string;
   link?: string;
   id?: string;
   subtitle?: string;
