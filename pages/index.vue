@@ -139,7 +139,9 @@
           class="mb-16 flex flex-col items-center px-16 text-center md:mb-0 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24"
         >
           <wip-section>
-            <p class="mb-8 text-2xl font-bold">Chantier en cours</p>
+            <p class="mb-8 text-2xl font-bold">
+              Chantier en cours Test <icon name="noto:scientist" />🧑‍🔬👨‍🔬
+            </p>
             <p>Ooh, c'est le tout, tout début.</p>
             <p>
               On commence seulement à créer les premières pages, les premiers
