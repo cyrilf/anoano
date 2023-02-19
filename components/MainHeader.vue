@@ -23,6 +23,9 @@
         <nuxt-link to="/outils" class="mr-5 hover:text-primary-500">
           Les outils
         </nuxt-link>
+        <nuxt-link to="/extras" class="mr-5 hover:text-primary-500">
+          Extras
+        </nuxt-link>
         <nuxt-link to="/a-propos" class="mr-5 hover:text-primary-500">
           À propos
         </nuxt-link>

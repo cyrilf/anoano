@@ -31,6 +31,28 @@
       >
     </template>
     <div class="flex flex-wrap justify-around 2xl:justify-between">
+      <div>
+        <Card title="📚 Les livres" link="/explorer#livres" id="livres">
+          <ul>
+            <li v-for="book in books" :key="book.name">
+              <nuxt-link :href="book.link" target="_blank">{{
+                book.name
+              }}</nuxt-link>
+              - {{ book.author }} - {{ book.editor }} - {{ book.year }}
+            </li>
+          </ul>
+        </Card>
+        <Card title="🎬 Les vidéos" link="/explorer#vidéos" id="vidéos">
+          <ul>
+            <li v-for="video in videos" :key="video.name">
+              <nuxt-link :href="video.link" target="_blank">{{
+                video.name
+              }}</nuxt-link>
+              - {{ video.author }} - {{ video.year }}
+            </li>
+          </ul>
+        </Card>
+      </div>
       <Card
         title="🧑‍🔬 Les ressources scientifiques"
         link="/explorer#ressources-scientifiques"
@@ -133,28 +155,6 @@
         qui recense plein de recherches concernant la contraception
         <ContentMasculine />. Par contre la majorité du contenu est en Anglais.
       </Card>
-      <div>
-        <Card title="📚 Les livres" link="/explorer#livres" id="livres">
-          <ul>
-            <li v-for="book in books" :key="book.name">
-              <nuxt-link :href="book.link" target="_blank">{{
-                book.name
-              }}</nuxt-link>
-              - {{ book.author }} - {{ book.editor }} - {{ book.year }}
-            </li>
-          </ul>
-        </Card>
-        <Card title="🎬 Les vidéos" link="/explorer#vidéos" id="vidéos">
-          <ul>
-            <li v-for="video in videos" :key="video.name">
-              <nuxt-link :href="video.link" target="_blank">{{
-                video.name
-              }}</nuxt-link>
-              - {{ video.author }} - {{ video.year }}
-            </li>
-          </ul>
-        </Card>
-      </div>
     </div>
   </PageSkeleton>
 </template>

@@ -89,7 +89,8 @@ const links = [
     ],
   },
   {
-    name: "Autres",
+    name: "Extras",
+    href: "/extras",
     links: [
       { name: "À propos", href: "/a-propos" },
       { name: "Glossaire", href: "/glossaire" },
