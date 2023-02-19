@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group prose my-4 mt-8 rounded bg-zinc-50 p-4 px-8 shadow transition-shadow hover:shadow-md hover:shadow-zinc-300 xl:min-w-[650px]"
+    class="group prose my-8 rounded bg-zinc-50 p-4 px-8 shadow transition-shadow hover:shadow-md hover:shadow-zinc-300 2xl:min-w-[650px]"
   >
     <nuxt-link
       :to="link"

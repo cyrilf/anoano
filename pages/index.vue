@@ -18,10 +18,10 @@
       >
         <div class="flex flex-col md:flex-row">
           <div
-            class="flex w-full flex-col items-center gap-7 text-center md:w-1/2 md:items-start md:gap-8 md:pr-8 md:text-left lg:w-2/3 lg:pr-20"
+            class="flex w-full flex-col items-center gap-7 text-center md:w-1/2 md:items-start md:gap-8 md:pr-8 md:text-left lg:w-2/3 lg:pr-36 2xl:pr-0"
           >
             <h1
-              class="bg-gradient-to-r from-primary-500 to-primary-400 bg-clip-text text-4xl font-medium text-transparent md:text-5xl lg:text-6xl"
+              class="bg-gradient-to-r from-primary-500 to-primary-400 bg-clip-text text-4xl font-medium text-transparent md:text-5xl 2xl:text-6xl"
             >
               Ta contraception
               <ContentMasculine />
@@ -31,7 +31,7 @@
               ici.
             </h1>
             <p
-              class="tracking-snug prose text-lg text-zinc-700 md:text-xl md:leading-normal"
+              class="tracking-snug prose bg-white/40 text-lg text-zinc-700 md:text-xl md:leading-normal"
             >
               Bienvenue <icon name="noto-waving-hand" />
               <br />
@@ -186,7 +186,7 @@ definePageMeta({
   border-color: #fbbf24 transparent transparent;
   border-radius: 100% 50% 0px 0px;
   position: absolute;
-  top: 90%;
+  top: 93%;
   left: -5%;
 }
 </style>
