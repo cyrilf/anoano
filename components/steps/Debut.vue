@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto mt-8 w-fit">
+  <StepsStep index="2" icon="noto-ok-hand" name="Je débute">
     <Card
       title="a. J'apprends à mettre l'anneau"
       subtitle="(et à l'enlever)"
@@ -227,5 +227,5 @@
         pour qu'elle.s puisse.nt faire des <b>choix éclairés et consentis</b>.
       </p>
     </Card>
-  </div>
+  </StepsStep>
 </template>

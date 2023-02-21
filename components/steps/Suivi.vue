@@ -1,5 +1,9 @@
 <template>
-  <div class="mx-auto mt-8 w-fit">
+  <StepsStep
+    index="3"
+    icon="noto-magnifying-glass-tilted-right"
+    name="Je fais mon suivi"
+  >
     <Card
       title="a. Spermogramme de contrôle à 3 mois"
       sticky
@@ -75,5 +79,5 @@
         (&lt;1M/mL).
       </div>
     </Card>
-  </div>
+  </StepsStep>
 </template>

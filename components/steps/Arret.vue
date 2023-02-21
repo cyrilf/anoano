@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto mt-8 w-fit">
+  <StepsStep index="4" icon="noto-stopwatch" name="Je décide d'arrêter">
     <Card
       title="a. J'enlève l'anneau"
       sticky
@@ -40,5 +40,5 @@
         t'assurer que tes spermatozoïdes sont de bonnes qualité.
       </p>
     </Card>
-  </div>
+  </StepsStep>
 </template>

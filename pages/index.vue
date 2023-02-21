@@ -111,7 +111,7 @@
               aussi facilement qu'un bracelet
               <span class="hand text-xl leading-normal text-zinc-600"
                 >(sauf que lui, tu ne le mets pas autour de ton bras)</span
-              >. On arrête la métaphore, tu as compris l'idée.
+              >.
             </p>
             <div>
               Prêt pour en apprendre plus ?

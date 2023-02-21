@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto mt-8 w-fit">
+  <StepsStep index="1" icon="noto-books" name="Je me prépare">
     <Card
       title="a. Je me renseigne"
       link="/parcours#renseigne"
@@ -159,5 +159,5 @@
         </div>
       </div>
     </Card>
-  </div>
+  </StepsStep>
 </template>
