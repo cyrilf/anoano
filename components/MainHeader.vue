@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-20">
+  <div class="mb-44 min-[438px]:mb-32 md:mb-20">
     <header
       :class="`header fixed z-30 w-full bg-white shadow ${headerClass} ${
         showHeader ? '' : 'header--hidden'

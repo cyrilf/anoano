@@ -14,7 +14,7 @@
         >
       </div>
       <div
-        class="container relative px-6 py-16 sm:mx-auto sm:py-8 md:py-28 md:pb-48"
+        class="container relative px-6 py-8 sm:mx-auto sm:py-8 md:py-28 md:pb-48"
       >
         <div class="flex flex-col md:flex-row">
           <div
@@ -25,7 +25,7 @@
             >
               Ta contraception
               <ContentMasculine />
-              <br class="hidden lg:inline-block" /><span class="underlined">
+              <br class="hidden lg:inline-block" /><span class="md:underlined">
                 commence</span
               >
               ici.
@@ -171,22 +171,3 @@ definePageMeta({
   desc: "Ta contraception masculine commence ici. Il y a des guides et des outils à ta disposition pour t'accompagner dans ton parcours contraceptif.",
 });
 </script>
-<style scoped>
-.underlined {
-  display: inline-block;
-  position: relative;
-  background: inherit;
-}
-
-.underlined::after {
-  content: "";
-  width: 110%;
-  height: 24px;
-  border-width: 3px;
-  border-color: #fbbf24 transparent transparent;
-  border-radius: 100% 50% 0px 0px;
-  position: absolute;
-  top: 93%;
-  left: -5%;
-}
-</style>
