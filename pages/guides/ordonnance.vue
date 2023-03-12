@@ -201,6 +201,6 @@
 definePageMeta({
   title: "L'ordonnance",
   icon: "noto-scroll",
-  desc: "Ce guide te donnes toutes les informations sur les spermogrammes que tu dois demander à ton.ta médecin.",
+  desc: "Ce guide te donnes toutes les informations sur l'ordonnance et les spermogrammes que tu dois demander à ton.ta médecin.",
 });
 </script>

@@ -73,6 +73,10 @@ const links = [
     name: "Les guides",
     href: "/guides",
     links: [
+      {
+        name: "La contraception thermique",
+        href: "/guides/contraception-thermique",
+      },
       { name: "L'ordonnance", href: "/guides/ordonnance" },
       { name: "Le spermogramme", href: "/guides/spermogramme" },
     ],

@@ -210,6 +210,6 @@
 definePageMeta({
   title: "Le spermogramme",
   icon: "noto-test-tube",
-  desc: "Ce guide te donne toutes les informations ce qu'est un spermogramme.",
+  desc: "Ce guide te donne toutes les informations sur ce qu'est un spermogramme.",
 });
 </script>
