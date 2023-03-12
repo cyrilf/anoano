@@ -27,10 +27,12 @@
         Alors tu peux lui présenter cette page à titre d'information.<br />
         Une ordonnance concerne une année à la fois.
       </p>
-      <p class="hidden">
-        TODO lien: Tu veux plus d'information sur comment se déroule un
-        spermogramme ? Alors cliques ici.
-      </p>
+      <Alert type="info" title="Le plus simple !">
+        L'ordonnance la plus simple que tu peux demander c'est :
+        <div class="hand text-xl">"12 spermogrammes. Renouvelable."</div>
+        Avec ça en poche, tu es libre de pouvoir agencer tes spermogrammes au
+        rythme qui te convient.
+      </Alert>
     </template>
     <div>
       <div
@@ -45,8 +47,13 @@
           </div>
         </div>
         <div class="flex flex-col gap-4">
-          <Toggle withGuide text="1 spermogramme initial."
-            ><div class="prose text-justify">
+          <Toggle withGuide>
+            <template #title>1 spermogramme initial.</template>
+            <div class="prose text-justify">
+              <p>
+                Tu peux l'effectuer <b>n'importe quand, avant</b> le début du
+                port de l'anneau !
+              </p>
               <p>
                 Il permet de contrôler que
                 <b>tout va bien au niveau de ta fertilité</b>. Ce sera aussi ton
@@ -70,7 +77,14 @@
               </p>
             </div>
           </Toggle>
-          <Toggle withGuide text="1 spermogramme de contrôle à 3 mois.">
+          <Toggle>
+            <template #title>
+              1 spermogramme de <b>contrôle</b> à
+              <Tooltip trigger="3 mois"
+                >Cette date commence à partir de ton premier jour de port
+                complet (15h+)</Tooltip
+              >.</template
+            >
             <div class="prose text-justify">
               <p>
                 Il permet de t'assurer que la méthode fonctionne bien pour toi.
@@ -87,10 +101,11 @@
               </p>
             </div>
           </Toggle>
-          <Toggle
-            withGuide
-            text="1 spermogramme de validation à 3 mois et 3 semaines."
-            ><div class="prose text-justify">
+          <Toggle withGuide>
+            <template #title>
+              1 spermogramme de <b>validation</b> à 3 mois et 3 semaines.
+            </template>
+            <div class="prose text-justify">
               <div>
                 Ce deuxième spermogramme de validation vient
                 <b>confirmer que tout se passe bien</b>. Tu es toujours sous la
@@ -106,10 +121,11 @@
               </div>
             </div>
           </Toggle>
-          <Toggle
-            withGuide
-            text="1 spermogramme renouvelable tous les mois pendant 6 mois."
-            ><div class="prose text-justify">
+          <Toggle withGuide>
+            <template #title>
+              1 spermogramme <b>renouvelable</b> tous les mois pendant 6 mois.
+            </template>
+            <div class="prose text-justify">
               Ces 6 spermogrammes te servent de <b>checkpoints</b>. Ils
               permettent de t'assurer que ta contraception
               <b>fonctionne bien dans la durée</b>, que la manière dont tu
@@ -170,6 +186,13 @@
             <b>un nouveau cycle</b>.
           </p>
         </div>
+      </div>
+      <div class="mt-16">
+        <Alert title="Au fait !" type="info">
+          Tu veux plus d'informations sur comment se déroule un spermogramme ?
+          Alors
+          <nuxt-link href="/guides/spermogramme">cliques ici</nuxt-link>.
+        </Alert>
       </div>
     </div>
   </PageSkeleton>
