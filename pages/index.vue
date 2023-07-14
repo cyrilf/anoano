@@ -30,21 +30,21 @@
             <div class="flex flex-wrap justify-center gap-4 md:justify-start">
               <nuxt-link
                 to="/parcours"
-                class="inline-flex items-center rounded border-0 bg-primary-400 px-6 py-2 text-lg text-zinc-700 hover:bg-primary-500"
+                class="inline-flex items-center rounded border-2 border-accent-400 px-6 py-2 text-lg text-zinc-700 hover:bg-accent-400 hover:text-white"
               >
-                <icon name="noto-flag-in-hole" class="-ml-2 mr-3" /> Le parcours
+                Le parcours
               </nuxt-link>
               <nuxt-link
                 to="/guides"
-                class="inline-flex items-center rounded border-0 bg-zinc-100 px-6 py-2 text-lg text-zinc-700 hover:bg-primary-200"
+                class="inline-flex items-center gap-4 rounded border-0 bg-zinc-100 px-6 py-2 text-lg text-zinc-700 transition hover:bg-primary-400"
               >
-                <icon name="noto-books" class="-ml-2 mr-3" /> Les guides
+                <icon name="noto-books" /> Les guides
               </nuxt-link>
               <nuxt-link
                 to="/outils"
-                class="inline-flex items-center rounded border-0 bg-zinc-100 px-6 py-2 text-lg text-zinc-700 hover:bg-primary-200"
+                class="inline-flex items-center gap-4 rounded border-0 bg-zinc-100 px-6 py-2 text-lg text-zinc-700 transition hover:bg-primary-400"
               >
-                <icon name="noto-screwdriver" class="-ml-2 mr-3" /> Les outils
+                <icon name="noto-screwdriver" /> Les outils
               </nuxt-link>
             </div>
           </div>
@@ -84,6 +84,17 @@
       <div
         class="container mx-auto flex flex-col items-center py-24 md:flex-row"
       >
+        <div>
+          <image-caption
+            src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWJzdHJhY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=470&q=80"
+            alt="personne travaillant sur un ordinateur"
+            :width="470"
+          >
+            Photo de
+            <a href="https://unsplash.com/@jipy32">Jean-Philippe Delberghe</a>
+            sur <a href="https://unsplash.com/photos/75xPHEQBmvA">Unsplash</a>
+          </image-caption>
+        </div>
         <div
           class="prose mb-16 flex max-w-none flex-col items-center px-16 text-center md:mb-0 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24"
         >
@@ -120,9 +131,9 @@
                 <span class="not-prose">
                   <nuxt-link
                     to="/parcours"
-                    class="rounded border-2 border-primary-400 p-1 hover:bg-primary-400 hover:text-zinc-900"
+                    class="font-semibold text-zinc-900 underline decoration-accent-400 decoration-2 transition hover:text-zinc-700 hover:decoration-accent-200"
                   >
-                    <icon name="noto-flag-in-hole" /> le parcours
+                    le parcours
                   </nuxt-link>
                 </span>
               </div>
@@ -146,22 +157,21 @@
           </h2>
           <div class="max-w-prose">
             <p>
-              L'idée ici est de partager du contenu <b>clair et détailé</b> sur
-              la contraception <ContentMasculine />. Il y a des <b>guides</b> et
-              des <b>outils pratiques</b> mis à disposition. Les textes et les
-              images sont <b>libres</b> de droits et le code de ce site est
-              <b>open source</b>.
+              L'idée ici est de partager du contenu clair et détailé sur la
+              contraception <ContentMasculine />. Il y a des guides et des
+              outils pratiques mis à disposition. Les textes et les images sont
+              libres de droits et le code de ce site est open source.
             </p>
             <p>
-              <b>Tout le monde est le.la bienvenue pour participer !</b> Et
-              surtout toi, oui, <b>toi</b> !
+              Tout le monde est le.la bienvenue pour participer ! Et surtout
+              toi, oui, toi !
             </p>
             <div>
               Pour celà, trois moyens de contribuer aujourd'hui :
               <ul class="flex list-none flex-col gap-4 text-lg">
                 <li class="flex flex-wrap sm:justify-normal sm:gap-2">
                   <a
-                    class="flex items-center gap-2"
+                    class="flex items-center gap-2 hover:text-primary-500"
                     href="https://github.com/cyrilf/anono"
                     ><icon name="fe-github" />github.com/cyrilf/anoano</a
                   >
@@ -171,7 +181,7 @@
                 </li>
                 <li class="flex flex-wrap sm:justify-normal sm:gap-2">
                   <a
-                    class="flex items-center gap-2"
+                    class="flex items-center gap-2 hover:text-primary-500"
                     href="mailto:hey@anoano.page"
                   >
                     <icon name="fe-mail" /> hey@anoano.page
@@ -181,7 +191,10 @@
                   </span>
                 </li>
                 <li class="flex flex-wrap text-left sm:justify-normal sm:gap-2">
-                  <a class="flex items-center gap-2" href="https://anoano.page">
+                  <a
+                    class="flex items-center gap-2 hover:text-primary-500"
+                    href="https://anoano.page"
+                  >
                     <icon name="fe-share" /> anoano.page
                   </a>
                   <span class="hand text-2xl text-zinc-500"
@@ -194,10 +207,14 @@
         </div>
         <div>
           <image-caption
-            src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=470&q=80"
             alt="personne travaillant sur un ordinateur"
             :width="470"
-          />
+          >
+            Photo de
+            <a href="https://unsplash.com/@christinhumephoto">Christin Hume</a>
+            sur <a href="https://unsplash.com/photos/Hcfwew744z4">Unsplash</a>
+          </image-caption>
         </div>
       </div>
     </section>

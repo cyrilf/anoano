@@ -35,20 +35,20 @@
             to="/parcours"
             active-class="_"
             exact-active-class="_"
-            class="inline-flex items-center rounded border-0 bg-primary-400 px-3 py-1 text-base hover:bg-primary-500"
+            class="inline-flex items-center gap-1 rounded border-2 border-accent-400 px-3 py-1 text-base transition hover:bg-accent-400 hover:text-white"
           >
-            Le parcours
             <svg
               fill="none"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              class="ml-1 h-4 w-4"
+              class="h-4 w-4"
               viewBox="0 0 24 24"
             >
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
+            Le parcours
           </nuxt-link>
         </nav>
       </div>
