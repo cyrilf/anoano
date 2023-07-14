@@ -52,7 +52,7 @@
       </div>
       <div
         class="clip-path group absolute inset-0 z-0 ml-auto hidden w-[400px] bg-cover bg-center bg-no-repeat md:block lg:w-[550px] xl:w-[650px]"
-        style="background-image: url(/anneaux.jpg)"
+        :style="`background-image: url(${image})`"
       >
         <span
           class="absolute bottom-0 right-0 bg-zinc-50 bg-opacity-70 px-2 text-sm text-zinc-600 opacity-0 transition-opacity group-hover:opacity-100"
@@ -66,7 +66,7 @@
         <image-caption
           class="mx-auto max-h-96 rounded-none object-cover object-center sm:rounded-lg"
           alt="anneaux contraceptif"
-          src="/anneaux.jpg"
+          :src="image"
           :width="650"
         >
           <span
@@ -169,5 +169,10 @@
 definePageMeta({
   title: "Contraception masculine",
   desc: "Ta contraception masculine commence ici. Il y a des guides et des outils à ta disposition pour t'accompagner dans ton parcours contraceptif.",
+});
+const image = ref("/anneaux.jpg");
+useSeoMeta({
+  ogImage: image,
+  twitterImage: image,
 });
 </script>

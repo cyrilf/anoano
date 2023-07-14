@@ -2,7 +2,7 @@
   <PageSkeleton>
     <template #image="{ imageClass }">
       <image-caption
-        src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=575&q=80"
+        :src="image"
         alt="Ordonnance papier"
         :width="575"
         :class="imageClass"
@@ -41,7 +41,7 @@
         <div class="mb-2 flex items-baseline gap-2">
           <h3 class="m-0">Année 1</h3>
           <div
-            class="rounded-md border border-zinc-300 bg-zinc-100 py-1 px-2 text-xs font-normal leading-none text-zinc-500 group-hover:border-primary-300 group-hover:bg-primary-100 group-hover:text-primary-600"
+            class="rounded-md border border-zinc-300 bg-zinc-100 px-2 py-1 text-xs font-normal leading-none text-zinc-500 group-hover:border-primary-300 group-hover:bg-primary-100 group-hover:text-primary-600"
           >
             10 spermogrammes
           </div>
@@ -148,7 +148,7 @@
         <div class="mb-2 flex items-baseline gap-2">
           <h3 class="mt-0">Année {{ index + 2 }}</h3>
           <div
-            class="rounded-md border border-zinc-300 bg-zinc-100 py-1 px-2 text-xs font-normal leading-none text-zinc-500 group-hover:border-primary-300 group-hover:bg-primary-100 group-hover:text-primary-600"
+            class="rounded-md border border-zinc-300 bg-zinc-100 px-2 py-1 text-xs font-normal leading-none text-zinc-500 group-hover:border-primary-300 group-hover:bg-primary-100 group-hover:text-primary-600"
           >
             4 spermogrammes
           </div>
@@ -170,7 +170,7 @@
         <div class="mb-2 flex items-baseline gap-2">
           <h3 class="mt-0">Année 5</h3>
           <div
-            class="rounded-md border border-zinc-300 bg-zinc-100 py-1 px-2 text-xs font-normal leading-none text-zinc-500 group-hover:border-primary-300 group-hover:bg-primary-100 group-hover:text-primary-600"
+            class="rounded-md border border-zinc-300 bg-zinc-100 px-2 py-1 text-xs font-normal leading-none text-zinc-500 group-hover:border-primary-300 group-hover:bg-primary-100 group-hover:text-primary-600"
           >
             0 spermogramme
           </div>
@@ -202,5 +202,12 @@ definePageMeta({
   title: "L'ordonnance",
   icon: "noto-scroll",
   desc: "Ce guide te donnes toutes les informations sur l'ordonnance et les spermogrammes que tu dois demander à ton.ta médecin.",
+});
+const image = ref(
+  "https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=575&q=80"
+);
+useSeoMeta({
+  ogImage: image,
+  twitterImage: image,
 });
 </script>

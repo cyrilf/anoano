@@ -2,7 +2,7 @@
   <PageSkeleton>
     <template #image="{ imageClass }">
       <image-caption
-        src="/explorer.jpg"
+        :src="image"
         alt="Documents"
         :width="640"
         :class="imageClass"
@@ -202,6 +202,11 @@ definePageMeta({
   title: "Des ressources pour explorer",
   icon: "noto-magnifying-glass-tilted-right",
   desc: "Ce guide référence l'ensemble des revues scientifiques disponible au sujet de la contraception thermique.",
+});
+const image = ref("/explorer.jpg");
+useSeoMeta({
+  ogImage: image,
+  twitterImage: image,
 });
 
 const headers = ref<Header[]>([

@@ -2,7 +2,7 @@
   <PageSkeleton>
     <template #image="{ imageClass }">
       <image-caption
-        src="/thermometer.jpg"
+        :src="image"
         alt="Thermomètre"
         :width="575"
         :class="imageClass"
@@ -286,5 +286,10 @@ definePageMeta({
   title: "La contraception thermique",
   icon: "noto-thermometer",
   desc: "Ce guide te donne toutes les informations sur la contraception thermique.",
+});
+const image = ref("/thermometer.jpg");
+useSeoMeta({
+  ogImage: image,
+  twitterImage: image,
 });
 </script>

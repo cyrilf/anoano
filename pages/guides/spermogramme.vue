@@ -2,7 +2,7 @@
   <PageSkeleton>
     <template #image="{ imageClass }">
       <image-caption
-        src="/sperm3d.jpg"
+        :src="image"
         alt="Spermatozoïdes en 3D"
         :width="575"
         :class="imageClass"
@@ -211,5 +211,10 @@ definePageMeta({
   title: "Le spermogramme",
   icon: "noto-test-tube",
   desc: "Ce guide te donne toutes les informations sur ce qu'est un spermogramme.",
+});
+const image = ref("/sperm3d.jpg");
+useSeoMeta({
+  ogImage: image,
+  twitterImage: image,
 });
 </script>

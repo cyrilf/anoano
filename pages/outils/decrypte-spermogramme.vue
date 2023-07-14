@@ -2,7 +2,7 @@
   <PageSkeleton>
     <template #image="{ imageClass }">
       <image-caption
-        src="https://img.freepik.com/photos-gratuite/jeune-femme-medecin-asiatique-uniforme-medical-blanc-aide-presse-papiers-livre-excellentes-nouvelles-pour-discuter-resultats_7861-3135.jpg?w=550"
+        :src="image"
         alt="Résultat médical"
         :width="550"
         :class="imageClass"
@@ -187,6 +187,13 @@ definePageMeta({
   title: "Décrypte ton spermogramme",
   icon: "noto-test-tube",
   desc: "Décrypte et comprend les valeurs indiquées sur ton spermogramme.",
+});
+const image = ref(
+  "https://img.freepik.com/photos-gratuite/jeune-femme-medecin-asiatique-uniforme-medical-blanc-aide-presse-papiers-livre-excellentes-nouvelles-pour-discuter-resultats_7861-3135.jpg?w=550"
+);
+useSeoMeta({
+  ogImage: image,
+  twitterImage: image,
 });
 
 const data = ref([
