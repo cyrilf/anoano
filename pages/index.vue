@@ -30,19 +30,19 @@
             <div class="flex flex-wrap justify-center gap-4 md:justify-start">
               <nuxt-link
                 to="/parcours"
-                class="inline-flex items-center rounded border-2 border-accent-400 px-6 py-2 text-lg text-zinc-700 hover:bg-accent-400 hover:text-white"
+                class="inline-flex items-center gap-2 rounded border-2 border-accent-400 px-4 py-2 text-lg text-zinc-700 hover:bg-accent-400 hover:text-white"
               >
-                Le parcours
+                <icon name="noto-clipboard" /> Le parcours
               </nuxt-link>
               <nuxt-link
                 to="/guides"
-                class="inline-flex items-center gap-4 rounded border-0 bg-zinc-100 px-6 py-2 text-lg text-zinc-700 transition hover:bg-primary-400"
+                class="inline-flex items-center gap-2 rounded border-0 bg-zinc-200 px-4 py-2 text-lg text-zinc-700 transition hover:bg-primary-400"
               >
                 <icon name="noto-books" /> Les guides
               </nuxt-link>
               <nuxt-link
                 to="/outils"
-                class="inline-flex items-center gap-4 rounded border-0 bg-zinc-100 px-6 py-2 text-lg text-zinc-700 transition hover:bg-primary-400"
+                class="inline-flex items-center gap-2 rounded border-0 bg-zinc-200 px-4 py-2 text-lg text-zinc-700 transition hover:bg-primary-400"
               >
                 <icon name="noto-screwdriver" /> Les outils
               </nuxt-link>
@@ -82,7 +82,7 @@
     </section>
     <section class="bg-zinc-100 text-zinc-600">
       <div
-        class="container mx-auto flex flex-col items-center py-24 md:flex-row"
+        class="container mx-auto flex flex-col-reverse items-center py-24 md:flex-row"
       >
         <div>
           <image-caption

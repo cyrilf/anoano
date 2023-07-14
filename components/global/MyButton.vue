@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     :to="to"
-    class="my-4 inline-flex rounded border-0 bg-primary-400 px-6 py-2 text-lg text-white no-underline hover:bg-primary-500"
+    class="my-2 inline-flex rounded border-2 border-accent-400 px-4 py-1 text-zinc-700 no-underline hover:bg-accent-400 hover:text-white"
   >
     <ContentSlot :use="$slots.default" unwrap="p" />
   </NuxtLink>

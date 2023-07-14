@@ -52,7 +52,7 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  title: "⛳️ Le parcours",
+  title: "📋 Le parcours",
   desc: "Tu découvres en 4 grandes étapes le parcours complet d'une personne qui souhaite se contracepter.",
 });
 </script>

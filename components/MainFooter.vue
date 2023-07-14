@@ -105,9 +105,9 @@ const links = [
     name: "Extras",
     href: "/extras",
     links: [
+      { name: "Des ressources pour explorer", href: "/explorer" },
       { name: "À propos", href: "/a-propos" },
       { name: "Glossaire", href: "/glossaire" },
-      { name: "Des ressources pour explorer", href: "/explorer" },
       {
         name: "Github",
         href: "https://github.com/cyrilf/anoano",
