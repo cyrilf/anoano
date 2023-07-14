@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-16">
+  <div class="mb-28 md:mb-16">
     <header :class="`fixed z-30 w-full bg-white shadow ${headerClass}`">
       <div
         class="container mx-auto flex flex-col flex-wrap items-center px-4 py-3 md:flex-row"
