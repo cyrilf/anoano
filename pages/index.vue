@@ -133,33 +133,71 @@
     </section>
     <section class="bg-white text-zinc-600">
       <div
-        class="container mx-auto flex flex-col items-center py-24 md:flex-row"
+        class="container mx-auto flex flex-col items-center justify-between py-24 md:flex-row"
       >
         <div
-          class="mb-16 flex flex-col items-center px-16 text-center md:mb-0 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24"
+          class="prose mb-16 flex max-w-none flex-col items-center px-16 text-center md:mb-0 md:items-start md:text-left"
         >
-          <wip-section>
-            <p class="mb-8 text-2xl font-bold">Chantier en cours</p>
-            <p>Ooh, c'est le tout, tout début.</p>
+          <h2 class="text-4xl">
+            Ce projet se veut libre et ouvert
+            <span class="hand text-2xl text-zinc-400"
+              >(alors viens contribuer ?)</span
+            >
+          </h2>
+          <div class="max-w-prose">
             <p>
-              On commence seulement à créer les premières pages, les premiers
-              outils.
+              L'idée ici est de partager du contenu <b>clair et détailé</b> sur
+              la contraception <ContentMasculine />. Il y a des <b>guides</b> et
+              des <b>outils pratiques</b> mis à disposition. Les textes et les
+              images sont <b>libres</b> de droits et le code de ce site est
+              <b>open source</b>.
             </p>
             <p>
-              Bientôt, ici tu retrouveras tout plein d'informations sur la
-              contraception masculine.
+              <b>Tout le monde est le.la bienvenue pour participer !</b> Et
+              surtout toi, oui, <b>toi</b> !
             </p>
-            <p>
-              Alors si tu vois un bloc qui a ce style avec l'emoji chantier
-              <icon name="noto-construction" />, c'est que le contenu n'est pas
-              final.
-            </p>
-            <p class="mb-4"></p>
-            <p>
-              Alors, un peu de patience, et bientôt tu pourras même contribuer à
-              ce projet ! <icon name="noto-ok-hand" />
-            </p>
-          </wip-section>
+            <div>
+              Pour celà, trois moyens de contribuer aujourd'hui :
+              <ul class="flex list-none flex-col gap-4 text-lg">
+                <li class="flex flex-wrap sm:justify-normal sm:gap-2">
+                  <a
+                    class="flex items-center gap-2"
+                    href="https://github.com/cyrilf/anono"
+                    ><icon name="fe-github" />github.com/cyrilf/anoano</a
+                  >
+                  <span class="hand text-2xl text-zinc-500"
+                    >pour le code et le contenu</span
+                  >
+                </li>
+                <li class="flex flex-wrap sm:justify-normal sm:gap-2">
+                  <a
+                    class="flex items-center gap-2"
+                    href="mailto:hey@anoano.page"
+                  >
+                    <icon name="fe-mail" /> hey@anoano.page
+                  </a>
+                  <span class="hand text-2xl text-zinc-500"
+                    >pour des idées ou remarques
+                  </span>
+                </li>
+                <li class="flex flex-wrap text-left sm:justify-normal sm:gap-2">
+                  <a class="flex items-center gap-2" href="https://anoano.page">
+                    <icon name="fe-share" /> anoano.page
+                  </a>
+                  <span class="hand text-2xl text-zinc-500"
+                    >à partager pour que le projet se fasse connaître</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <image-caption
+            src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            alt="personne travaillant sur un ordinateur"
+            :width="470"
+          />
         </div>
       </div>
     </section>
