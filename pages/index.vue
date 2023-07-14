@@ -2,18 +2,6 @@
   <div>
     <section class="relative">
       <div
-        class="clip-path absolute inset-0 z-0 ml-auto hidden w-[400px] bg-cover bg-center bg-no-repeat md:block lg:w-[550px] xl:w-[650px]"
-        style="background-image: url(/anneaux.jpg)"
-      >
-        <span
-          class="absolute right-0 bottom-0 bg-zinc-50 bg-opacity-70 px-2 text-sm text-zinc-600"
-          >Photo de Koeko en
-          <a href="https://creativecommons.org/licenses/by/4.0/deed.fr"
-            >CC BY 4.0</a
-          ></span
-        >
-      </div>
-      <div
         class="container relative px-6 py-8 sm:mx-auto sm:py-8 md:py-28 md:pb-48"
       >
         <div class="flex flex-col md:flex-row">
@@ -42,25 +30,37 @@
             <div class="flex flex-wrap justify-center gap-4 md:justify-start">
               <nuxt-link
                 to="/parcours"
-                class="inline-flex items-center rounded border-0 bg-primary-400 py-2 px-6 text-lg text-zinc-700 hover:bg-primary-500"
+                class="inline-flex items-center rounded border-0 bg-primary-400 px-6 py-2 text-lg text-zinc-700 hover:bg-primary-500"
               >
                 <icon name="noto-flag-in-hole" class="-ml-2 mr-3" /> Le parcours
               </nuxt-link>
               <nuxt-link
                 to="/guides"
-                class="inline-flex items-center rounded border-0 bg-zinc-100 py-2 px-6 text-lg text-zinc-700 hover:bg-primary-200"
+                class="inline-flex items-center rounded border-0 bg-zinc-100 px-6 py-2 text-lg text-zinc-700 hover:bg-primary-200"
               >
                 <icon name="noto-books" class="-ml-2 mr-3" /> Les guides
               </nuxt-link>
               <nuxt-link
                 to="/outils"
-                class="inline-flex items-center rounded border-0 bg-zinc-100 py-2 px-6 text-lg text-zinc-700 hover:bg-primary-200"
+                class="inline-flex items-center rounded border-0 bg-zinc-100 px-6 py-2 text-lg text-zinc-700 hover:bg-primary-200"
               >
                 <icon name="noto-screwdriver" class="-ml-2 mr-3" /> Les outils
               </nuxt-link>
             </div>
           </div>
         </div>
+      </div>
+      <div
+        class="clip-path group absolute inset-0 z-0 ml-auto hidden w-[400px] bg-cover bg-center bg-no-repeat md:block lg:w-[550px] xl:w-[650px]"
+        style="background-image: url(/anneaux.jpg)"
+      >
+        <span
+          class="absolute bottom-0 right-0 bg-zinc-50 bg-opacity-70 px-2 text-sm text-zinc-600 opacity-0 transition-opacity group-hover:opacity-100"
+          >Photo de Koeko en
+          <a href="https://creativecommons.org/licenses/by/4.0/deed.fr"
+            >CC BY 4.0</a
+          ></span
+        >
       </div>
       <div class="mx-auto w-fit md:hidden">
         <image-caption
