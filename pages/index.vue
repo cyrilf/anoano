@@ -62,9 +62,9 @@
           ></span
         >
       </div>
-      <div class="mx-auto w-fit md:hidden">
+      <div class="mx-auto w-fit sm:mb-8 md:hidden">
         <image-caption
-          class="mx-auto max-h-96 object-cover object-center sm:rounded-lg"
+          class="mx-auto max-h-96 rounded-none object-cover object-center sm:rounded-lg"
           alt="anneaux contraceptif"
           src="/anneaux.jpg"
           :width="650"
