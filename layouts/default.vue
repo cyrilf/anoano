@@ -14,6 +14,7 @@ const route = useRoute();
 watchEffect(() => {
   const title = (route.meta.title as string) || "Anoano";
   if (!route.meta.desc) {
+    // eslint-disable-next-line no-console
     console.warn(
       `${route.meta.title || route.fullPath} has no meta description defined`
     );

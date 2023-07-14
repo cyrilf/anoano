@@ -5,10 +5,10 @@
     name="Je fais mon suivi"
   >
     <Card
+      id="spermogramme-controle"
       title="a. Spermogramme de contrôle à 3 mois"
       sticky
       link="/parcours#spermogramme-controle"
-      id="spermogramme-controle"
     >
       <p>
         Ça y est, trois mois se sont écoulés. Tout s'est bien passé. Il est
@@ -45,10 +45,10 @@
       </p>
     </Card>
     <Card
+      id="spermogramme-validation"
       title="b. Spermogramme de validation à 3 mois et 3 semaines."
       sticky
       link="/parcours#spermogramme-validation"
-      id="spermogramme-validation"
     >
       <div>
         Ce deuxième spermogramme de validation vient
@@ -64,10 +64,10 @@
       </div>
     </Card>
     <Card
+      id="spermogrammes-reguliers"
       title="c. Spermogrammes réguliers"
       sticky
       link="/parcours#spermogrammes-reguliers"
-      id="spermogrammes-reguliers"
     >
       Ces spermogrammes te servent de <b>checkpoints</b>. Ils permettent de
       t'assurer que ta contraception <b>fonctionne bien dans la durée</b>, que

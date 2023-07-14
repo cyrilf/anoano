@@ -30,10 +30,10 @@
     <div>
       <div class="flex flex-wrap justify-around 2xl:justify-between">
         <Card
+          id="chaleur"
           title="La chaleur"
           icon="noto-fire"
           link="/guides/spermogramme#chaleur"
-          id="chaleur"
         >
           Notre corps est à une température moyenne de 37.5°.
           <p>
@@ -82,10 +82,10 @@
           </p>
         </Card>
         <Card
+          id="technique"
           title="La technique"
           icon="noto-wrench"
           link="/guides/spermogramme#technique"
-          id="technique"
         >
           L'idée est donc de remonter les testicules.
           <p>
@@ -116,10 +116,10 @@
           </p>
         </Card>
         <Card
+          id="fiable"
           title="C'est fiable ?"
           icon="noto-check-mark-button"
           link="/guides/spermogramme#fiable"
-          id="fiable"
         >
           <div>
             Oui, cette méthode est efficace. Après, il est important de
@@ -177,10 +177,10 @@
           </div>
         </Card>
         <Card
+          id="outils"
           title="Les outils"
           icon="noto-briefs"
           link="/guides/spermogramme#outils"
-          id="outils"
         >
           Alors dans les options disponibles on retrouve :
           <ul>
@@ -214,10 +214,10 @@
           atteindre la certification européenne pour l'anneau (Andro-switch).
         </Card>
         <Card
+          id="contre-indication"
           title="Contre-indications ou effets secondaires"
           icon="noto-cross-mark"
           link="/guides/spermogramme#contre-indication"
-          id="contre-indication"
         >
           Les <b>contre-indications</b> à la remontée testiculaire sont :
           <ul>

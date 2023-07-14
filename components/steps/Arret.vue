@@ -1,10 +1,10 @@
 <template>
   <StepsStep index="4" icon="noto-stopwatch" name="Je décide d'arrêter">
     <Card
+      id="enleve"
       title="a. J'enlève l'anneau"
       sticky
       link="/parcours#enleve"
-      id="enleve"
     >
       <p>
         Il n'est <b>pas recommandé</b> d'utiliser la méthode thermique

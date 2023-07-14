@@ -39,8 +39,8 @@
       <div class="prose my-4 max-w-none rounded bg-zinc-50 p-4 px-8 shadow">
         <h2 class="not-prose">
           <nuxt-link
-            to="/outils/ano-taille#etape-1"
             id="etape-1"
+            to="/outils/ano-taille#etape-1"
             active-class="_"
             exact-active-class="_"
             class="scroll-mt-24"
@@ -67,8 +67,8 @@
       <div class="prose my-4 max-w-none rounded bg-zinc-50 p-4 px-8 shadow">
         <h2 class="not-prose mt-8">
           <nuxt-link
-            to="/outils/ano-taille#etape-2"
             id="etape-2"
+            to="/outils/ano-taille#etape-2"
             active-class="_"
             exact-active-class="_"
             class="scroll-mt-24"
@@ -87,7 +87,7 @@
             </Tooltip>
           </nuxt-link>
         </h2>
-        <Tabs :tabs="tabs" v-model="provider" class="not-prose">
+        <Tabs v-model="provider" :tabs="tabs" class="not-prose">
           <ToolsAnoTailleDIY v-if="provider === 'diy'" />
           <ToolsAnoTailleAndro v-if="provider === 'andro'" @change="onChange" />
         </Tabs>
@@ -95,8 +95,8 @@
       <div class="prose my-4 max-w-none rounded bg-zinc-50 p-4 px-8 shadow">
         <h2 class="not-prose mt-8">
           <nuxt-link
-            to="/outils/ano-taille#etape-3"
             id="etape-3"
+            to="/outils/ano-taille#etape-3"
             active-class="_"
             exact-active-class="_"
             class="scroll-mt-24"
@@ -141,7 +141,7 @@
               pour atteindre la certification européenne.
             </p>
           </Alert>
-          <Tabs :tabs="tabs" v-model="provider" class="not-prose">
+          <Tabs v-model="provider" :tabs="tabs" class="not-prose">
             <div v-if="provider === 'diy'" class="prose max-w-none">
               <div>
                 Tu peux

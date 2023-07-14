@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="flex flex-col gap-4">
-          <Toggle withGuide>
+          <Toggle with-guide>
             <template #title>1 spermogramme initial.</template>
             <div class="prose text-justify">
               <p>
@@ -101,7 +101,7 @@
               </p>
             </div>
           </Toggle>
-          <Toggle withGuide>
+          <Toggle with-guide>
             <template #title>
               1 spermogramme de <b>validation</b> à 3 mois et 3 semaines.
             </template>
@@ -121,7 +121,7 @@
               </div>
             </div>
           </Toggle>
-          <Toggle withGuide>
+          <Toggle with-guide>
             <template #title>
               1 spermogramme <b>renouvelable</b> tous les mois pendant 6 mois.
             </template>
@@ -141,9 +141,9 @@
         </div>
       </div>
       <div
-        class="group prose my-4 max-w-none rounded bg-zinc-50 p-4 px-8 shadow xl:max-w-prose"
         v-for="(_, index) in Array(3).fill('')"
         :key="index"
+        class="group prose my-4 max-w-none rounded bg-zinc-50 p-4 px-8 shadow xl:max-w-prose"
       >
         <div class="mb-2 flex items-baseline gap-2">
           <h3 class="mt-0">Année {{ index + 2 }}</h3>
@@ -154,7 +154,7 @@
           </div>
         </div>
         <div class="flex flex-col gap-4">
-          <Toggle withGuide text="1 spermogramme renouvelable tous les 3 mois."
+          <Toggle with-guide text="1 spermogramme renouvelable tous les 3 mois."
             ><div class="prose text-justify">
               <div>
                 La contraception fonctionne bien, les tests sont plus espacés.

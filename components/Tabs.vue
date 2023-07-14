@@ -4,14 +4,14 @@
     :class="$attrs.class"
   >
     <ul class="-mb-px flex flex-wrap">
-      <li class="mr-2" v-for="tab in tabs" :key="tab.value">
+      <li v-for="tab in tabs" :key="tab.value" class="mr-2">
         <button
-          @click="emit('update:modelValue', tab.value)"
           :class="`inline-flex items-center rounded-t-lg border-b-2 p-4 ${
             modelValue === tab.value
               ? 'border-primary-500 text-primary-500 hover:border-primary-500 hover:text-primary-500'
               : 'border-transparent hover:border-zinc-300 hover:text-zinc-600'
           }`"
+          @click="emit('update:modelValue', tab.value)"
         >
           <icon
             :name="

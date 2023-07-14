@@ -33,10 +33,10 @@
     <div class="flex flex-wrap items-start justify-around 2xl:justify-between">
       <div>
         <Card
+          id="livres"
           title="Les livres"
           icon="noto-books"
           link="/explorer#livres"
-          id="livres"
         >
           <ul>
             <li v-for="book in books" :key="book.name">
@@ -48,10 +48,10 @@
           </ul>
         </Card>
         <Card
+          id="vidéos"
           title="Les vidéos"
           icon="noto-clapper-board"
           link="/explorer#vidéos"
-          id="vidéos"
         >
           <ul>
             <li v-for="video in videos" :key="video.name">
@@ -63,10 +63,10 @@
           </ul>
         </Card>
         <Card
+          id="podcasts"
           title="Les podcasts"
           icon="noto-microphone"
           link="/explorer#podcasts"
-          id="podcasts"
         >
           <iframe
             style="border-radius: 12px"
@@ -90,10 +90,10 @@
         </Card>
       </div>
       <Card
+        id="ressources-scientifiques"
         title="Les ressources scientifiques"
         icon="noto-scientist"
         link="/explorer#ressources-scientifiques"
-        id="ressources-scientifiques"
       >
         <Alert type="danger" title="Besoin d'aide pour le contenu"
           >Loin d'être expert.e.s sur la partie "études scientifiques", une aide
@@ -160,7 +160,7 @@
                 :items="resources"
                 class="min-w-full leading-normal"
               >
-                <template #item-name="{ item, header, outerClass, innerClass }">
+                <template #item-name="{ item, outerClass }">
                   <td :class="outerClass">
                     <nuxt-link :href="item.link" target="_blank">{{
                       item.name

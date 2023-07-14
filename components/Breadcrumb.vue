@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-zinc-100" v-if="!isHome">
+  <div v-if="!isHome" class="bg-zinc-100">
     <ol
       class="container mx-auto flex flex-wrap items-center justify-center px-4 py-6 md:justify-start"
     >
@@ -26,8 +26,8 @@
           >
         </nuxt-link>
         <icon
-          name="fe:arrow-right"
           v-if="index !== crumbs.length - 1"
+          name="fe:arrow-right"
           class="mx-2 text-zinc-400"
         />
       </li>

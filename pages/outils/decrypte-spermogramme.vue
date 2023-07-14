@@ -87,9 +87,9 @@
                 <div class="flex items-center space-x-6">
                   <div class="group/radio flex items-center">
                     <input
-                      type="radio"
                       :id="`radio-${d.name}-yes`"
                       v-model="d.check"
+                      type="radio"
                       :value="true"
                       class="h-5 w-5 cursor-pointer group-hover/radio:border-zinc-300"
                     />
@@ -102,9 +102,9 @@
                   </div>
                   <div class="group/radio flex cursor-pointer items-center">
                     <input
-                      type="radio"
                       :id="`radio-${d.name}-no`"
                       v-model="d.check"
+                      type="radio"
                       :value="false"
                       class="h-5 w-5 cursor-pointer group-hover/radio:border-zinc-300"
                     />
@@ -135,8 +135,8 @@
             <tr>
               <td colspan="3" class="text-center">
                 <button
-                  @click="showExtra = !showExtra"
                   class="w-full border p-2 transition-colors hover:bg-primary-200"
+                  @click="showExtra = !showExtra"
                 >
                   {{
                     showExtra

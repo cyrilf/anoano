@@ -1,10 +1,10 @@
 <template>
   <StepsStep index="2" icon="noto-ok-hand" name="Je débute">
     <Card
+      id="anneau"
       title="a. J'apprends à mettre l'anneau"
       subtitle="(et à l'enlever)"
       link="/parcours#anneau"
-      id="anneau"
       sticky
     >
       <p>
@@ -108,10 +108,10 @@
       </p>
     </Card>
     <Card
+      id="adapte"
       title="b. Je porte un anneau adapté"
       sticky
       link="/parcours#adapte"
-      id="adapte"
     >
       <div>
         Il se peut que l'anneau soit :
@@ -141,10 +141,10 @@
       </p>
     </Card>
     <Card
+      id="15heures"
       title="c. Je porte l'anneau 15h / jour"
       sticky
       link="/parcours#15heures"
-      id="15heures"
     >
       <p>
         Pour que la méthode de contraception thermique soit efficace, il faut
@@ -193,10 +193,10 @@
       </p>
     </Card>
     <Card
+      id="responsabilise"
       title="d. Je me responsabilise"
       subtitle="(et je fais attention)"
       link="/parcours#responsabilise"
-      id="responsabilise"
       sticky
     >
       <p>

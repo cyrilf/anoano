@@ -18,12 +18,12 @@
           </nuxt-link>
         </h2>
         <nuxt-link
+          v-for="sub in step.subs"
+          :key="sub.link"
           :to="`/parcours#${sub.link}`"
           class="block font-normal text-zinc-400 no-underline hover:underline"
           active-class="_"
           exact-active-class="_"
-          v-for="sub in step.subs"
-          :key="sub.link"
         >
           {{ sub.name }}
         </nuxt-link>

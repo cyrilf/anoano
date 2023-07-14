@@ -1,18 +1,16 @@
 ![](public/favicon.ico)
+
 # Anoano
 
-> Ta contraception masculine commence ici. ✨  
+> Ta contraception masculine commence ici. ✨
 
-
-Tu peux consulter le site sur [anoano.page](https://anoano.page)  
+Tu peux consulter le site sur [anoano.page](https://anoano.page)
 
 **Si tu veux contribuer, soit le.la bienvenue : 🙌**
 
 Tu peux [ouvrir une issue](https://github.com/cyrilf/anoano/issues/new) ou simplement envoyer un mail à [hey@anoano.page](mailto:hey@anoano.page).
 
-
-
-----
+---
 
 ### Nuxt 3 Minimal Starter
 

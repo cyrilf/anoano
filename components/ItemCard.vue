@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mt-20 w-96 rounded-lg bg-white py-4 px-8 shadow-lg"
+    class="mt-20 w-96 rounded-lg bg-white px-8 py-4 shadow-lg"
     :class="
       inProgress
         ? 'cursor-not-allowed'
@@ -53,7 +53,7 @@ const props = defineProps<{
   inProgress?: boolean | string;
 }>();
 
-let actionName = ref("Ouvrir");
+const actionName = ref("Ouvrir");
 if (props.inProgress) {
   actionName.value =
     typeof props.inProgress === "boolean"

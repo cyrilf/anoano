@@ -5,9 +5,9 @@
     >
       <div class="flex flex-wrap gap-12 lg:gap-24">
         <div
-          class="w-48 flex-initial text-sm font-semibold"
           v-for="linkGroup in links"
           :key="linkGroup.name"
+          class="w-48 flex-initial text-sm font-semibold"
         >
           <NuxtLink
             v-if="linkGroup.href === '/'"
@@ -35,7 +35,7 @@
             {{ linkGroup.name }}
           </NuxtLink>
           <ul class="font-normal text-zinc-400 dark:text-zinc-400">
-            <li class="pb-3" v-for="link in linkGroup.links" :key="link.name">
+            <li v-for="link in linkGroup.links" :key="link.name" class="pb-3">
               <NuxtLink
                 :to="link.href"
                 class="whitespace-nowrap transition hover:text-zinc-200 dark:hover:text-white"

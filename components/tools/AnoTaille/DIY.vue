@@ -4,13 +4,13 @@
       <label class="relative leading-10 md:leading-normal">
         <icon
           name="fe:quote-left"
-          class="absolute -top-2 -left-6 text-xl text-zinc-300"
+          class="absolute -left-6 -top-2 text-xl text-zinc-300"
         />
         Mon pénis mesure
         <input
-          type="number"
-          class="w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent py-1 px-2 text-center text-2xl font-bold focus:border-primary-300 focus:outline-none focus:ring-0"
           v-model="erect"
+          type="number"
+          class="w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent px-2 py-1 text-center text-2xl font-bold focus:border-primary-300 focus:outline-none focus:ring-0"
           step="0.1"
           min="3.2"
           max="4.8"
@@ -33,7 +33,7 @@
       </div>
       <Toggle
         text="Voir toutes les tailles"
-        textOpen="Cacher toutes les tailles"
+        text-open="Cacher toutes les tailles"
         class="mt-4 text-zinc-400 hover:text-zinc-500"
       >
         <div class="rouded w-fit">
@@ -69,8 +69,6 @@ const headers = ref<Header[]>([
   { name: "Diamètre de la verge en érection (en cm)", key: "size" },
   { name: "Référence de taille (en mm)", key: "measure" },
 ]);
-const allSizesOpen = ref(false);
-const toggleOpenAllSizes = () => (allSizesOpen.value = !allSizesOpen.value);
 
 const BASE_SIZE = 32;
 const models = ref<DiyModel[]>(

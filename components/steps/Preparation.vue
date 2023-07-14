@@ -1,9 +1,9 @@
 <template>
   <StepsStep index="1" icon="noto-books" name="Je me prépare">
     <Card
+      id="renseigne"
       title="a. Je me renseigne"
       link="/parcours#renseigne"
-      id="renseigne"
       sticky
     >
       <p>
@@ -50,10 +50,10 @@
       </Alert>
     </Card>
     <Card
+      id="accompagner"
       title="b. Je me fais accompagner"
       sticky
       link="/parcours#accompagner"
-      id="accompagner"
     >
       <p>
         La contraception est un sujet sérieux. Il est donc important pour toi de
@@ -96,10 +96,10 @@
       </div>
     </Card>
     <Card
+      id="spermogramme"
       title="c. Je fais mon premier spermogramme"
       sticky
       link="/parcours#spermogramme"
-      id="spermogramme"
     >
       <p>Il permet de <b>contrôler si tu es fertile</b> ou non.</p>
       <Alert title="⚠️ Attention" type="accent">
@@ -136,10 +136,10 @@
       </div>
     </Card>
     <Card
+      id="outil"
       title="d. Je choisis mon outil de contraception"
       sticky
       link="/parcours#outil"
-      id="outil"
     >
       <p>
         Ça y est, le moment de s'équiper est arrivé. Il y a

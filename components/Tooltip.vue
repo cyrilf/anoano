@@ -2,10 +2,10 @@
   <span class="group/tooltip inline-flex flex-col items-center">
     <slot
       name="trigger"
-      :defaultTriggerClass="defaultTriggerClass"
-      :accentClass="accentClass"
+      :default-trigger-class="defaultTriggerClass"
+      :accent-class="accentClass"
       ><span>
-        <span :class="defaultTriggerClass" v-if="trigger">{{ trigger }}</span>
+        <span v-if="trigger" :class="defaultTriggerClass">{{ trigger }}</span>
         <span :class="accentClass">*</span>
       </span>
     </slot>

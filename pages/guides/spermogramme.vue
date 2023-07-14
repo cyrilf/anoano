@@ -28,10 +28,10 @@
     </template>
     <div class="flex flex-wrap justify-around 2xl:justify-between">
       <Card
+        id="qui"
         title="Qui est concerné ?"
         icon="noto-bust-in-silhouette"
         link="/guides/spermogramme#qui"
-        id="qui"
       >
         Cet examen est le plus généralement fait dans le cardre d'un bilan
         d'infertilité pour un couple hétérosexuel.
@@ -47,10 +47,10 @@
         </p>
       </Card>
       <Card
+        id="quand"
         title="Je le fais quand ?"
         icon="noto-spiral-calendar"
         link="/guides/spermogramme#quand"
-        id="quand"
       >
         Tout est bien décrit sur la page
         <NuxtLink to="/guides/ordonnance">ordonnance</NuxtLink>. Mais allez, je
@@ -77,10 +77,10 @@
         </ul>
       </Card>
       <Card
+        id="où"
         title="Je le fais où ?"
         icon="noto-round-pushpin"
         link="/guides/spermogramme#où"
-        id="où"
       >
         Dans un <b>laboratoire d'analyses médicales</b>.
         <p>
@@ -104,9 +104,9 @@
         </p>
       </Card>
       <Card
+        id="quoi"
         title="🪧 J'ai besoin de quoi ?"
         link="/guides/spermogramme#quoi"
-        id="quoi"
       >
         <b>Une ordonnance</b>. Ça tombe bien, il y a une
         <NuxtLink to="/guides/ordonnance">page dédiée</NuxtLink> qui t'explique
@@ -121,9 +121,9 @@
         </p>
       </Card>
       <Card
+        id="conditions"
         title="✅ Quelles sont les conditions ?"
         link="/guides/spermogramme#conditions"
-        id="conditions"
       >
         <p>
           Tu dois respecter une <b>période d'abstinence sexuelle</b> comprise
@@ -141,10 +141,10 @@
         </p>
       </Card>
       <Card
+        id="comment"
         title="Comment ça se passe ?"
         icon="noto-thinking-face"
         link="/guides/spermogramme#comment"
-        id="comment"
       >
         <p>
           Chaque laboratoire est différent mais généralement ça se passe comme
@@ -191,10 +191,10 @@
         </p>
       </Card>
       <Card
+        id="decrypte"
         title="Comment je lis mes résultats ?"
         icon="noto-glasses"
         link="/guides/spermogramme#decrypte"
-        id="decrypte"
       >
         Tu peux <b>demander conseil à ta.ton médecin</b> ou la personne qui te
         suis. Sinon, tu peux aussi utiliser l'outil
