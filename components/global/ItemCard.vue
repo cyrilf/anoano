@@ -18,7 +18,7 @@
               : 'border-primary-400 bg-primary-100'
           }`"
         >
-          <icon :name="icon" size="2.5em" />
+          <Icon :name="icon" size="2.5em" />
         </div>
       </div>
       <div class="flex-grow">

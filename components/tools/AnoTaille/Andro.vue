@@ -2,7 +2,7 @@
   <div>
     <div>
       <label class="relative leading-10 md:leading-normal">
-        <icon
+        <Icon
           name="fe:quote-left"
           class="absolute -left-6 -top-2 text-xl text-zinc-300"
         />
@@ -33,7 +33,7 @@
           aria-label="Au repos"
           @change="onChangeFlacid"
         />
-        cm de large au repos.<icon
+        cm de large au repos.<Icon
           name="fe:quote-right"
           class="-mt-4 text-xl text-zinc-300"
         />
@@ -88,10 +88,10 @@
 
 <script lang="ts" setup>
 import { ref, computed } from "vue";
-import { Model, Header, SelectedModel } from "~/types/Model";
+import type { Model, Header, SelectedModel } from "~/types/Model";
 
 const emit = defineEmits<{
-  (event: "change", payload: SelectedModel): void;
+  change: [payload: SelectedModel];
 }>();
 
 const headers = ref<Header[]>([

@@ -6,7 +6,7 @@
       >
         <div class="flex gap-8">
           <button class="w-4 md:hidden" @click.prevent="toggleMenu()">
-            <icon name="fe:bar" class="text-xl" />
+            <Icon name="fe:bar" class="text-xl" />
           </button>
           <nuxt-link
             to="/"

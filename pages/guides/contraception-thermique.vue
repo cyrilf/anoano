@@ -55,9 +55,9 @@
             devient possible d'atteindre le seuil contraceptif défini par l'OMS
             à savoir mois d'1 million de spermatozoïdes par millilitre de
             sperme. Pour vérifier ses chiffres il faudra faire
-            <nuxt-link href="guides/ordonnance">une ordonnance</nuxt-link> et
+            <nuxt-link to="/guides/ordonnance">une ordonnance</nuxt-link> et
             effectuer
-            <nuxt-link href="guides/spermogramme">un spermogramme</nuxt-link>.
+            <nuxt-link to="/guides/spermogramme">un spermogramme</nuxt-link>.
             L'analyse des résultats te permettra d'ajuster la durée du port à
             comment fonctionne ton corps.
           </p>
@@ -101,7 +101,7 @@
           </p>
           <p>
             Pour apprendre à le mettre tu peux te réferrer à la section
-            <nuxt-link href="/parcours#anneau"
+            <nuxt-link to="/parcours#anneau"
               >"J'apprends à mettre l'anneau"</nuxt-link
             >
             dans le parcours.
@@ -128,11 +128,11 @@
             déférent s'étaient ressoudés longtemps après l'opération).
             <p>
               L'unique source de vérité pour contrôler l'efficacité reste
-              <nuxt-link href="/guides/spermogramme">le spermogramme</nuxt-link
-              >. Il faut que ce dernier indique une concentration de
-              spermatozoïdes inférieure à 1 million par millilitre de sperme. Si
-              c'est le cas alors la contraception est efficace et la personne
-              est considérée comme contracepté.e.
+              <nuxt-link to="/guides/spermogramme">le spermogramme</nuxt-link>.
+              Il faut que ce dernier indique une concentration de spermatozoïdes
+              inférieure à 1 million par millilitre de sperme. Si c'est le cas
+              alors la contraception est efficace et la personne est considérée
+              comme contracepté.e.
             </p>
             <p>
               L'outil qui permet de mesurer l'efficacité d'une méthode
@@ -164,13 +164,13 @@
             <p>
               Les
               <nuxt-link
-                href="https://link.springer.com/content/pdf/10.1007/s12610-012-0192-1.pdf"
+                to="https://link.springer.com/content/pdf/10.1007/s12610-012-0192-1.pdf"
                 target="_blank"
                 >études du Dr Mieusset</nuxt-link
               >
               restent la référence dans le domaine. Si tu veux plus
               d'informations sur les recherches scientifiques alors tu peux lire
-              <nuxt-link href="explorer#ressources-scientifiques"
+              <nuxt-link to="/explorer#ressources-scientifiques"
                 >notre page "Des ressources pour explorer"</nuxt-link
               >
             </p>
@@ -186,7 +186,7 @@
           <ul>
             <li>
               L'<b>anneau</b>. On commence par lui car c'est quand même la star
-              <icon name="noto-glowing-star" /> de ce site. Un simple anneau en
+              <Icon name="noto-glowing-star" /> de ce site. Un simple anneau en
               silicone bio-compatible qui se place à la base de ton pénis. Il
               existe différentes versions que tu peux trouver en ligne ou tu
               peux en fabriquer un lors d'ateliers.

@@ -116,7 +116,7 @@
             >. Les essais cliniques ont permis de démontrer l'efficacité et la
             reversibilité de la cryptorchidie artificielle.
             <p class="mt-0">
-              <icon name="fe:document" />
+              <Icon name="fe:document" />
               <nuxt-link
                 href="https://link.springer.com/content/pdf/10.1007/s12610-012-0192-1.pdf"
                 >Guide pratique d'une contraception masculine hormonale ou
@@ -134,7 +134,7 @@
             1950. Elle a pu mettre en évidence que l'exposition des testicules à
             des bains chauds altérait la fertilité.
             <p class="mt-0">
-              <icon name="fe:document" />
+              <Icon name="fe:document" />
               <nuxt-link
                 href="https://findingaids.smith.edu/repositories/2/archival_objects/69812"
                 target="_blank"
@@ -196,7 +196,7 @@
   </PageSkeleton>
 </template>
 <script setup lang="ts">
-import { Header } from "~/types/Model";
+import type { Header } from "~/types/Model";
 
 definePageMeta({
   title: "Des ressources pour explorer",

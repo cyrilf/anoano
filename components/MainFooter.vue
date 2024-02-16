@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-zinc-700 px-8 pt-6 dark:bg-zinc-800 md:py-12">
+  <footer class="bg-zinc-700 px-8 pt-6 md:py-12 dark:bg-zinc-800">
     <div
       class="container mx-auto flex flex-col flex-wrap justify-center gap-y-8 px-8 pt-8 md:flex-row"
     >
@@ -43,7 +43,7 @@
                 exact-active-class="_"
               >
                 {{ link.name }}
-                <span v-if="link.icon"><icon :name="link.icon" /></span>
+                <span v-if="link.icon"><Icon :name="link.icon" /></span>
               </NuxtLink>
             </li>
           </ul>
@@ -51,13 +51,13 @@
       </div>
     </div>
     <hr
-      class="container my-6 rounded border-zinc-600 dark:border-zinc-600 sm:mx-auto lg:my-8"
+      class="container my-6 rounded border-zinc-600 sm:mx-auto lg:my-8 dark:border-zinc-600"
     />
     <div
       class="container mx-auto block px-8 py-2 text-center text-sm text-zinc-100 dark:text-zinc-300"
     >
       <div>Anoano ~ contraception <ContentMasculine /></div>
-      <div class="pt-2"><icon name="noto-sparkles" /></div>
+      <div class="pt-2"><Icon name="noto-sparkles" /></div>
     </div>
   </footer>
 </template>

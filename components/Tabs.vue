@@ -13,7 +13,7 @@
           }`"
           @click="emit('update:modelValue', tab.value)"
         >
-          <icon
+          <Icon
             :name="
               modelValue === tab.value
                 ? 'noto:orange-circle'
@@ -42,6 +42,6 @@ defineProps<{
 }>();
 
 const emit = defineEmits<{
-  (event: "update:modelValue", payload: string): void;
+  "update:modelValue": [payload: string];
 }>();
 </script>

@@ -43,7 +43,7 @@
   </table>
 </template>
 <script setup lang="ts">
-import { Header } from "~/types/Model";
+import type { Header } from "~/types/Model";
 
 type Item = {
   [key: string]: any;

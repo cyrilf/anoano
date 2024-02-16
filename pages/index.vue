@@ -21,7 +21,7 @@
             <p
               class="tracking-snug prose bg-white/40 text-lg text-zinc-700 md:text-xl md:leading-normal"
             >
-              Bienvenue <icon name="noto-waving-hand" />
+              Bienvenue <Icon name="noto-waving-hand" />
               <br />
               On te recommande de suivre le parcours qui résume les grandes
               étapes de la contraception. Tu peux aussi regarder les outils et
@@ -32,19 +32,19 @@
                 to="/parcours"
                 class="inline-flex items-center gap-2 rounded border-2 border-accent-400 px-4 py-2 text-lg text-zinc-700 hover:bg-accent-400 hover:text-white"
               >
-                <icon name="noto-clipboard" /> Le parcours
+                <Icon name="noto-clipboard" /> Le parcours
               </nuxt-link>
               <nuxt-link
                 to="/guides"
                 class="inline-flex items-center gap-2 rounded border-0 bg-zinc-200 px-4 py-2 text-lg text-zinc-700 transition hover:bg-primary-400"
               >
-                <icon name="noto-books" /> Les guides
+                <Icon name="noto-books" /> Les guides
               </nuxt-link>
               <nuxt-link
                 to="/outils"
                 class="inline-flex items-center gap-2 rounded border-0 bg-zinc-200 px-4 py-2 text-lg text-zinc-700 transition hover:bg-primary-400"
               >
-                <icon name="noto-screwdriver" /> Les outils
+                <Icon name="noto-screwdriver" /> Les outils
               </nuxt-link>
             </div>
           </div>
@@ -173,7 +173,7 @@
                   <a
                     class="flex items-center gap-2 hover:text-primary-500"
                     href="https://github.com/cyrilf/anono"
-                    ><icon name="fe-github" />github.com/cyrilf/anoano</a
+                    ><Icon name="fe-github" />github.com/cyrilf/anoano</a
                   >
                   <span class="hand text-2xl text-zinc-500"
                     >pour le code et le contenu</span
@@ -184,7 +184,7 @@
                     class="flex items-center gap-2 hover:text-primary-500"
                     href="mailto:hey@anoano.page"
                   >
-                    <icon name="fe-mail" /> hey@anoano.page
+                    <Icon name="fe-mail" /> hey@anoano.page
                   </a>
                   <span class="hand text-2xl text-zinc-500"
                     >pour des idées ou remarques
@@ -195,7 +195,7 @@
                     class="flex items-center gap-2 hover:text-primary-500"
                     href="https://anoano.page"
                   >
-                    <icon name="fe-share" /> anoano.page
+                    <Icon name="fe-share" /> anoano.page
                   </a>
                   <span class="hand text-2xl text-zinc-500"
                     >à partager pour que le projet se fasse connaître</span

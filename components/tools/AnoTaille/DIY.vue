@@ -2,7 +2,7 @@
   <div>
     <div>
       <label class="relative leading-10 md:leading-normal">
-        <icon
+        <Icon
           name="fe:quote-left"
           class="absolute -left-6 -top-2 text-xl text-zinc-300"
         />
@@ -17,7 +17,7 @@
           aria-label="En éréction"
           hide-spin-buttons
         />
-        cm de large en éréction.<icon
+        cm de large en éréction.<Icon
           name="fe:quote-right"
           class="-mt-4 text-xl text-zinc-300"
         />
@@ -63,7 +63,7 @@
 </template>
 
 <script lang="ts" setup>
-import { DiyModel, Header } from "~/types/Model";
+import type { DiyModel, Header } from "~/types/Model";
 
 const headers = ref<Header[]>([
   { name: "Diamètre de la verge en érection (en cm)", key: "size" },

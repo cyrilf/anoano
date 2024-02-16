@@ -9,6 +9,6 @@
     thermique car il est plus populaire. Mais nous ne voulons pas invisibiliser
     les problèmes de genre que celà implique. D'où la
     <span class="text-accent-500">petite étoile</span> et cette note.
-    <icon name="noto-sparkling-heart" />
+    <Icon name="noto-sparkling-heart" />
   </Tooltip>
 </template>

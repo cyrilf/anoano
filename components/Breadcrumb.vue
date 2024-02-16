@@ -11,7 +11,7 @@
         } flex items-center font-bold tracking-tight text-zinc-900`"
       >
         <h1 v-if="crumb.isCurrent" class="flex items-center gap-4">
-          <icon v-if="crumb.icon" :name="crumb.icon" size="1.2em" />
+          <Icon v-if="crumb.icon" :name="crumb.icon" size="1.2em" />
           {{ crumb.title }}
         </h1>
         <nuxt-link
@@ -21,11 +21,11 @@
           exact-active-class="_"
         >
           <span class="flex items-center gap-2"
-            ><icon v-if="crumb.icon" :name="crumb.icon" size="1.2em" />
+            ><Icon v-if="crumb.icon" :name="crumb.icon" size="1.2em" />
             {{ crumb.title }}</span
           >
         </nuxt-link>
-        <icon
+        <Icon
           v-if="index !== crumbs.length - 1"
           name="fe:arrow-right"
           class="mx-2 text-zinc-400"

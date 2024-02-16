@@ -10,7 +10,7 @@
             <b>personne voulant se contracepter</b
             ><span class="hand text-2xl text-zinc-600"
               >(potentiellement, toi
-              <span class="text-base"><icon name="noto-winking-face" /></span
+              <span class="text-base"><Icon name="noto-winking-face" /></span
               >)</span
             >.
           </p>

@@ -1,7 +1,7 @@
 <template>
   <div class="w-fit cursor-pointer hover:underline" :class="$attrs.class">
     <div @click="toggle">
-      <icon
+      <Icon
         v-if="!right"
         name="ep:arrow-down-bold"
         class="mr-1 transition-transform"
@@ -10,7 +10,7 @@
       <slot :is-open="isOpen" name="title">{{
         isOpen ? localTextOpen : text
       }}</slot>
-      <icon
+      <Icon
         v-if="right"
         name="ep:arrow-down-bold"
         class="ml-1 transition-transform"

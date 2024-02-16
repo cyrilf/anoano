@@ -13,7 +13,7 @@
             active-class="_"
             exact-active-class="_"
           >
-            <icon :name="step.icon" /> Étape {{ index + 1 }} :
+            <Icon :name="step.icon" /> Étape {{ index + 1 }} :
             <span class="text-zinc-400">{{ step.name }}</span>
           </nuxt-link>
         </h2>

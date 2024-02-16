@@ -55,7 +55,7 @@
         Tout est bien décrit sur la page
         <NuxtLink to="/guides/ordonnance">ordonnance</NuxtLink>. Mais allez, je
         te fais un petit résumé ici. C'est cadeau
-        <icon name="noto-wrapped-gift" />.<br />Tu en fais :
+        <Icon name="noto-wrapped-gift" />.<br />Tu en fais :
         <ul class="mt-0">
           <li>
             <b>avant de commencer</b> la contraception pour t'assurer que tu es

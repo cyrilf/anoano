@@ -24,7 +24,7 @@
         <b
           >te proposes le modèle parfait
           <span class="relative bottom-1 inline-block scale-125"
-            ><icon name="noto-ring" /></span></b
+            ><Icon name="noto-ring" /></span></b
         >.
       </p>
       <p>
@@ -188,8 +188,8 @@
 </template>
 
 <script lang="ts" setup>
-import { Ref } from "vue";
-import { SelectedModel } from "~/types/Model";
+import type { Ref } from "vue";
+import type { SelectedModel } from "~/types/Model";
 
 defineProps<{
   image: string;

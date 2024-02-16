@@ -25,11 +25,6 @@ export default defineNuxtConfig({
     },
   },
   plugins: [],
-  typescript: { shim: false },
-  modules: [
-    "@nuxtjs/eslint-module",
-    "@nuxtjs/tailwindcss",
-    "nuxt-icon",
-    "@nuxt/content",
-  ],
+  typescript: { shim: false, typeCheck: true },
+  modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@nuxt/content"],
 });

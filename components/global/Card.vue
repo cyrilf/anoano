@@ -15,7 +15,7 @@
         class="mb-0 mt-0 bg-zinc-50 py-2 pt-4"
         :class="sticky ? 'xl:sticky xl:top-20 xl:text-center' : ''"
       >
-        <icon v-if="icon" :name="icon" /> {{ title }}
+        <Icon v-if="icon" :name="icon" /> {{ title }}
         <span v-if="subtitle" class="hand text-xl text-zinc-600">{{
           subtitle
         }}</span>
