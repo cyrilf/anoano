@@ -1,6 +1,9 @@
 export default defineNuxtConfig({
+  compatibilityDate: "2024-11-22",
   telemetry: false,
   devtools: { enabled: true },
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/content", "@nuxt/icon", "@nuxt/eslint"],
+  typescript: { typeCheck: true },
   app: {
     head: {
       title: "Anoano",
@@ -24,7 +27,10 @@ export default defineNuxtConfig({
       ],
     },
   },
-  plugins: [],
-  typescript: { shim: false, typeCheck: true },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-icon", "@nuxt/content"],
+  icon: {
+    clientBundle: {
+      scan: true,
+      includeCustomCollections: true,
+    },
+  },
 });
