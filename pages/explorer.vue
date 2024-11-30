@@ -1,73 +1,43 @@
 <template>
   <PageSkeleton>
     <template #image="{ imageClass }">
-      <image-caption
-        :src="image"
-        alt="Documents"
-        :width="640"
-        :class="imageClass"
-      >
+      <image-caption :src="image" alt="Documents" :width="640" :class="imageClass">
         Photo de
         <a href="https://unsplash.com/@ian dooley">Ian Dooley</a>
         sur <a href="https://unsplash.com/photos/3NCA3tbaE5I">Unsplash</a>
       </image-caption>
     </template>
     <template #intro>
+      <p>Le but principal de ce site est de te fournir des informations simples et claires.</p>
       <p>
-        Le but principal de ce site est de te fournir des informations simples
-        et claires.
-      </p>
-      <p>
-        Évidemment celà peut créer quelques lacunes en termes de profondeur.
-        Cette page va te permettre de poursuivre tes recherches pour trouver
-        plus d'informations. Plus tu seras informé.e, plus tu pourras faire un
-        choix éclairé et conscient vers le type de contraception juste pour toi.
+        Évidemment celà peut créer quelques lacunes en termes de profondeur. Cette page va te permettre de poursuivre
+        tes recherches pour trouver plus d'informations. Plus tu seras informé.e, plus tu pourras faire un choix éclairé
+        et conscient vers le type de contraception juste pour toi.
       </p>
       <Alert type="danger" title="Besoin d'aide pour le contenu"
-        >Si tu connais une ressource qui aurait toute sa place sur cette page,
-        envoie nous un mail à
-        <nuxt-link href="mailto:hey@anono.page">hey@anoano.page</nuxt-link
-        >.</Alert
+        >Si tu connais une ressource qui aurait toute sa place sur cette page, envoie nous un mail à
+        <nuxt-link href="mailto:hey@anono.page">hey@anoano.page</nuxt-link>.</Alert
       >
     </template>
     <div class="flex flex-wrap items-start justify-around 2xl:justify-between">
       <div>
-        <Card
-          id="livres"
-          title="Les livres"
-          icon="noto-books"
-          link="/explorer#livres"
-        >
+        <Card id="livres" title="Les livres" icon="noto-books" link="/explorer#livres">
           <ul>
             <li v-for="book in books" :key="book.name">
-              <nuxt-link :href="book.link" target="_blank">{{
-                book.name
-              }}</nuxt-link>
+              <nuxt-link :href="book.link" target="_blank">{{ book.name }}</nuxt-link>
               - {{ book.author }} - {{ book.editor }} - {{ book.year }}
             </li>
           </ul>
         </Card>
-        <Card
-          id="vidéos"
-          title="Les vidéos"
-          icon="noto-clapper-board"
-          link="/explorer#vidéos"
-        >
+        <Card id="vidéos" title="Les vidéos" icon="noto-clapper-board" link="/explorer#vidéos">
           <ul>
             <li v-for="video in videos" :key="video.name">
-              <nuxt-link :href="video.link" target="_blank">{{
-                video.name
-              }}</nuxt-link>
+              <nuxt-link :href="video.link" target="_blank">{{ video.name }}</nuxt-link>
               - {{ video.author }} - {{ video.year }}
             </li>
           </ul>
         </Card>
-        <Card
-          id="podcasts"
-          title="Les podcasts"
-          icon="noto-microphone"
-          link="/explorer#podcasts"
-        >
+        <Card id="podcasts" title="Les podcasts" icon="noto-microphone" link="/explorer#podcasts">
           <iframe
             style="border-radius: 12px"
             class="mb-4"
@@ -96,50 +66,38 @@
         link="/explorer#ressources-scientifiques"
       >
         <Alert type="danger" title="Besoin d'aide pour le contenu"
-          >Loin d'être expert.e.s sur la partie "études scientifiques", une aide
-          pour recenser/catégoriser/vulgariser le contenu scientifique est la
-          bienvenue.</Alert
+          >Loin d'être expert.e.s sur la partie "études scientifiques", une aide pour recenser/catégoriser/vulgariser le
+          contenu scientifique est la bienvenue.</Alert
         >
         <p>
-          Depuis 1930, il y a déjà eu plus de 15 études scientifiques, avec
-          essais cliniques, sur la contraception <ContentMasculine /> thermique.
+          Depuis 1930, il y a déjà eu plus de 15 études scientifiques, avec essais cliniques, sur la contraception
+          <ContentMasculine /> thermique.
         </p>
         Voilà ci-dessous une liste non exhaustive des ressources clés.
         <ul>
           <li>
-            Le document référence. <br />Dr Mieusset, andrologue au CHU de
-            Toulouse, est un spécialiste de la CMT depuis les années 80. Il est
-            à l'origine de nombreuses publications sur le sujet et a créé le
-            premier slip à remontée testculaire
-            <span class="hand text-xl leading-normal text-zinc-600"
-              >(le fameux remonte-couilles toulousain)</span
-            >. Les essais cliniques ont permis de démontrer l'efficacité et la
-            reversibilité de la cryptorchidie artificielle.
+            Le document référence. <br />Dr Mieusset, andrologue au CHU de Toulouse, est un spécialiste de la CMT depuis
+            les années 80. Il est à l'origine de nombreuses publications sur le sujet et a créé le premier slip à
+            remontée testculaire
+            <span class="hand text-xl leading-normal text-zinc-600">(le fameux remonte-couilles toulousain)</span>. Les
+            essais cliniques ont permis de démontrer l'efficacité et la reversibilité de la cryptorchidie artificielle.
             <p class="mt-0">
               <Icon name="fe:document" />
-              <nuxt-link
-                href="https://link.springer.com/content/pdf/10.1007/s12610-012-0192-1.pdf"
-                >Guide pratique d'une contraception masculine hormonale ou
-                thermique - C. Soufir et R. Mieusset - 2012</nuxt-link
+              <nuxt-link href="https://link.springer.com/content/pdf/10.1007/s12610-012-0192-1.pdf"
+                >Guide pratique d'une contraception masculine hormonale ou thermique - C. Soufir et R. Mieusset -
+                2012</nuxt-link
               >
             </p>
           </li>
           <li>
-            <nuxt-link
-              href="https://en.wikipedia.org/wiki/Marthe_Voegeli"
-              target="_blank"
-              >Marthe Voegli</nuxt-link
-            >, la première scientifique a avoir testé la méthode thermique et
-            les effets de la chaleur sur la spermatogenèse en Inde entre 1930 et
-            1950. Elle a pu mettre en évidence que l'exposition des testicules à
-            des bains chauds altérait la fertilité.
+            <nuxt-link href="https://en.wikipedia.org/wiki/Marthe_Voegeli" target="_blank">Marthe Voegli</nuxt-link>, la
+            première scientifique a avoir testé la méthode thermique et les effets de la chaleur sur la spermatogenèse
+            en Inde entre 1930 et 1950. Elle a pu mettre en évidence que l'exposition des testicules à des bains chauds
+            altérait la fertilité.
             <p class="mt-0">
               <Icon name="fe:document" />
-              <nuxt-link
-                href="https://findingaids.smith.edu/repositories/2/archival_objects/69812"
-                target="_blank"
-                >Correspondance avec le gouvernement Indien - Marthe Voegli -
-                1956</nuxt-link
+              <nuxt-link href="https://findingaids.smith.edu/repositories/2/archival_objects/69812" target="_blank"
+                >Correspondance avec le gouvernement Indien - Marthe Voegli - 1956</nuxt-link
               >
             </p>
           </li>
@@ -155,16 +113,10 @@
               >)</i
             >.
             <Toggle text="Voir les recherches" text-open="Replier">
-              <simple-table
-                :headers="headers"
-                :items="resources"
-                class="min-w-full leading-normal"
-              >
+              <simple-table :headers="headers" :items="resources" class="min-w-full leading-normal">
                 <template #item-name="{ item, outerClass }">
                   <td :class="outerClass">
-                    <nuxt-link :href="item.link" target="_blank">{{
-                      item.name
-                    }}</nuxt-link>
+                    <nuxt-link :href="item.link" target="_blank">{{ item.name }}</nuxt-link>
                   </td>
                 </template>
               </simple-table>
@@ -180,15 +132,11 @@
           </li>
         </ul>
         Si tu as envie de creuser par toi même, il existe
-        <nuxt-link
-          href="https://drive.google.com/drive/folders/1Mqyz5YvbWfGHUvJgnv73rlIfvrWwPpRV"
+        <nuxt-link href="https://drive.google.com/drive/folders/1Mqyz5YvbWfGHUvJgnv73rlIfvrWwPpRV"
           >ce lien Drive</nuxt-link
         >
         et
-        <nuxt-link
-          href="https://drive.google.com/drive/folders/1TMyL0-iXF3Em1FlnXn6MPxm76JVFz99G"
-          >celui-ci</nuxt-link
-        >
+        <nuxt-link href="https://drive.google.com/drive/folders/1TMyL0-iXF3Em1FlnXn6MPxm76JVFz99G">celui-ci</nuxt-link>
         qui recense plein de recherches concernant la contraception
         <ContentMasculine />. Par contre la majorité du contenu est en Anglais.
       </Card>
@@ -230,29 +178,25 @@ const resources = ref([
   },
   {
     year: 1985,
-    author:
-      "Mieusset, R., Grandjean, H., Mansat, A. and Pontonnier, F. 1985. Fertil. Steril., 43: 589.",
+    author: "Mieusset, R., Grandjean, H., Mansat, A. and Pontonnier, F. 1985. Fertil. Steril., 43: 589.",
     name: "Inhibiting effect of artificial cryptorchidism on spermatogenesis.",
     link: "https://pubmed.ncbi.nlm.nih.gov/3987927/",
   },
   {
     year: 1987,
-    author:
-      "Mieusset, R., Bujan, L., Mansat, A., Pontonnier, F. and Grandjean, H. 1987a. .Int. J. Androl., 10: 471. &",
+    author: "Mieusset, R., Bujan, L., Mansat, A., Pontonnier, F. and Grandjean, H. 1987a. .Int. J. Androl., 10: 471. &",
     name: "Hyperthermia and human spermatogenesis: enhancement of the inhibitory effect obtained by “artificial cryptorchidism”",
     link: "https://pubmed.ncbi.nlm.nih.gov/2888735/",
   },
   {
     year: 1987,
-    author:
-      "Mieusset, R., Bujan, L., Mansat, A., Pontonnier, F. and Grandjean, H. 1987b.Fertil. Steril., 47: 150.",
+    author: "Mieusset, R., Bujan, L., Mansat, A., Pontonnier, F. and Grandjean, H. 1987b.Fertil. Steril., 47: 150.",
     name: "Effects of artificial cryptorchidism on sperm morphology",
     link: "https://pubmed.ncbi.nlm.nih.gov/3792568/",
   },
   {
     year: 1988,
-    author:
-      "F. R. Kandeel et Swerdloff R. S., Fertil Steril, vol. 49, no 1, janvier 1988, p. 1–23",
+    author: "F. R. Kandeel et Swerdloff R. S., Fertil Steril, vol. 49, no 1, janvier 1988, p. 1–23",
     name: "Role of temperature in regulation of spermatogenesis and the use of heating as a method for contraception",
     link: "https://pubmed.ncbi.nlm.nih.gov/3275550/",
   },
@@ -289,22 +233,19 @@ const resources = ref([
   },
   {
     year: 2010,
-    author:
-      "Zhu H, Cui Y, Xie J, Chen L, Chen X, Guo X, et al. « . Proteomics. 2010;10:3480–93.",
+    author: "Zhu H, Cui Y, Xie J, Chen L, Chen X, Guo X, et al. « . Proteomics. 2010;10:3480–93.",
     name: "Proteomic analysis of testis biopsies in men treated with transient scrotal hyperthermia reveals the potential targets for contraceptive development",
     link: "https://pubmed.ncbi.nlm.nih.gov/20815088/",
   },
   {
     year: 2012,
-    author:
-      "Ahmad G, Moinard N, Lamare C, Mieusset R, Bujan L.  Fertil Steril. 2012;97:546–53.",
+    author: "Ahmad G, Moinard N, Lamare C, Mieusset R, Bujan L.  Fertil Steril. 2012;97:546–53.",
     name: "Mild testicular and epididymal hyperthermia alters sperm chromatin integrity in men.",
     link: "https://pubmed.ncbi.nlm.nih.gov/22265039/",
   },
   {
     year: 2019,
-    author:
-      "Abdelhamid MHM, Esquerre-Lamare C, Walschaerts M, Ahmad G, Mieusset R, Hamdi S, Bujan L. Reprod Biol.",
+    author: "Abdelhamid MHM, Esquerre-Lamare C, Walschaerts M, Ahmad G, Mieusset R, Hamdi S, Bujan L. Reprod Biol.",
     name: "Experimental mild increase in testicular temperature has drastic, but reversible, effect on sperm aneuploidy in men: A pilot study.",
     link: "https://pubmed.ncbi.nlm.nih.gov/31208935/",
   },

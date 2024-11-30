@@ -1,12 +1,7 @@
 <template>
   <PageSkeleton>
     <template #image="{ imageClass }">
-      <image-caption
-        :src="image"
-        alt="Résultat médical"
-        :width="550"
-        :class="imageClass"
-      >
+      <image-caption :src="image" alt="Résultat médical" :width="550" :class="imageClass">
         Photo de
         <a href="https://fr.freepik.com/auteur/tirachardz">tirachardz</a>
         sur
@@ -18,9 +13,8 @@
     </template>
     <template #intro
       ><p>
-        Ça y est, tu as les résultats de ton <b>premier spermogramme</b> en
-        main. Maintenant, c'est le moment de le décrypter pour
-        <b>comprendre</b> ce qu'il veut dire.
+        Ça y est, tu as les résultats de ton <b>premier spermogramme</b> en main. Maintenant, c'est le moment de le
+        décrypter pour <b>comprendre</b> ce qu'il veut dire.
       </p>
       <p>
         Cet outil va te permettre d'apprendre à interpréter les
@@ -32,25 +26,20 @@
         <div class="prose">
           <Alert title="Information" type="info">
             Les sections et valeurs de références ci-dessous concernent
-            <b>ton premier spermogramme</b>. Celui qui doit montrer que tu es
-            fertile.
+            <b>ton premier spermogramme</b>. Celui qui doit montrer que tu es fertile.
           </Alert>
           Pour avoir une
-          <b>fertilité qualifiée de "normale"</b> (normozoospermie), selon les
-          références de l'OMS, il faut que tes paramètres spermiques soient
-          <b>égaux ou supérieurs à chacunes des valeurs</b> décritent
-          ci-dessous.
+          <b>fertilité qualifiée de "normale"</b> (normozoospermie), selon les références de l'OMS, il faut que tes
+          paramètres spermiques soient <b>égaux ou supérieurs à chacunes des valeurs</b> décritent ci-dessous.
           <p>
-            Alors muni-toi de ton spermogramme, et <b>indique si oui ou non</b>,
-            tu remplis la condition pour chaque critères.
+            Alors muni-toi de ton spermogramme, et <b>indique si oui ou non</b>, tu remplis la condition pour chaque
+            critères.
           </p>
         </div>
         <table class="table border-separate p-4">
           <thead>
             <tr>
-              <th colspan="3" class="pb-4 text-center">
-                Valeurs de références pour une fertilité "normale"
-              </th>
+              <th colspan="3" class="pb-4 text-center">Valeurs de références pour une fertilité "normale"</th>
             </tr>
             <tr>
               <th class="pb-4 text-center">Critères</th>
@@ -59,17 +48,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr
-              v-for="d in showExtra ? data : data.filter((d) => !d.extra)"
-              :key="d.name"
-              class="shadow"
-            >
-              <td
-                class="border-2 border-r-0 p-4 font-bold text-zinc-600 lg:w-56"
-              >
-                <Tooltip v-if="d.explanation" :trigger="d.name">{{
-                  d.explanation
-                }}</Tooltip>
+            <tr v-for="d in showExtra ? data : data.filter((d) => !d.extra)" :key="d.name" class="shadow">
+              <td class="border-2 border-r-0 p-4 font-bold text-zinc-600 lg:w-56">
+                <Tooltip v-if="d.explanation" :trigger="d.name">{{ d.explanation }}</Tooltip>
                 <span v-else>{{ d.name }}</span>
               </td>
               <td
@@ -126,10 +107,9 @@
             </tr>
             <tr v-if="hasConditionUnmet">
               <td colspan="3" class="text bg-rose-300 p-4">
-                D'après les résultats de ton premier spermogramme, tu ne remplis
-                pas toutes les conditions nécessaire pour être fertile.<br />
-                On te recommande de te rapprocher de ton.ta médecin ou de la
-                personne qui te suis.
+                D'après les résultats de ton premier spermogramme, tu ne remplis pas toutes les conditions nécessaire
+                pour être fertile.<br />
+                On te recommande de te rapprocher de ton.ta médecin ou de la personne qui te suis.
               </td>
             </tr>
             <tr>
@@ -138,11 +118,7 @@
                   class="w-full border p-2 transition-colors hover:bg-primary-200"
                   @click="showExtra = !showExtra"
                 >
-                  {{
-                    showExtra
-                      ? "Voir la vue simplifiée"
-                      : "Voir toutes les valeurs"
-                  }}
+                  {{ showExtra ? "Voir la vue simplifiée" : "Voir toutes les valeurs" }}
                 </button>
               </td>
             </tr>
@@ -151,32 +127,22 @@
         <div class="prose">
           <p>
             Ces valeurs de références proviennent de l'étude faite en
-            <NuxtLink
-              href="https://pubmed.ncbi.nlm.nih.gov/19934213/"
-              target="_blank"
-              >2010 par l'OMS</NuxtLink
-            >
+            <NuxtLink href="https://pubmed.ncbi.nlm.nih.gov/19934213/" target="_blank">2010 par l'OMS</NuxtLink>
             concernant les paramètres séminaux de plus de 4500 hommes fertiles.
           </p>
           <p>
-            Les critères les plus importants sont le <b>volume</b>, le
-            <b>nombre de spermatozoïdes</b>, leurs <b>mobilités</b>, leurs
-            <b>morphologies</b> et leurs <b>vitalités</b>.
+            Les critères les plus importants sont le <b>volume</b>, le <b>nombre de spermatozoïdes</b>, leurs
+            <b>mobilités</b>, leurs <b>morphologies</b> et leurs <b>vitalités</b>.
             <br />
-            En gros, il s'agit de leur quantité, la façon dont ils se déplaçent,
-            si ils sont normaux et si ils sont vivants.
+            En gros, il s'agit de leur quantité, la façon dont ils se déplaçent, si ils sont normaux et si ils sont
+            vivants.
           </p>
           <p>
-            Chacun de <b>ces critères influent sur la fertilité</b> et sont
-            <b>interdépendants</b>. Tu peux avoir un nombre de spermatozoïde
-            suffisant mais rester stérile car ils sont immobiles ou anormaux par
-            exemple. C'est pour cela que toutes tes valeurs doivent être
-            supérieurs aux valeurs de références.
+            Chacun de <b>ces critères influent sur la fertilité</b> et sont <b>interdépendants</b>. Tu peux avoir un
+            nombre de spermatozoïde suffisant mais rester stérile car ils sont immobiles ou anormaux par exemple. C'est
+            pour cela que toutes tes valeurs doivent être supérieurs aux valeurs de références.
           </p>
-          <p>
-            Si tu as le <b>moindre doute</b>, n'hésite pas à
-            <b>contacter ton laboratoire ou ton.ta médecin</b>.
-          </p>
+          <p>Si tu as le <b>moindre doute</b>, n'hésite pas à <b>contacter ton laboratoire ou ton.ta médecin</b>.</p>
         </div>
       </div>
     </Card>
@@ -189,7 +155,7 @@ definePageMeta({
   desc: "Décrypte et comprend les valeurs indiquées sur ton spermogramme.",
 });
 const image = ref(
-  "https://img.freepik.com/photos-gratuite/jeune-femme-medecin-asiatique-uniforme-medical-blanc-aide-presse-papiers-livre-excellentes-nouvelles-pour-discuter-resultats_7861-3135.jpg?w=550"
+  "https://img.freepik.com/photos-gratuite/jeune-femme-medecin-asiatique-uniforme-medical-blanc-aide-presse-papiers-livre-excellentes-nouvelles-pour-discuter-resultats_7861-3135.jpg?w=550",
 );
 useSeoMeta({
   ogImage: image,
@@ -294,15 +260,9 @@ const data = ref([
 ]);
 
 const showExtra = ref(false);
-const filteredData = computed(() =>
-  showExtra.value ? data.value : data.value.filter((d) => !d.extra)
-);
-const allChecked = computed(() =>
-  filteredData.value.every((d) => d.check === true)
-);
-const hasConditionUnmet = computed(() =>
-  filteredData.value.some((d) => d.check === false)
-);
+const filteredData = computed(() => (showExtra.value ? data.value : data.value.filter((d) => !d.extra)));
+const allChecked = computed(() => filteredData.value.every((d) => d.check === true));
+const hasConditionUnmet = computed(() => filteredData.value.some((d) => d.check === false));
 </script>
 <style scoped>
 .table {

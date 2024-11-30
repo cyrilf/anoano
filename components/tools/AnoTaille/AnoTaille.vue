@@ -1,12 +1,7 @@
 <template>
   <PageSkeleton>
     <template #image="{ imageClass }">
-      <image-caption
-        :src="image"
-        alt="Mètre mesure"
-        :width="530"
-        :class="imageClass"
-      >
+      <image-caption :src="image" alt="Mètre mesure" :width="530" :class="imageClass">
         Photo de
         <a href="https://unsplash.com/@diana_pole">Diana Polekhina</a>
         sur <a href="https://unsplash.com/photos/Xg-ut7qtJiM">Unsplash</a>
@@ -19,20 +14,19 @@
       </p>
       <p>
         Pour cela, il te suffit de
-        <b>mesurer la largeur de ton pénis en éréction</b> avec une règle. Puis
-        d'<b>entrer cette valeur dans le formulaire</b> ci-dessous et hop', on
+        <b>mesurer la largeur de ton pénis en éréction</b> avec une règle. Puis d'<b
+          >entrer cette valeur dans le formulaire</b
+        >
+        ci-dessous et hop', on
         <b
           >te proposes le modèle parfait
-          <span class="relative bottom-1 inline-block scale-125"
-            ><Icon name="noto-ring" /></span></b
+          <span class="relative bottom-1 inline-block scale-125"><Icon name="noto-ring" /></span></b
         >.
       </p>
       <p>
-        Il est très important de bien prendre tes mesures. Si l'anneau est trop
-        grand, il ne tiendra pas en place et glissera. Si il est trop petit,
-        alors il irritera ta peau et sera responsable de sensations
-        désagréables. Si sa taille est bien choisi, tu ne sauras même pas que tu
-        le porte.
+        Il est très important de bien prendre tes mesures. Si l'anneau est trop grand, il ne tiendra pas en place et
+        glissera. Si il est trop petit, alors il irritera ta peau et sera responsable de sensations désagréables. Si sa
+        taille est bien choisi, tu ne sauras même pas que tu le porte.
       </p>
     </template>
     <div>
@@ -53,14 +47,10 @@
             Prends <b>une règle</b> ou un mètre.
             <div>
               Une fois debout, pose la règle sur ton pénis
-              <b>en éréction</b> et <b>mesure sa largeur</b> à la base. Notes
-              cette taille.
+              <b>en éréction</b> et <b>mesure sa largeur</b> à la base. Notes cette taille.
             </div>
           </div>
-          <div>
-            Tu dois aussi faire une mesure similaire mais avec ton pénis au
-            repos pour l'Andro-switch.
-          </div>
+          <div>Tu dois aussi faire une mesure similaire mais avec ton pénis au repos pour l'Andro-switch.</div>
         </div>
       </div>
 
@@ -77,12 +67,10 @@
             <Tooltip
               ><template #trigger="{ defaultTriggerClass, accentClass }"
                 ><span
-                  ><span :class="defaultTriggerClass"
-                    >la taille qu'il te faut</span
+                  ><span :class="defaultTriggerClass">la taille qu'il te faut</span
                   ><span :class="accentClass" class="accent">*</span></span
                 ></template
-              >Aucune donnée n'est sauvegardée ou envoyée.
-              <span class="text-primary-400">Promis ✨</span>.
+              >Aucune donnée n'est sauvegardée ou envoyée. <span class="text-primary-400">Promis ✨</span>.
               <div>D'ailleurs le code est open-source.</div>
             </Tooltip>
           </nuxt-link>
@@ -105,40 +93,24 @@
           </nuxt-link>
         </h2>
         <div class="mt-2">
-          <div>
-            C'est bon, tu peux maintenant acheter ou faire ton anneau. Tu as les
-            mesures nécessaires.
-          </div>
-          <Alert
-            title="⚠️ Information importante"
-            type="accent"
-            toggle
-            class="mt-6"
-          >
+          <div>C'est bon, tu peux maintenant acheter ou faire ton anneau. Tu as les mesures nécessaires.</div>
+          <Alert title="⚠️ Information importante" type="accent" toggle class="mt-6">
             Aujourd'hui,
-            <b>aucun dispositif de remontée testiculaire n'est certifié</b>.
-            Légalement les anneaux ne peuvent être vendu en tant qu'appareil
-            médical. Ce sont de simples anneaux adaptés pour la remontée
-            testiculaire mais ils ne peuvent être catégorisés comme
-            contraceptifs. Il est donc important de garder en tête que la
-            contraception masculine reste expérimentale, bien que basée sur des
-            études scientifiques, dont celles du
-            <a
-              href="https://link.springer.com/content/pdf/10.1007/s12610-012-0192-1.pdf"
-              >Dr Mieusset</a
-            >.
+            <b>aucun dispositif de remontée testiculaire n'est certifié</b>. Légalement les anneaux ne peuvent être
+            vendu en tant qu'appareil médical. Ce sont de simples anneaux adaptés pour la remontée testiculaire mais ils
+            ne peuvent être catégorisés comme contraceptifs. Il est donc important de garder en tête que la
+            contraception masculine reste expérimentale, bien que basée sur des études scientifiques, dont celles du
+            <a href="https://link.springer.com/content/pdf/10.1007/s12610-012-0192-1.pdf">Dr Mieusset</a>.
             <p>
-              C'est pourquoi l'achat de l'Andro-Switch ne se fait plus sur le
-              site de <a href="https://thoreme.com">Thoreme</a> mais sur un site
-              partenaire en tant que
-              <a href="https://www.coucouroucoucou.com"
-                ><i>"talismans réversibles"</i></a
+              C'est pourquoi l'achat de l'Andro-Switch ne se fait plus sur le site de
+              <a href="https://thoreme.com">Thoreme</a> mais sur un site partenaire en tant que
+              <a href="https://www.coucouroucoucou.com"><i>"talismans réversibles"</i></a
               >.
             </p>
             <p>
               Mais les choses bougent
-              <a href="https://entrelac.coop/">une coopérative</a> a été créée
-              pour atteindre la certification européenne.
+              <a href="https://entrelac.coop/">une coopérative</a> a été créée pour atteindre la certification
+              européenne.
             </p>
           </Alert>
           <Tabs v-model="provider" :tabs="tabs" class="not-prose">
@@ -153,14 +125,12 @@
                 pour le fabriquer toi même.
               </div>
               <div>
-                Sinon, tu peux rejoindre un groupe près de chez toi ou assister
-                à un atelier animé par Otoko (sur Paris).
+                Sinon, tu peux rejoindre un groupe près de chez toi ou assister à un atelier animé par Otoko (sur
+                Paris).
               </div>
               <div>
                 Toutes
-                <a
-                  href="https://samflam.notion.site/Les-ateliers-d9de9241af564c2a877468af9d49d162"
-                  target="_blank"
+                <a href="https://samflam.notion.site/Les-ateliers-d9de9241af564c2a877468af9d49d162" target="_blank"
                   >les informations sur ses ateliers sont ici</a
                 >.
               </div>

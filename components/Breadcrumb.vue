@@ -1,35 +1,21 @@
 <template>
   <div v-if="!isHome" class="bg-zinc-100">
-    <ol
-      class="container mx-auto flex flex-wrap items-center justify-center px-4 py-6 md:justify-start"
-    >
+    <ol class="container mx-auto flex flex-wrap items-center justify-center px-4 py-6 md:justify-start">
       <li
         v-for="(crumb, index) in crumbs"
         :key="crumb.path"
-        :class="`${
-          crumb.isCurrent ? 'text-3xl' : 'text-xl'
-        } flex items-center font-bold tracking-tight text-zinc-900`"
+        :class="`${crumb.isCurrent ? 'text-3xl' : 'text-xl'} flex items-center font-bold tracking-tight text-zinc-900`"
       >
         <h1 v-if="crumb.isCurrent" class="flex items-center gap-4">
           <Icon v-if="crumb.icon" :name="crumb.icon" size="1.2em" />
           {{ crumb.title }}
         </h1>
-        <nuxt-link
-          v-if="!crumb.isCurrent"
-          :to="crumb.path"
-          active-class="_"
-          exact-active-class="_"
-        >
+        <nuxt-link v-if="!crumb.isCurrent" :to="crumb.path" active-class="_" exact-active-class="_">
           <span class="flex items-center gap-2"
-            ><Icon v-if="crumb.icon" :name="crumb.icon" size="1.2em" />
-            {{ crumb.title }}</span
+            ><Icon v-if="crumb.icon" :name="crumb.icon" size="1.2em" /> {{ crumb.title }}</span
           >
         </nuxt-link>
-        <Icon
-          v-if="index !== crumbs.length - 1"
-          name="fe:arrow-right"
-          class="mx-2 text-zinc-400"
-        />
+        <Icon v-if="index !== crumbs.length - 1" name="fe:arrow-right" class="mx-2 text-zinc-400" />
       </li>
     </ol>
   </div>
@@ -51,9 +37,7 @@ const isHome = computed(() => route.fullPath === "/");
 const removeHash = (section: string) => section.split("#")[0];
 
 const crumbs = computed(() => {
-  const sections = route.fullPath.startsWith("/")
-    ? route.fullPath.substring(1).split("/")
-    : route.fullPath.split("/");
+  const sections = route.fullPath.startsWith("/") ? route.fullPath.substring(1).split("/") : route.fullPath.split("/");
 
   const routes = router.getRoutes();
   let path = "";

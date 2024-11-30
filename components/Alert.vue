@@ -4,13 +4,13 @@
   >
     <div :class="color.text">
       <Toggle v-if="toggle" :text="title" class="font-bold">
-        <slot />
+        <slot></slot>
       </Toggle>
       <div v-if="!toggle">
         <div class="font-bold">
           {{ title }}
         </div>
-        <slot />
+        <slot></slot>
       </div>
     </div>
   </div>

@@ -2,10 +2,7 @@
   <div>
     <div>
       <label class="relative leading-10 md:leading-normal">
-        <Icon
-          name="fe:quote-left"
-          class="absolute -left-6 -top-2 text-xl text-zinc-300"
-        />
+        <Icon name="fe:quote-left" class="absolute -left-6 -top-2 text-xl text-zinc-300" />
         Mon pénis mesure
         <input
           v-model="erect"
@@ -33,18 +30,13 @@
           aria-label="Au repos"
           @change="onChangeFlacid"
         />
-        cm de large au repos.<Icon
-          name="fe:quote-right"
-          class="-mt-4 text-xl text-zinc-300"
-        />
+        cm de large au repos.<Icon name="fe:quote-right" class="-mt-4 text-xl text-zinc-300" />
       </label>
     </div>
     <div>
       <div class="mt-4">
         Alors ton modèle idéal c'est le
-        <b class="ml-0.5 text-primary-500"
-          >{{ isSoftVariant ? "soft" : "basique" }} {{ finalModel }}</b
-        >
+        <b class="ml-0.5 text-primary-500">{{ isSoftVariant ? "soft" : "basique" }} {{ finalModel }}</b>
       </div>
       <Toggle
         text="Voir toutes les tailles"
@@ -58,8 +50,7 @@
                 <p
                   :class="{
                     [innerClass]: true,
-                    'text-2xl font-bold !text-primary-500':
-                      item.model === finalModel,
+                    'text-2xl font-bold !text-primary-500': item.model === finalModel,
                   }"
                 >
                   {{ item[header.key] }}
@@ -71,8 +62,7 @@
                 <p
                   :class="{
                     [innerClass]: true,
-                    'text-2xl font-bold !text-primary-500':
-                      item.soft === finalModel,
+                    'text-2xl font-bold !text-primary-500': item.soft === finalModel,
                   }"
                 >
                   {{ item[header.key] }}
@@ -100,8 +90,7 @@ const headers = ref<Header[]>([
   { name: "Andro-Switch basique", key: "model" },
   {
     name: "Andro-Switch souple",
-    tooltip:
-      "Si la différence entre la mesure au repos et en érection est supérieure à 1,2cm ",
+    tooltip: "Si la différence entre la mesure au repos et en érection est supérieure à 1,2cm ",
     key: "soft",
   },
 ]);
@@ -114,8 +103,7 @@ const models = ref<Model[]>(
       model: "A",
       soft: "S",
       href: "https://www.coucouroucoucou.com/boutique/s429928p/31-5-A",
-      hrefSoft:
-        "https://www.coucouroucoucou.com/boutique/s429946p/alaze-31-5-S",
+      hrefSoft: "https://www.coucouroucoucou.com/boutique/s429946p/alaze-31-5-S",
     },
     {
       id: 2,
@@ -124,8 +112,7 @@ const models = ref<Model[]>(
       model: "N",
       soft: "W",
       href: "https://www.coucouroucoucou.com/boutique/s429929p/34-7-N",
-      hrefSoft:
-        "https://www.coucouroucoucou.com/boutique/s429953p/alaze-34-7-W",
+      hrefSoft: "https://www.coucouroucoucou.com/boutique/s429953p/alaze-34-7-W",
     },
     {
       id: 3,
@@ -134,8 +121,7 @@ const models = ref<Model[]>(
       model: "D",
       soft: "I",
       href: "https://www.coucouroucoucou.com/boutique/s429931p/35-9-D",
-      hrefSoft:
-        "https://www.coucouroucoucou.com/boutique/s429961p/alaze-35-9-I",
+      hrefSoft: "https://www.coucouroucoucou.com/boutique/s429961p/alaze-35-9-I",
     },
     {
       id: 4,
@@ -144,8 +130,7 @@ const models = ref<Model[]>(
       model: "R",
       soft: "T",
       href: "https://www.coucouroucoucou.com/boutique/s429932p/41-3-R",
-      hrefSoft:
-        "https://www.coucouroucoucou.com/boutique/s429966p/alaze-41-3-T",
+      hrefSoft: "https://www.coucouroucoucou.com/boutique/s429966p/alaze-41-3-T",
     },
     {
       id: 5,
@@ -154,13 +139,12 @@ const models = ref<Model[]>(
       model: "O",
       soft: "C",
       href: "https://www.coucouroucoucou.com/boutique/s429939p/44-7-O",
-      hrefSoft:
-        "https://www.coucouroucoucou.com/boutique/s429970p/alaze-44-7-C",
+      hrefSoft: "https://www.coucouroucoucou.com/boutique/s429970p/alaze-44-7-C",
     },
   ].map((m) => ({
     ...m,
     measure: `Entre ${m.range[0]}cm et ${m.range[1]}cm`,
-  }))
+  })),
 );
 
 const flacid = ref(2.3);
@@ -168,9 +152,7 @@ const erect = ref(3.2);
 
 const selectedModel = computed(() => {
   const result =
-    models.value.find(
-      (size) => erect.value > size.range[0] && erect.value <= size.range[1]
-    ) || ({} as Model);
+    models.value.find((size) => erect.value > size.range[0] && erect.value <= size.range[1]) || ({} as Model);
 
   emit("change", { ...result, isSoft: isSoftVariant.value });
 
@@ -179,9 +161,7 @@ const selectedModel = computed(() => {
 
 const isSoftVariant = computed(() => erect.value - flacid.value > 1.2);
 
-const finalModel = computed(
-  () => selectedModel.value[isSoftVariant.value ? "soft" : "model"]
-);
+const finalModel = computed(() => selectedModel.value[isSoftVariant.value ? "soft" : "model"]);
 
 const onChangeErect = () => {
   if (erect.value < flacid.value) {

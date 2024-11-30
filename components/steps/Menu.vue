@@ -1,11 +1,7 @@
 <template>
   <div class="sticky top-24 ml-auto hidden w-fit max-w-sm xl:block">
     <Card no-min-width>
-      <div
-        v-for="(step, index) in menu.steps"
-        :key="step.link"
-        class="mt-4 first:mt-0"
-      >
+      <div v-for="(step, index) in menu.steps" :key="step.link" class="mt-4 first:mt-0">
         <h2 class="m-0 mb-2 text-xl font-bold">
           <nuxt-link
             :to="`/parcours#${step.link}`"

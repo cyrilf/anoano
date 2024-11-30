@@ -1,29 +1,17 @@
 <template>
   <footer class="bg-zinc-700 px-8 pt-6 md:py-12 dark:bg-zinc-800">
-    <div
-      class="container mx-auto flex flex-col flex-wrap justify-center gap-y-8 px-8 pt-8 md:flex-row"
-    >
+    <div class="container mx-auto flex flex-col flex-wrap justify-center gap-y-8 px-8 pt-8 md:flex-row">
       <div class="flex flex-wrap gap-12 lg:gap-24">
-        <div
-          v-for="linkGroup in links"
-          :key="linkGroup.name"
-          class="w-48 flex-initial text-sm font-semibold"
-        >
+        <div v-for="linkGroup in links" :key="linkGroup.name" class="w-48 flex-initial text-sm font-semibold">
           <NuxtLink
             v-if="linkGroup.href === '/'"
             class="-mt-3 flex flex-auto items-center self-start font-medium hover:text-primary-500 lg:-ml-14"
             :to="linkGroup.href"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-10 w-10 rounded-full bg-primary-400 p-2"
-            >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 rounded-full bg-primary-400 p-2">
               <circle cx="50" cy="50" r="40" stroke="white" stroke-width="40" />
             </svg>
-            <span
-              class="ml-4 text-2xl font-extrabold text-zinc-200 dark:text-zinc-300"
-              >{{ linkGroup.name }}</span
-            >
+            <span class="ml-4 text-2xl font-extrabold text-zinc-200 dark:text-zinc-300">{{ linkGroup.name }}</span>
           </NuxtLink>
           <NuxtLink
             v-else-if="linkGroup.href !== '/'"
@@ -50,12 +38,8 @@
         </div>
       </div>
     </div>
-    <hr
-      class="container my-6 rounded border-zinc-600 sm:mx-auto lg:my-8 dark:border-zinc-600"
-    />
-    <div
-      class="container mx-auto block px-8 py-2 text-center text-sm text-zinc-100 dark:text-zinc-300"
-    >
+    <hr class="container my-6 rounded border-zinc-600 sm:mx-auto lg:my-8 dark:border-zinc-600" />
+    <div class="container mx-auto block px-8 py-2 text-center text-sm text-zinc-100 dark:text-zinc-300">
       <div>Anoano ~ contraception <ContentMasculine /></div>
       <div class="pt-2"><Icon name="noto-sparkles" /></div>
     </div>

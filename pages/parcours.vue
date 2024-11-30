@@ -5,22 +5,16 @@
       <div class="py-6 sm:px-6 lg:px-8">
         <div class="container prose mx-auto">
           <p>
-            Cette page, découpée en <b>4 grandes étapes</b>, te permets de
-            découvir le parcours complet d'une
+            Cette page, découpée en <b>4 grandes étapes</b>, te permets de découvir le parcours complet d'une
             <b>personne voulant se contracepter</b
             ><span class="hand text-2xl text-zinc-600"
-              >(potentiellement, toi
-              <span class="text-base"><Icon name="noto-winking-face" /></span
-              >)</span
+              >(potentiellement, toi <span class="text-base"><Icon name="noto-winking-face" /></span>)</span
             >.
           </p>
           <p>
-            Prends le temps de lire chaque section pour comprendre les
-            pré-requis, la marche à suivre, la mise en pratique et le suivi. Si
-            besoin, il y a aussi le processus pour arrêter
-            <span class="hand text-2xl text-zinc-600"
-              >(oui, cette méthode est réversible)</span
-            >.
+            Prends le temps de lire chaque section pour comprendre les pré-requis, la marche à suivre, la mise en
+            pratique et le suivi. Si besoin, il y a aussi le processus pour arrêter
+            <span class="hand text-2xl text-zinc-600">(oui, cette méthode est réversible)</span>.
           </p>
         </div>
       </div>

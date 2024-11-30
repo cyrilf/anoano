@@ -1,10 +1,8 @@
 <template>
-  <div
-    class="flex min-h-screen flex-col selection:bg-accent-500 selection:text-zinc-50"
-  >
+  <div class="flex min-h-screen flex-col selection:bg-accent-500 selection:text-zinc-50">
     <MainHeader />
     <Breadcrumb />
-    <div class="flex-grow"><slot /></div>
+    <div class="flex-grow"><slot></slot></div>
     <MainFooter />
   </div>
 </template>
@@ -14,10 +12,7 @@ const route = useRoute();
 watchEffect(() => {
   const title = (route.meta.title as string) || "Anoano";
   if (!route.meta.desc) {
-    // eslint-disable-next-line no-console
-    console.warn(
-      `${route.meta.title || route.fullPath} has no meta description defined`
-    );
+    console.warn(`${route.meta.title || route.fullPath} has no meta description defined`);
   }
   useSeoMeta({
     title,

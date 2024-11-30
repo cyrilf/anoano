@@ -7,9 +7,7 @@
         class="mr-1 transition-transform"
         :class="{ 'rotate-180': isOpen }"
       />
-      <slot :is-open="isOpen" name="title">{{
-        isOpen ? localTextOpen : text
-      }}</slot>
+      <slot :is-open="isOpen" name="title">{{ isOpen ? localTextOpen : text }}</slot>
       <Icon
         v-if="right"
         name="ep:arrow-down-bold"
@@ -18,12 +16,8 @@
       />
     </div>
   </div>
-  <div
-    :class="`mb-4 ml-2 mt-2 ${
-      isOpen ? (withGuide ? 'border-l border-zinc-300 pl-4' : '') : 'hidden'
-    }`"
-  >
-    <slot />
+  <div :class="`mb-4 ml-2 mt-2 ${isOpen ? (withGuide ? 'border-l border-zinc-300 pl-4' : '') : 'hidden'}`">
+    <slot></slot>
   </div>
 </template>
 <script setup lang="ts">
@@ -40,9 +34,7 @@ const props = withDefaults(defineProps<Props>(), {
   right: false,
 });
 
-const localTextOpen = computed(
-  () => props.textOpen || props.text || "Voir moins"
-);
+const localTextOpen = computed(() => props.textOpen || props.text || "Voir moins");
 
 const isOpen = ref(false);
 const toggle = () => (isOpen.value = !isOpen.value);

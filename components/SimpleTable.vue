@@ -7,9 +7,7 @@
           :key="header.key"
           class="border-b-2 border-zinc-200 bg-zinc-100 px-5 py-3 first:rounded-tl-lg last:rounded-tr-lg"
         >
-          <span
-            class="text-left text-xs font-semibold uppercase tracking-wider text-zinc-600"
-            >{{ header.name }}</span
+          <span class="text-left text-xs font-semibold uppercase tracking-wider text-zinc-600">{{ header.name }}</span
           ><Tooltip v-if="header.tooltip" :text="header.tooltip" />
         </th>
       </tr>
@@ -25,14 +23,11 @@
             indexItem,
             headers,
             header,
-            outerClass:
-              'border-b border-zinc-200 px-4 py-4 text-center text-sm first:rounded-bl-lg last:rounded-br-lg',
+            outerClass: 'border-b border-zinc-200 px-4 py-4 text-center text-sm first:rounded-bl-lg last:rounded-br-lg',
             innerClass: 'whitespace-no-wrap text-zinc-900',
           }"
         >
-          <td
-            class="border-b border-zinc-200 px-4 py-4 text-center text-sm first:rounded-bl-lg last:rounded-br-lg"
-          >
+          <td class="border-b border-zinc-200 px-4 py-4 text-center text-sm first:rounded-bl-lg last:rounded-br-lg">
             <p class="whitespace-no-wrap text-zinc-900">
               {{ item[header.key] }}
             </p>

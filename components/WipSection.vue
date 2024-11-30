@@ -5,6 +5,6 @@
     >
       <Icon name="noto-construction" size="2em" />
     </div>
-    <slot />
+    <slot></slot>
   </div>
 </template>

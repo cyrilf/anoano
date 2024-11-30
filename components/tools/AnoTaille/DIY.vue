@@ -2,10 +2,7 @@
   <div>
     <div>
       <label class="relative leading-10 md:leading-normal">
-        <Icon
-          name="fe:quote-left"
-          class="absolute -left-6 -top-2 text-xl text-zinc-300"
-        />
+        <Icon name="fe:quote-left" class="absolute -left-6 -top-2 text-xl text-zinc-300" />
         Mon pénis mesure
         <input
           v-model="erect"
@@ -17,18 +14,13 @@
           aria-label="En éréction"
           hide-spin-buttons
         />
-        cm de large en éréction.<Icon
-          name="fe:quote-right"
-          class="-mt-4 text-xl text-zinc-300"
-        />
+        cm de large en éréction.<Icon name="fe:quote-right" class="-mt-4 text-xl text-zinc-300" />
       </label>
     </div>
     <div>
       <div class="mt-4">
         La taille idéale pour ton modèle est de
-        <b class="ml-0.5 text-2xl text-primary-500">{{
-          selectedModel.measure
-        }}</b>
+        <b class="ml-0.5 text-2xl text-primary-500">{{ selectedModel.measure }}</b>
         mm
       </div>
       <Toggle
@@ -37,18 +29,13 @@
         class="mt-4 text-zinc-400 hover:text-zinc-500"
       >
         <div class="rouded w-fit">
-          <simple-table
-            :headers="headers"
-            :items="models"
-            class="min-w-full leading-normal"
-          >
+          <simple-table :headers="headers" :items="models" class="min-w-full leading-normal">
             <template #item-measure="{ item, header, outerClass, innerClass }">
               <td :class="outerClass">
                 <p
                   :class="{
                     [innerClass]: true,
-                    'font-bold !text-primary-500':
-                      item.size === selectedModel.size,
+                    'font-bold !text-primary-500': item.size === selectedModel.size,
                   }"
                 >
                   {{ item[header.key] }}

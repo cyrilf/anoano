@@ -1,9 +1,7 @@
 <template>
   <div>
     <section class="relative">
-      <div
-        class="container relative px-6 py-8 sm:mx-auto sm:py-8 md:py-28 md:pb-48"
-      >
+      <div class="container relative px-6 py-8 sm:mx-auto sm:py-8 md:py-28 md:pb-48">
         <div class="flex flex-col md:flex-row">
           <div
             class="flex w-full flex-col items-center gap-7 text-center md:w-1/2 md:items-start md:gap-8 md:pr-8 md:text-left lg:w-2/3 lg:pr-36 2xl:pr-0"
@@ -13,19 +11,14 @@
             >
               Ta contraception
               <ContentMasculine />
-              <br class="hidden lg:inline-block" /><span class="md:underlined">
-                commence</span
-              >
+              <br class="hidden lg:inline-block" /><span class="md:underlined"> commence</span>
               ici.
             </h1>
-            <p
-              class="tracking-snug prose bg-white/40 text-lg text-zinc-700 md:text-xl md:leading-normal"
-            >
+            <p class="tracking-snug prose bg-white/40 text-lg text-zinc-700 md:text-xl md:leading-normal">
               Bienvenue <Icon name="noto-waving-hand" />
               <br />
-              On te recommande de suivre le parcours qui résume les grandes
-              étapes de la contraception. Tu peux aussi regarder les outils et
-              les guides à ta disposition.
+              On te recommande de suivre le parcours qui résume les grandes étapes de la contraception. Tu peux aussi
+              regarder les outils et les guides à ta disposition.
             </p>
             <div class="flex flex-wrap justify-center gap-4 md:justify-start">
               <nuxt-link
@@ -56,10 +49,7 @@
       >
         <span
           class="absolute bottom-0 right-0 bg-zinc-50 bg-opacity-70 px-2 text-sm text-zinc-600 opacity-0 transition-opacity group-hover:opacity-100"
-          >Photo de Koeko en
-          <a href="https://creativecommons.org/licenses/by/4.0/deed.fr"
-            >CC BY 4.0</a
-          ></span
+          >Photo de Koeko en <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">CC BY 4.0</a></span
         >
       </div>
       <div class="mx-auto w-fit sm:mb-8 md:hidden">
@@ -71,19 +61,13 @@
         >
           <span
             >Photo de Koeko en
-            <a
-              href="https://creativecommons.org/licenses/by/4.0/deed.fr"
-              target="_blank"
-              >CC BY 4.0</a
-            ></span
+            <a href="https://creativecommons.org/licenses/by/4.0/deed.fr" target="_blank">CC BY 4.0</a></span
           >
         </image-caption>
       </div>
     </section>
     <section class="bg-zinc-100 text-zinc-600">
-      <div
-        class="container mx-auto flex flex-col-reverse items-center py-24 md:flex-row"
-      >
+      <div class="container mx-auto flex flex-col-reverse items-center py-24 md:flex-row">
         <div>
           <image-caption
             src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWJzdHJhY3R8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=470&q=80"
@@ -100,26 +84,18 @@
         >
           <h2 class="text-4xl">
             La contraception en deux mots
-            <span class="hand text-2xl text-zinc-400"
-              >(et un tout petit peu plus..)</span
-            >
+            <span class="hand text-2xl text-zinc-400">(et un tout petit peu plus..)</span>
           </h2>
           <div class="max-w-prose">
+            <p>Ce site te présente une méthode simple, efficace et réversible pour te contracepter.</p>
             <p>
-              Ce site te présente une méthode simple, efficace et réversible
-              pour te contracepter.
+              Il s'agit d'une méthode thermique naturelle qui utilise la chaleur de ton propre corps pour arrêter la
+              production de spermatozoïdes. Il suffit pour cela d'exposer tes testicules à une température de 37°, 15
+              heures par jour. Au bout de trois mois, te voilà contracepté !
             </p>
             <p>
-              Il s'agit d'une méthode thermique naturelle qui utilise la chaleur
-              de ton propre corps pour arrêter la production de spermatozoïdes.
-              Il suffit pour cela d'exposer tes testicules à une température de
-              37°, 15 heures par jour. Au bout de trois mois, te voilà
-              contracepté !
-            </p>
-            <p>
-              Différents outils sont disponible, ici on va surtout te parler de
-              l'anneau. Un simple objet en silicone bio-compatible qui se porte
-              aussi facilement qu'un bracelet
+              Différents outils sont disponible, ici on va surtout te parler de l'anneau. Un simple objet en silicone
+              bio-compatible qui se porte aussi facilement qu'un bracelet
               <span class="hand text-xl leading-normal text-zinc-600"
                 >(sauf que lui, tu ne le mets pas autour de ton bras)</span
               >.
@@ -143,63 +119,41 @@
       </div>
     </section>
     <section class="bg-white text-zinc-600">
-      <div
-        class="container mx-auto flex flex-col items-center justify-between py-24 md:flex-row"
-      >
+      <div class="container mx-auto flex flex-col items-center justify-between py-24 md:flex-row">
         <div
           class="prose mb-16 flex max-w-none flex-col items-center px-16 text-center md:mb-0 md:items-start md:text-left"
         >
           <h2 class="text-4xl">
             Ce projet se veut libre et ouvert
-            <span class="hand text-2xl text-zinc-400"
-              >(alors viens contribuer ?)</span
-            >
+            <span class="hand text-2xl text-zinc-400">(alors viens contribuer ?)</span>
           </h2>
           <div class="max-w-prose">
             <p>
-              L'idée ici est de partager du contenu clair et détailé sur la
-              contraception <ContentMasculine />. Il y a des guides et des
-              outils pratiques mis à disposition. Les textes et les images sont
-              libres de droits et le code de ce site est open source.
+              L'idée ici est de partager du contenu clair et détailé sur la contraception <ContentMasculine />. Il y a
+              des guides et des outils pratiques mis à disposition. Les textes et les images sont libres de droits et le
+              code de ce site est open source.
             </p>
-            <p>
-              Tout le monde est le.la bienvenue pour participer ! Et surtout
-              toi, oui, toi !
-            </p>
+            <p>Tout le monde est le.la bienvenue pour participer ! Et surtout toi, oui, toi !</p>
             <div>
               Pour celà, trois moyens de contribuer aujourd'hui :
               <ul class="flex list-none flex-col gap-4 text-lg">
                 <li class="flex flex-wrap sm:justify-normal sm:gap-2">
-                  <a
-                    class="flex items-center gap-2 hover:text-primary-500"
-                    href="https://github.com/cyrilf/anono"
+                  <a class="flex items-center gap-2 hover:text-primary-500" href="https://github.com/cyrilf/anono"
                     ><Icon name="fe-github" />github.com/cyrilf/anoano</a
                   >
-                  <span class="hand text-2xl text-zinc-500"
-                    >pour le code et le contenu</span
-                  >
+                  <span class="hand text-2xl text-zinc-500">pour le code et le contenu</span>
                 </li>
                 <li class="flex flex-wrap sm:justify-normal sm:gap-2">
-                  <a
-                    class="flex items-center gap-2 hover:text-primary-500"
-                    href="mailto:hey@anoano.page"
-                  >
+                  <a class="flex items-center gap-2 hover:text-primary-500" href="mailto:hey@anoano.page">
                     <Icon name="fe-mail" /> hey@anoano.page
                   </a>
-                  <span class="hand text-2xl text-zinc-500"
-                    >pour des idées ou remarques
-                  </span>
+                  <span class="hand text-2xl text-zinc-500">pour des idées ou remarques </span>
                 </li>
                 <li class="flex flex-wrap text-left sm:justify-normal sm:gap-2">
-                  <a
-                    class="flex items-center gap-2 hover:text-primary-500"
-                    href="https://anoano.page"
-                  >
+                  <a class="flex items-center gap-2 hover:text-primary-500" href="https://anoano.page">
                     <Icon name="fe-share" /> anoano.page
                   </a>
-                  <span class="hand text-2xl text-zinc-500"
-                    >à partager pour que le projet se fasse connaître</span
-                  >
+                  <span class="hand text-2xl text-zinc-500">à partager pour que le projet se fasse connaître</span>
                 </li>
               </ul>
             </div>
