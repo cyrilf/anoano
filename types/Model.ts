@@ -17,8 +17,8 @@ export type SelectedModel = Model & {
 };
 
 export type DiyModel = BaseModel & {
-  size: number;
-  measure: string;
+  size: string;
+  measure: number;
 };
 
 export type Header = {

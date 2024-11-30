@@ -75,21 +75,20 @@ const models = ref<DiyModel[]>(
   Array(9)
     .fill("")
     .map((_, i) => {
-      const range = [BASE_SIZE + 2 + 2 * i, BASE_SIZE + 4 + 2 * i];
+      const range = [(BASE_SIZE + 2 + 2 * i) / 10, (BASE_SIZE + 4 + 2 * i) / 10];
 
       return {
         id: i,
-        size: (BASE_SIZE + 2 * i) / 10,
+        size: `${range[0]} - ${range[1]}`,
         range,
-        measure: `${range[0]} - ${range[1]}`,
+        measure: BASE_SIZE + 2 * i,
       };
-    })
+    }),
 );
 const searchModels = [...models.value].reverse();
 
 const erect = ref(3.2);
 const selectedModel = computed(
-  () =>
-    searchModels.find((model) => erect.value >= model.size) || ({} as DiyModel)
+  () => searchModels.find((model) => erect.value >= +model.size.split("-")[0].trimEnd()) || ({} as DiyModel),
 );
 </script>
