@@ -30,7 +30,12 @@ export default defineNuxtConfig({
   icon: {
     clientBundle: {
       scan: true,
-      includeCustomCollections: true,
+    },
+  },
+  $production: {
+    nitro: {
+      compressPublicAssets: { gzip: true, brotli: true },
+      minify: true,
     },
   },
 });
