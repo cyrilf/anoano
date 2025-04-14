@@ -2,12 +2,12 @@
   <div>
     <div>
       <label class="relative leading-10 md:leading-normal">
-        <Icon name="fe:quote-left" class="absolute -left-6 -top-2 text-xl text-zinc-300" />
+        <Icon name="fe:quote-left" class="absolute -top-2 -left-6 text-xl text-zinc-300" />
         Mon pénis mesure
         <input
           v-model="erect"
           type="number"
-          class="w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent px-2 py-1 text-center text-2xl font-bold focus:border-primary-300 focus:outline-none focus:ring-0"
+          class="focus:border-primary-300 w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent px-2 py-1 text-center text-2xl font-bold focus:ring-0 focus:outline-none"
           step="0.1"
           min="2.9"
           max="5.5"
@@ -22,7 +22,7 @@
         <input
           v-model="flacid"
           type="number"
-          class="w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent px-2 py-1 text-center text-2xl font-bold focus:border-primary-300 focus:outline-none focus:ring-0"
+          class="focus:border-primary-300 w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent px-2 py-1 text-center text-2xl font-bold focus:ring-0 focus:outline-none"
           step="0.1"
           min="2.9"
           max="5.5"
@@ -36,7 +36,7 @@
     <div>
       <div class="mt-4">
         Alors ton modèle idéal c'est le
-        <b class="ml-0.5 text-primary-500">{{ isSoftVariant ? "soft" : "basique" }} {{ finalModel }}</b>
+        <b class="text-primary-500 ml-0.5">{{ isSoftVariant ? "soft" : "basique" }} {{ finalModel }}</b>
       </div>
       <Toggle
         text="Voir toutes les tailles"
@@ -50,7 +50,7 @@
                 <p
                   :class="{
                     [innerClass]: true,
-                    'text-2xl font-bold !text-primary-500': item.model === finalModel,
+                    '!text-primary-500 text-2xl font-bold': item.model === finalModel,
                   }"
                 >
                   {{ item[header.key] }}
@@ -62,7 +62,7 @@
                 <p
                   :class="{
                     [innerClass]: true,
-                    'text-2xl font-bold !text-primary-500': item.soft === finalModel,
+                    '!text-primary-500 text-2xl font-bold': item.soft === finalModel,
                   }"
                 >
                   {{ item[header.key] }}

@@ -115,7 +115,7 @@
             <tr>
               <td colspan="3" class="text-center">
                 <button
-                  class="w-full border p-2 transition-colors hover:bg-primary-200"
+                  class="hover:bg-primary-200 w-full border p-2 transition-colors"
                   @click="showExtra = !showExtra"
                 >
                   {{ showExtra ? "Voir la vue simplifiée" : "Voir toutes les valeurs" }}

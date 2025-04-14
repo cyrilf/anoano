@@ -2,12 +2,12 @@
   <div>
     <div>
       <label class="relative leading-10 md:leading-normal">
-        <Icon name="fe:quote-left" class="absolute -left-6 -top-2 text-xl text-zinc-300" />
+        <Icon name="fe:quote-left" class="absolute -top-2 -left-6 text-xl text-zinc-300" />
         Mon pénis mesure
         <input
           v-model="erect"
           type="number"
-          class="w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent px-2 py-1 text-center text-2xl font-bold focus:border-primary-300 focus:outline-none focus:ring-0"
+          class="focus:border-primary-300 w-20 appearance-none border-0 border-b-2 border-zinc-200 bg-transparent px-2 py-1 text-center text-2xl font-bold focus:ring-0 focus:outline-none"
           step="0.1"
           min="3.2"
           max="4.8"
@@ -20,7 +20,7 @@
     <div>
       <div class="mt-4">
         La taille idéale pour ton modèle est de
-        <b class="ml-0.5 text-2xl text-primary-500">{{ selectedModel.measure }}</b>
+        <b class="text-primary-500 ml-0.5 text-2xl">{{ selectedModel.measure }}</b>
         mm
       </div>
       <Toggle
@@ -35,7 +35,7 @@
                 <p
                   :class="{
                     [innerClass]: true,
-                    'font-bold !text-primary-500': item.size === selectedModel.size,
+                    '!text-primary-500 font-bold': item.size === selectedModel.size,
                   }"
                 >
                   {{ item[header.key] }}

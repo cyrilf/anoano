@@ -2,7 +2,7 @@
   <main>
     <div class="px-4 py-6 sm:px-0">
       <div class="py-6 sm:px-6 lg:px-8">
-        <div class="container relative mx-auto">
+        <div class="relative container mx-auto">
           <div class="grid grid-cols-2 items-center gap-x-4 gap-y-4 lg:gap-x-24">
             <slot
               name="image"

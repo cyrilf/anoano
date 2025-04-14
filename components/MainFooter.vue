@@ -5,17 +5,17 @@
         <div v-for="linkGroup in links" :key="linkGroup.name" class="w-48 flex-initial text-sm font-semibold">
           <NuxtLink
             v-if="linkGroup.href === '/'"
-            class="-mt-3 flex flex-auto items-center self-start font-medium hover:text-primary-500 lg:-ml-14"
+            class="hover:text-primary-500 -mt-3 flex flex-auto items-center self-start font-medium lg:-ml-14"
             :to="linkGroup.href"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 rounded-full bg-primary-400 p-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bg-primary-400 h-10 w-10 rounded-full p-2">
               <circle cx="50" cy="50" r="40" stroke="white" stroke-width="40" />
             </svg>
             <span class="ml-4 text-2xl font-extrabold text-zinc-200 dark:text-zinc-300">{{ linkGroup.name }}</span>
           </NuxtLink>
           <NuxtLink
             v-else-if="linkGroup.href !== '/'"
-            class="mb-4 block whitespace-nowrap uppercase text-zinc-200 hover:text-zinc-400 dark:text-zinc-300"
+            class="mb-4 block whitespace-nowrap text-zinc-200 uppercase hover:text-zinc-400 dark:text-zinc-300"
             :to="linkGroup.href"
             active-class="_"
             exact-active-class="_"

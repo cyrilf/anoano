@@ -7,7 +7,7 @@
     <nuxt-link :to="link" active-class="_" exact-active-class="_" class="no-underline">
       <h3
         v-if="title"
-        class="mb-0 mt-0 bg-zinc-50 py-2 pt-4"
+        class="mt-0 mb-0 bg-zinc-50 py-2 pt-4"
         :class="sticky ? 'xl:sticky xl:top-20 xl:text-center' : ''"
       >
         <Icon v-if="icon" :name="icon" /> {{ title }}

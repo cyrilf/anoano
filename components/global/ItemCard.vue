@@ -1,7 +1,7 @@
 <template>
   <div
     class="mt-20 w-96 rounded-lg bg-white px-8 py-4 shadow-lg"
-    :class="inProgress ? 'cursor-not-allowed' : 'duration-50 group transition-all hover:scale-105 hover:shadow-2xl'"
+    :class="inProgress ? 'cursor-not-allowed' : 'group transition-all duration-50 hover:scale-105 hover:shadow-2xl'"
   >
     <nuxt-link :to="link" class="flex h-full flex-col">
       <div class="relative -mt-16 flex justify-center transition-all duration-200 group-hover:scale-125 md:justify-end">

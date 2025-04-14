@@ -1,13 +1,13 @@
 <template>
   <div>
     <section class="relative">
-      <div class="container relative px-6 py-8 sm:mx-auto sm:py-8 md:py-28 md:pb-48">
+      <div class="relative container px-6 py-8 sm:mx-auto sm:py-8 md:py-28 md:pb-48">
         <div class="flex flex-col md:flex-row">
           <div
             class="flex w-full flex-col items-center gap-7 text-center md:w-1/2 md:items-start md:gap-8 md:pr-8 md:text-left lg:w-2/3 lg:pr-36 2xl:pr-0"
           >
             <h1
-              class="bg-gradient-to-r from-primary-500 to-primary-400 bg-clip-text text-4xl font-medium text-transparent md:text-5xl 2xl:text-6xl"
+              class="from-primary-500 to-primary-400 bg-gradient-to-r bg-clip-text text-4xl font-medium text-transparent md:text-5xl 2xl:text-6xl"
             >
               Ta contraception
               <ContentMasculine />
@@ -23,19 +23,19 @@
             <div class="flex flex-wrap justify-center gap-4 md:justify-start">
               <nuxt-link
                 to="/parcours"
-                class="inline-flex items-center gap-2 rounded border-2 border-accent-400 px-4 py-2 text-lg text-zinc-700 hover:bg-accent-400 hover:text-white"
+                class="border-accent-400 hover:bg-accent-400 inline-flex items-center gap-2 rounded border-2 px-4 py-2 text-lg text-zinc-700 hover:text-white"
               >
                 <Icon name="noto-clipboard" /> Le parcours
               </nuxt-link>
               <nuxt-link
                 to="/guides"
-                class="inline-flex items-center gap-2 rounded border-0 bg-zinc-200 px-4 py-2 text-lg text-zinc-700 transition hover:bg-primary-400"
+                class="hover:bg-primary-400 inline-flex items-center gap-2 rounded border-0 bg-zinc-200 px-4 py-2 text-lg text-zinc-700 transition"
               >
                 <Icon name="noto-books" /> Les guides
               </nuxt-link>
               <nuxt-link
                 to="/outils"
-                class="inline-flex items-center gap-2 rounded border-0 bg-zinc-200 px-4 py-2 text-lg text-zinc-700 transition hover:bg-primary-400"
+                class="hover:bg-primary-400 inline-flex items-center gap-2 rounded border-0 bg-zinc-200 px-4 py-2 text-lg text-zinc-700 transition"
               >
                 <Icon name="noto-screwdriver" /> Les outils
               </nuxt-link>
@@ -48,7 +48,7 @@
         :style="`background-image: url(${image})`"
       >
         <span
-          class="absolute bottom-0 right-0 bg-zinc-50 bg-opacity-70 px-2 text-sm text-zinc-600 opacity-0 transition-opacity group-hover:opacity-100"
+          class="bg-opacity-70 absolute right-0 bottom-0 bg-zinc-50 px-2 text-sm text-zinc-600 opacity-0 transition-opacity group-hover:opacity-100"
           >Photo de Koeko en <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">CC BY 4.0</a></span
         >
       </div>
@@ -107,7 +107,7 @@
                 <span class="not-prose">
                   <nuxt-link
                     to="/parcours"
-                    class="font-semibold text-zinc-900 underline decoration-accent-400 decoration-2 transition hover:text-zinc-700 hover:decoration-accent-200"
+                    class="decoration-accent-400 hover:decoration-accent-200 font-semibold text-zinc-900 underline decoration-2 transition hover:text-zinc-700"
                   >
                     le parcours
                   </nuxt-link>
@@ -138,19 +138,19 @@
               Pour celà, trois moyens de contribuer aujourd'hui :
               <ul class="flex list-none flex-col gap-4 text-lg">
                 <li class="flex flex-wrap sm:justify-normal sm:gap-2">
-                  <a class="flex items-center gap-2 hover:text-primary-500" href="https://github.com/cyrilf/anono"
+                  <a class="hover:text-primary-500 flex items-center gap-2" href="https://github.com/cyrilf/anono"
                     ><Icon name="fe-github" />github.com/cyrilf/anoano</a
                   >
                   <span class="hand text-2xl text-zinc-500">pour le code et le contenu</span>
                 </li>
                 <li class="flex flex-wrap sm:justify-normal sm:gap-2">
-                  <a class="flex items-center gap-2 hover:text-primary-500" href="mailto:hey@anoano.page">
+                  <a class="hover:text-primary-500 flex items-center gap-2" href="mailto:hey@anoano.page">
                     <Icon name="fe-mail" /> hey@anoano.page
                   </a>
                   <span class="hand text-2xl text-zinc-500">pour des idées ou remarques </span>
                 </li>
                 <li class="flex flex-wrap text-left sm:justify-normal sm:gap-2">
-                  <a class="flex items-center gap-2 hover:text-primary-500" href="https://anoano.page">
+                  <a class="hover:text-primary-500 flex items-center gap-2" href="https://anoano.page">
                     <Icon name="fe-share" /> anoano.page
                   </a>
                   <span class="hand text-2xl text-zinc-500">à partager pour que le projet se fasse connaître</span>
@@ -180,8 +180,5 @@ definePageMeta({
   desc: "Ta contraception masculine commence ici. Il y a des guides et des outils à ta disposition pour t'accompagner dans ton parcours contraceptif.",
 });
 const image = ref("/anneaux.jpg");
-useSeoMeta({
-  ogImage: image,
-  twitterImage: image,
-});
+useSeoMeta({ ogImage: image, twitterImage: image });
 </script>

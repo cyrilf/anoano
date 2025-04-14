@@ -8,12 +8,12 @@
           </button>
           <nuxt-link
             to="/"
-            class="group flex items-center font-medium text-primary-400 transition-colors hover:text-primary-500"
+            class="group text-primary-400 hover:text-primary-500 flex items-center font-medium transition-colors"
             active-class="_"
             exact-active-class="_"
           >
             <svg
-              class="h-10 w-10 rounded-full bg-primary-400 stroke-primary-400 transition-colors group-hover:bg-primary-500 group-hover:stroke-primary-500"
+              class="bg-primary-400 stroke-primary-400 group-hover:bg-primary-500 group-hover:stroke-primary-500 h-10 w-10 rounded-full transition-colors"
             >
               <circle cx="50%" cy="50%" r="50%" stroke-width="40%" fill="white" />
               <line x1="-10%" y1="70%" x2="70%" y2="-10%" stroke-width="30%" />
@@ -23,24 +23,24 @@
           </nuxt-link>
         </div>
         <nav
-          :class="`mt-5 flex h-20 flex-wrap items-center justify-center gap-y-4 text-base transition sm:h-auto md:ml-auto md:mt-0 ${
+          :class="`mt-5 flex h-20 flex-wrap items-center justify-center gap-y-4 text-base transition sm:h-auto md:mt-0 md:ml-auto ${
             isMenuOpen ? 'block' : 'hidden'
           } md:block`"
         >
-          <nuxt-link to="/guides" class="mr-5 hover:text-primary-500" @click="isMenuOpen && toggleMenu()">
+          <nuxt-link to="/guides" class="hover:text-primary-500 mr-5" @click="isMenuOpen && toggleMenu()">
             Les guides
           </nuxt-link>
-          <nuxt-link to="/outils" class="mr-5 hover:text-primary-500" @click="isMenuOpen && toggleMenu()">
+          <nuxt-link to="/outils" class="hover:text-primary-500 mr-5" @click="isMenuOpen && toggleMenu()">
             Les outils
           </nuxt-link>
-          <nuxt-link to="/extras" class="mr-5 hover:text-primary-500" @click="isMenuOpen && toggleMenu()">
+          <nuxt-link to="/extras" class="hover:text-primary-500 mr-5" @click="isMenuOpen && toggleMenu()">
             Les extras
           </nuxt-link>
           <nuxt-link
             to="/parcours"
             active-class="_"
             exact-active-class="_"
-            class="inline-flex items-center gap-1 rounded border-2 border-accent-400 px-3 py-1 text-base transition hover:bg-accent-400 hover:text-white"
+            class="border-accent-400 hover:bg-accent-400 inline-flex items-center gap-1 rounded border-2 px-3 py-1 text-base transition hover:text-white"
             @click="isMenuOpen && toggleMenu()"
           >
             <svg

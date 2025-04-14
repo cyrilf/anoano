@@ -1,5 +1,5 @@
 <template>
-  <div class="flex min-h-screen flex-col selection:bg-accent-500 selection:text-zinc-50">
+  <div class="selection:bg-accent-500 flex min-h-screen flex-col selection:text-zinc-50">
     <MainHeader />
     <Breadcrumb />
     <div class="flex-grow"><slot></slot></div>

@@ -4,7 +4,7 @@
     <h2 class="z-10 bg-white py-4 text-2xl font-bold xl:sticky xl:top-0 xl:pt-8">
       <nuxt-link
         :to="`/parcours#etape-${index}`"
-        class="flex flex-wrap items-center justify-center gap-2 text-primary-400"
+        class="text-primary-400 flex flex-wrap items-center justify-center gap-2"
         active-class="_"
         exact-active-class="_"
       >

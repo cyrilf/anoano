@@ -1,5 +1,5 @@
 <template>
-  <table class="border-l border-r border-zinc-100 bg-white">
+  <table class="border-r border-l border-zinc-100 bg-white">
     <thead>
       <tr>
         <th
@@ -7,7 +7,7 @@
           :key="header.key"
           class="border-b-2 border-zinc-200 bg-zinc-100 px-5 py-3 first:rounded-tl-lg last:rounded-tr-lg"
         >
-          <span class="text-left text-xs font-semibold uppercase tracking-wider text-zinc-600">{{ header.name }}</span
+          <span class="text-left text-xs font-semibold tracking-wider text-zinc-600 uppercase">{{ header.name }}</span
           ><Tooltip v-if="header.tooltip" :text="header.tooltip" />
         </th>
       </tr>
@@ -40,12 +40,8 @@
 <script setup lang="ts">
 import type { Header } from "~/types/Model";
 
-type Item = {
-  [key: string]: any;
-};
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type Item = { [key: string]: any };
 
-defineProps<{
-  headers: Header[];
-  items: Item[];
-}>();
+defineProps<{ headers: Header[]; items: Item[] }>();
 </script>

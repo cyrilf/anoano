@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ContentSlot :use="$slots.default" unwrap="p" />
+    <slot mdc-unwrap="p"></slot>
   </div>
 </template>
 

@@ -142,7 +142,7 @@
                   ><a
                     :href="selection[selection.isSoft ? 'hrefSoft' : 'href']"
                     target="_blank"
-                    class="text-primary-500 underline decoration-primary-500 decoration-2 hover:text-primary-400 hover:decoration-primary-400"
+                    class="text-primary-500 decoration-primary-500 hover:text-primary-400 hover:decoration-primary-400 underline decoration-2"
                     >l'Andro-switch
                     {{ selection.isSoft ? "soft" : "basique" }}
                     {{ selection[selection.isSoft ? "soft" : "model"] }}</a

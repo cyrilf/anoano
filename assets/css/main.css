@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
+@theme {
+  --color-primary-50: var(--color-amber-50);
+  --color-primary-100: var(--color-amber-100);
+  --color-primary-200: var(--color-amber-200);
+  --color-primary-300: var(--color-amber-300);
+  --color-primary-400: var(--color-amber-400);
+  --color-primary-500: var(--color-amber-500);
+  --color-primary-600: var(--color-amber-600);
+  --color-primary-700: var(--color-amber-700);
+  --color-primary-800: var(--color-amber-800);
+  --color-primary-900: var(--color-amber-900);
+  --color-primary-950: var(--color-amber-950);
+
+  --color-accent-50: var(--color-pink-50);
+  --color-accent-100: var(--color-pink-100);
+  --color-accent-200: var(--color-pink-200);
+  --color-accent-300: var(--color-pink-300);
+  --color-accent-400: var(--color-pink-400);
+  --color-accent-500: var(--color-pink-500);
+  --color-accent-600: var(--color-pink-600);
+  --color-accent-700: var(--color-pink-700);
+  --color-accent-800: var(--color-pink-800);
+  --color-accent-900: var(--color-pink-900);
+  --color-accent-950: var(--color-pink-950);
+}
+
+.clip-path {
+  clip-path: polygon(11% 0%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.hand {
+  font-family:
+    "Caveat",
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+.router-link-active {
+  color: var(--text-primary-600);
+}
+
+.router-link-exact-active {
+  color: var(--text-primary-600);
+}
+
+input[type="number"][hide-spin-buttons]::-webkit-outer-spin-button,
+input[type="number"][hide-spin-buttons]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"][hide-spin-buttons] {
+  -moz-appearance: textfield;
+}
+
+@utility underlined {
+  display: inline-block;
+  position: relative;
+  background: inherit;
+
+  &::after {
+    content: "";
+    width: 110%;
+    height: 24px;
+    border-width: 3px;
+    border-color: #fbbf24 transparent transparent;
+    border-radius: 100% 50% 0px 0px;
+    position: absolute;
+    top: 93%;
+    left: -5%;
+  }
+}

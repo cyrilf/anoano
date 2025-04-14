@@ -16,7 +16,7 @@
       />
     </div>
   </div>
-  <div :class="`mb-4 ml-2 mt-2 ${isOpen ? (withGuide ? 'border-l border-zinc-300 pl-4' : '') : 'hidden'}`">
+  <div :class="`mt-2 mb-4 ml-2 ${isOpen ? (withGuide ? 'border-l border-zinc-300 pl-4' : '') : 'hidden'}`">
     <slot></slot>
   </div>
 </template>

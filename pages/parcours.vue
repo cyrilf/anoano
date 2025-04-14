@@ -3,7 +3,7 @@
     <StepsMenu class="self-start" />
     <div class="col-span-2 px-4 pt-6 sm:px-0">
       <div class="py-6 sm:px-6 lg:px-8">
-        <div class="container prose mx-auto">
+        <div class="prose container mx-auto">
           <p>
             Cette page, découpée en <b>4 grandes étapes</b>, te permets de découvir le parcours complet d'une
             <b>personne voulant se contracepter</b
