@@ -36,7 +36,7 @@
     <div>
       <div class="mt-4">
         Alors ton modèle idéal c'est le
-        <b class="text-primary-500 ml-0.5">{{ isSoftVariant ? "soft" : "basique" }} {{ finalModel }}</b>
+        <b class="text-primary-500 ml-0.5">{{ selectedModel.diameter }} {{ selectedModel[isSoftVariant ? "soft" : "model"]}}{{ isSoftVariant ? " - ALAZE" : "" }}</b>
       </div>
       <Toggle
         text="Voir toutes les tailles"

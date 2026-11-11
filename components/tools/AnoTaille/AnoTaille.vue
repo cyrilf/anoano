@@ -138,15 +138,12 @@
             <div v-if="provider === 'andro'">
               <div>
                 Pour acheter ton modèle idéal, tu peux te rendre sur
-                <b class="text-primary-500"
-                  ><a
+                <b class="text-primary-500">
+                  <a
                     href="https://www.coucouroucoucou.com/Boutique/"
                     target="_blank"
                     class="text-primary-500 decoration-primary-500 hover:text-primary-400 hover:decoration-primary-400 underline decoration-2"
-                  >
-                    cette boutique
-                  </a></b
-                >, choisir ta couleur et ensuite prendre la taille
+                  >cette boutique</a></b>, choisir ta couleur et ensuite prendre la taille
                 <b
                   >{{ selection.diameter }} {{ selection[selection.isSoft ? "soft" : "model"]
                   }}{{ selection.isSoft ? " - ALAZE" : "" }}</b
