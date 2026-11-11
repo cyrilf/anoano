@@ -137,16 +137,19 @@
             </div>
             <div v-if="provider === 'andro'">
               <div>
-                Voilà un lien pour acheter ton modèle idéal,
+                Pour acheter ton modèle idéal, tu peux te rendre sur
                 <b class="text-primary-500"
                   ><a
-                    :href="selection[selection.isSoft ? 'hrefSoft' : 'href']"
+                    href="https://www.coucouroucoucou.com/Boutique/"
                     target="_blank"
                     class="text-primary-500 decoration-primary-500 hover:text-primary-400 hover:decoration-primary-400 underline decoration-2"
-                    >l'Andro-switch
-                    {{ selection.isSoft ? "soft" : "basique" }}
-                    {{ selection[selection.isSoft ? "soft" : "model"] }}</a
-                  ></b
+                  >
+                    cette boutique
+                  </a></b
+                >, choisir ta couleur et ensuite prendre la taille
+                <b
+                  >{{ selection.diameter }} {{ selection[selection.isSoft ? "soft" : "model"]
+                  }}{{ selection.isSoft ? " - ALAZE" : "" }}</b
                 >
               </div>
             </div>

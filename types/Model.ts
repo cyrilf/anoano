@@ -8,8 +8,6 @@ export type Model = BaseModel & {
   diameter: number;
   model: string;
   soft: string;
-  href: string;
-  hrefSoft: string;
 };
 
 export type SelectedModel = Model & {

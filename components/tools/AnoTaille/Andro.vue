@@ -102,8 +102,6 @@ const models = ref<Model[]>(
       diameter: 31.5,
       model: "A",
       soft: "S",
-      href: "https://www.coucouroucoucou.com/boutique/s429928p/31-5-A",
-      hrefSoft: "https://www.coucouroucoucou.com/boutique/s429946p/alaze-31-5-S",
     },
     {
       id: 2,
@@ -111,8 +109,6 @@ const models = ref<Model[]>(
       diameter: 34.7,
       model: "N",
       soft: "W",
-      href: "https://www.coucouroucoucou.com/boutique/s429929p/34-7-N",
-      hrefSoft: "https://www.coucouroucoucou.com/boutique/s429953p/alaze-34-7-W",
     },
     {
       id: 3,
@@ -120,8 +116,6 @@ const models = ref<Model[]>(
       diameter: 35.9,
       model: "D",
       soft: "I",
-      href: "https://www.coucouroucoucou.com/boutique/s429931p/35-9-D",
-      hrefSoft: "https://www.coucouroucoucou.com/boutique/s429961p/alaze-35-9-I",
     },
     {
       id: 4,
@@ -129,8 +123,6 @@ const models = ref<Model[]>(
       diameter: 41.3,
       model: "R",
       soft: "T",
-      href: "https://www.coucouroucoucou.com/boutique/s429932p/41-3-R",
-      hrefSoft: "https://www.coucouroucoucou.com/boutique/s429966p/alaze-41-3-T",
     },
     {
       id: 5,
@@ -138,8 +130,6 @@ const models = ref<Model[]>(
       diameter: 44.7,
       model: "O",
       soft: "C",
-      href: "https://www.coucouroucoucou.com/boutique/s429939p/44-7-O",
-      hrefSoft: "https://www.coucouroucoucou.com/boutique/s429970p/alaze-44-7-C",
     },
   ].map((m) => ({
     ...m,
